@@ -5,7 +5,7 @@ import re
 import sys
 import urllib.request
 import urllib.error
-from datetime import date, datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -95,7 +95,9 @@ def unique_id(base, taken):
 
 
 def today():
-    return date.today().isoformat()
+    # 일일 창작 한도는 매일 09:00 KST(=00:00 UTC)에 리셋된다.
+    # (09:00 KST 하루 = 00:00 UTC 하루이므로 UTC 날짜가 곧 창작 일자다.)
+    return datetime.now(timezone.utc).date().isoformat()
 
 
 def load_state():
