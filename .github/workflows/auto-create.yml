@@ -1,0 +1,66 @@
+name: 자동 창작 (두시오분)
+
+on:
+  schedule:
+    # 하루 6개의 창작 슬롯 (KST 기준 대략: 09:47 / 13:23 / 16:31 / 20:05 / 23:52 / 04:38)
+    # 매일 이 6개 중 일부만 골라집니다 (하루 1~6개, 간격은 불규칙 — 스펙 §32 하루 창작량 및 창작 시간).
+    - cron: "47 0 * * *"
+    - cron: "23 4 * * *"
+    - cron: "31 7 * * *"
+    - cron: "05 11 * * *"
+    - cron: "52 14 * * *"
+    - cron: "38 19 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: auto-create
+  cancel-in-progress: false
+
+jobs:
+  create:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 실행 슬롯 판별
+        shell: bash
+        run: |
+          SLOT=""
+          case "${{ github.event.schedule }}" in
+            "47 0 * * *") SLOT=1 ;;
+            "23 4 * * *") SLOT=2 ;;
+            "31 7 * * *") SLOT=3 ;;
+            "05 11 * * *") SLOT=4 ;;
+            "52 14 * * *") SLOT=5 ;;
+            "38 19 * * *") SLOT=6 ;;
+          esac
+          echo "CREATE_SLOT=$SLOT" >> "$GITHUB_ENV"
+          echo "이번 실행 슬롯: ${SLOT:-수동 실행}"
+
+      - name: 자동 창작 실행
+        env:
+          # 보안: API 키는 반드시 Repository Secrets(GEMINI_API_KEY)로만 주입합니다.
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODELS: ${{ vars.GEMINI_MODELS }}
+        run: python agent/create.py
+
+      - name: 변경 사항 커밋 및 푸시
+        run: |
+          git config user.name "두시오분[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/ agent/state.json
+          if ! git diff --cached --quiet; then
+            git commit -m "자동 창작: $(date +%F)"
+            git push
+          else
+            echo "새 창작물이 없어 커밋하지 않습니다."
+          fi

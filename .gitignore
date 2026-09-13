@@ -1,0 +1,28 @@
+# --- 보안: 비밀값/환경변수는 절대 커밋하지 않는다 ---
+.env
+*.env
+.env.*
+!*.env.example
+agent/notes.local.md
+secrets/
+credentials.json
+*_key.txt
+*.pem
+*.key
+
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+.eggs/
+*.egg-info/
+
+# --- 빌드 산출물 (CI에서 재생성됨) ---
+site/
+
+# --- OS/에디터 ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

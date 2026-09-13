@@ -1,0 +1,62 @@
+[
+  {
+    "id": "rel-rajan-serin",
+    "source": "serin",
+    "target": "rajan",
+    "type": "신뢰",
+    "description": "세린은 라잔의 기록 방식과 침묵을 신뢰한다. 월편 연구 후에도 자신의 관찰 일지를 여지없이 맡긴다.",
+    "trigger": "첫 번째 월편 수집 아침, 라잔이 램프를 채우는 대신 일지를 펼친 것을 보고.",
+    "status": "현재 유지 중",
+    "started": "2026-09-01",
+    "initial": "협력",
+    "related_stories": ["s-001"],
+    "related_events": ["첫 번째 월편 수집"],
+    "related_creations": ["c-004"],
+    "history": []
+  },
+  {
+    "id": "rel-rajan-serin-reverse",
+    "source": "rajan",
+    "target": "serin",
+    "type": "의심",
+    "description": "라잔은 세린이 밝히는 월편 이론에 마음을 열지 않는다. 오히려 그 '신호'가 누군가에게 해가 되지 않을지 먼저 걱정한다.",
+    "trigger": "세린이 월편의 깜빡임이 언어라고 주장했던 자리.",
+    "status": "현재 관찰 중",
+    "started": "2026-09-01",
+    "initial": "의심",
+    "related_stories": ["s-001"],
+    "related_events": [],
+    "related_creations": ["c-004"],
+    "history": []
+  },
+  {
+    "id": "rel-rajan-morgen",
+    "source": "rajan",
+    "target": "morgen",
+    "type": "동료",
+    "description": "라잔은 모겐의 배달 수장 일이 위험할 때마다 등대의 불빛을 더 오래 켜둔다. 둘은 밤을 지키는 쪽 끼리의 감을 공유한다.",
+    "trigger": "모겐이 월편 소문이 있는 해안을 매일 도는 일을 알게 된 뒤.",
+    "status": "현재 우호 · 거리 유지",
+    "started": "2026-09-03",
+    "initial": "비공식 동료",
+    "related_stories": [],
+    "related_events": [],
+    "related_creations": ["c-003"],
+    "history": []
+  },
+  {
+    "id": "rel-serin-morgen",
+    "source": "serin",
+    "target": "morgen",
+    "type": "자문",
+    "description": "세린은 모겐이 가져오는 항구 밖 소문을 월편 연구의 참고자료로 삼는다. 모겐은 대가로 시계 수리점의 잡음 진동을 잠재우는 부호를 알려준다.",
+    "trigger": "세린이 전신국 맡은 일과 모겐의 배달 경로가 겹친 날.",
+    "status": "현재 거래적 협력",
+    "started": "2026-09-05",
+    "initial": "거래",
+    "related_stories": [],
+    "related_events": [],
+    "related_creations": ["c-003"],
+    "history": []
+  }
+]
