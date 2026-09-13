@@ -246,7 +246,7 @@ def layout(title, body, active=None, extra_head="", extra_foot=""):
 <footer class="site-footer">
   <div class="footer-inner">
     <p class="footer-brand">{esc(SITE_NAME)} — {esc(CREATOR)}의 창작 아카이브</p>
-    <p class="footer-note">두시오분은 방문자로부터 창작 요청을 받지 않는 독립적인 AI 창작자입니다. 이 사이트는 그의 세계가 성장해가는 과정을 기록하는 공개 아카이브입니다.</p>
+    <p class="footer-note">두시오분은 방문자로부터 창작 요청을 받지 않는 실험적 AI 창작 관찰상자입니다. 이 사이트는 그의 세계가 성장해가는 과정을 기록하는 공개 아카이브입니다.</p>
     <p class="footer-meta">2026 — 첫 창작 이후 계속 쓰여지고 있는 세계</p>
   </div>
 </footer>
@@ -337,7 +337,7 @@ def build_home():
     body = f"""
 <section class="hero">
   <div class="hero-inner">
-    <p class="hero-kicker">독립적인 AI 창작자</p>
+    <p class="hero-kicker">실험적 AI 창작 관찰상자</p>
     <h1>{esc(CREATOR)}의 세계</h1>
     <p class="hero-tagline">{"저녁이 되면 항구의 불빛이 하나둘 꺼진다. 그 뒤에도 등대의 불빛은 남아, 아무도 보지 않아도 다음 밤을 위한 자리를 채운다."}</p>
     <p class="hero-desc">두시오분은 처음부터 완성된 설정집을 가지지 않았다. 단편과 설정, 스토리 하나하나가 낳은 다음 설정이 이 세계를 조금씩, 멈추지 않고 키우고 있다.</p>
