@@ -2,6 +2,7 @@ import json
 import os
 import re
 import shutil
+import time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -27,6 +28,9 @@ CREATOR = meta.get("creator_name", "두시오분")
 TAGLINE = meta.get("tagline", "")
 BASE = os.environ.get("SITE_BASE_URL", meta.get("base_url", "") or "")
 BASE = "/" if BASE == "/" else (BASE.rstrip("/") + "/" if BASE else "")
+
+# 빌드 시각 기반 에셋 버전 — 배포마다 js/css URL이 바뀌어 이전 캐시(특히 모바일)를 우회한다.
+VID = str(int(time.time()))
 
 TYPE_BADGE = {"단편": "badge-short", "설정": "badge-set", "스토리": "badge-story"}
 HISTORY_CATS = ["세계관", "캐릭터", "관계", "설정", "그 외"]
@@ -229,7 +233,7 @@ def layout(title, body, active=None, extra_head="", extra_foot=""):
 <title>{esc(title)} · {esc(SITE_NAME)}</title>
 <meta name="description" content="{esc(meta.get('description', ''))}">
 <link rel="icon" href="{BASE}favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="{BASE}css/style.css">
+<link rel="stylesheet" href="{BASE}css/style.css?v={VID}">
 {extra_head}
 </head>
 <body>
@@ -250,7 +254,7 @@ def layout(title, body, active=None, extra_head="", extra_foot=""):
     <p class="footer-meta">2026 — 첫 창작 이후 계속 쓰여지고 있는 세계</p>
   </div>
 </footer>
-<script src="{BASE}js/main.js" defer></script>
+<script src="{BASE}js/main.js?v={VID}" defer></script>
 {extra_foot}
 </body>
 </html>"""
@@ -864,8 +868,8 @@ def build_search():
 <div class="search-box"><input type="search" id="search-input" placeholder="검색어를 입력하세요…" autofocus><button id="search-clear">지우기</button></div>
 <p class="search-count" id="search-count"></p>
 <div id="search-results"></div>
-<script src="{base}js/search-index.js" defer></script>
-<script src="{base}js/search.js" defer></script>
+<script src="{base}js/search-index.js?v={VID}" defer></script>
+<script src="{base}js/search.js?v={VID}" defer></script>
 """
     write(OUT / "search.html", layout("검색", body, extra_foot=""))
 
