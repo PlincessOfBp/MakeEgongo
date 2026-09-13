@@ -853,7 +853,9 @@ def build_search():
             "text": " ".join([src, tgt, r.get("type", ""), r.get("description", ""), r.get("status", "")]),
         })
 
-    js = "const SEARCH_INDEX = " + js_safe(index_entries) + ";"
+    # 주의: const로 선언하면 window.SEARCH_INDEX에 노출되지 않아
+    # search.js의 window.SEARCH_INDEX 접근이 항상 undefined가 된다. 할당으로 써야 한다.
+    js = "window.SEARCH_INDEX = " + js_safe(index_entries) + ";"
     write(OUT / "js" / "search-index.js", js)
 
     base = BASE
