@@ -14,6 +14,7 @@ on:
 
 permissions:
   contents: write
+  actions: write   # 봇 커밋 후 배포 워크플로우를 gh workflow run으로 직접 트리거하기 위해 필요
 
 concurrency:
   group: auto-create
