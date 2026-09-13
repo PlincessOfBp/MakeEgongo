@@ -246,6 +246,48 @@ def build_context(meta, world, characters, relationships, stories, creations, hi
     return "\n".join(lines)
 
 
+def parse_model_json(text):
+    """모델 응답에서 JSON을 복원한다. 코드 펜스·앞뒤 설명 텍스트·문자열 안 중괄호까지 처리한다."""
+    text = re.sub(r"^```(?:json)?\s*", "", (text or "").strip())
+    text = re.sub(r"\s*```$", "", text)
+    if not text:
+        raise ValueError("빈 응답")
+    try:
+        return json.loads(text)
+    except ValueError:
+        pass
+    # 앞뒤 설명 텍스트·튀어있는 중괄호 때문에 첫 문자부터 짝지우는 것만으론 부족하다.
+    # '[' 나 '{' 가 나오는 모든 위치를 후보 시작점으로 잡아 한 번씩 시도한다.
+    for start, ch0 in enumerate(text):
+        if ch0 not in "[{":
+            continue
+        open_ch, close_ch = ("{", "}") if ch0 == "{" else ("[", "]")
+        depth, in_str, esc = 0, False, False
+        for i in range(start, len(text)):
+            ch = text[i]
+            if in_str:
+                if esc:
+                    esc = False
+                elif ch == "\\":
+                    esc = True
+                elif ch == '"':
+                    in_str = False
+            else:
+                if ch == '"':
+                    in_str = True
+                elif ch == open_ch:
+                    depth += 1
+                elif ch == close_ch:
+                    depth -= 1
+                    if depth == 0:
+                        cand = text[start : i + 1]
+                        try:
+                            return json.loads(cand)
+                        except ValueError:
+                            break
+    raise ValueError("완전한 JSON을 찾지 못함")
+
+
 def call_model(model, key, prompt):
     url = API_ENDPOINT.format(model=model)
     payload = {
@@ -281,9 +323,10 @@ def call_model(model, key, prompt):
         text = body["candidates"][0]["content"]["parts"][0]["text"]
     except (KeyError, IndexError, TypeError):
         raise ApiError(f"{model} 응답 형식 오류: " + json.dumps(body, ensure_ascii=False)[:300])
-    text = re.sub(r"^```(?:json)?\s*", "", text.strip())
-    text = re.sub(r"\s*```$", "", text)
-    return json.loads(text)
+    try:
+        return parse_model_json(text)
+    except ValueError as e:
+        raise ApiError(f"{model} JSON 파싱 실패: {e} · 원문 앞부분: {text[:200]!r}", rotate=True)
 
 
 def ask_gemini(key, prompt, models):
