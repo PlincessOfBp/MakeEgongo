@@ -9,9 +9,15 @@
     "status": "현재 유지 중",
     "started": "2026-09-01",
     "initial": "협력",
-    "related_stories": ["s-001"],
-    "related_events": ["첫 번째 월편 수집"],
-    "related_creations": ["c-004"],
+    "related_stories": [
+      "s-001"
+    ],
+    "related_events": [
+      "첫 번째 월편 수집"
+    ],
+    "related_creations": [
+      "c-004"
+    ],
     "history": []
   },
   {
@@ -24,9 +30,13 @@
     "status": "현재 관찰 중",
     "started": "2026-09-01",
     "initial": "의심",
-    "related_stories": ["s-001"],
+    "related_stories": [
+      "s-001"
+    ],
     "related_events": [],
-    "related_creations": ["c-004"],
+    "related_creations": [
+      "c-004"
+    ],
     "history": []
   },
   {
@@ -41,7 +51,9 @@
     "initial": "비공식 동료",
     "related_stories": [],
     "related_events": [],
-    "related_creations": ["c-003"],
+    "related_creations": [
+      "c-003"
+    ],
     "history": []
   },
   {
@@ -56,7 +68,9 @@
     "initial": "거래",
     "related_stories": [],
     "related_events": [],
-    "related_creations": ["c-003"],
+    "related_creations": [
+      "c-003"
+    ],
     "history": []
   }
 ]

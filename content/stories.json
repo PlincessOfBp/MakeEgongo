@@ -7,7 +7,11 @@
     "date": "2026-09-01",
     "setting_date": "2026-08-31 새벽 ~ 2026-09-01 새벽",
     "place": "솔가지 사구 해변 · 등대 1층",
-    "characters": ["rajan", "serin", "morgen"],
+    "characters": [
+      "rajan",
+      "serin",
+      "morgen"
+    ],
     "cause": "8월 31일 밤에 몰아친 이른 가을 폭풍. 해변에 '달이 흘린 조각'이라는 소문의 월편이 흩뿌려진다.",
     "plot": [
       "폭풍이 그친 새벽, 세린이 사구 해변에서 유난히 빛나는 조각 네 개를 발견한다.",
@@ -25,8 +29,14 @@
       "세린 → 라잔 : 신뢰 시작",
       "라잔 → 세린 : 의심 지속 (관찰 중)"
     ],
-    "related_settings": ["w-tech-wolpyeon", "w-hist-first-wolpyeon", "w-geo-solgaji"],
+    "related_settings": [
+      "w-tech-wolpyeon",
+      "w-hist-first-wolpyeon",
+      "w-geo-solgaji"
+    ],
     "related_stories": [],
-    "related_creations": ["c-004"]
+    "related_creations": [
+      "c-004"
+    ]
   }
 ]

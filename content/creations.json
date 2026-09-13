@@ -5,14 +5,27 @@
     "type": "설정",
     "date": "2026-08-31",
     "content": "이 세계의 어느 밤, 폭풍 뒤의 해안에서 채집되는 비정상 물질 **월편**.\n\n월편은 자갈 크기의 회백색 조각이다. 보름달빛 아래에서 처음에는 단순한 광물로 보이지만, 가열하거나 전류를 흘리면 **일정한 간격으로 반복해서 빛난다.**\n\n- 발견 장소는 십중팔구 사구 해변이다.\n- 사람들은 '달이 흘린 조각'이라는 이름으로 부른다.\n- 마법처럼 보이지만, 정작 그것이 초자연인지 미지의 기술인지는 아직 아무도 모른다.",
-    "characters": ["serin", "rajan"],
-    "world_settings": ["w-tech-wolpyeon", "w-geo-solgaji", "w-natur-coast"],
-    "places": ["솔가지 사구 해변"],
+    "characters": [
+      "serin",
+      "rajan"
+    ],
+    "world_settings": [
+      "w-tech-wolpyeon",
+      "w-geo-solgaji",
+      "w-natur-coast"
+    ],
+    "places": [
+      "솔가지 사구 해변"
+    ],
     "events": [],
     "stories": [],
     "relationships": [],
     "setting_changes": [],
-    "tags": ["월편", "설정", "미지의 기술"]
+    "tags": [
+      "월편",
+      "설정",
+      "미지의 기술"
+    ]
   },
   {
     "id": "c-002",
@@ -20,14 +33,27 @@
     "type": "단편",
     "date": "2026-08-31",
     "content": "라잔은 등대 1층의 낡은 테이블 위에 보리차 두 잔을 놓는다.\n\n손님은 없다. 그는 자리만 비운 뒤 계단을 올라 불빛을 점검한다.\n\n한잔은 스스로에게, 한잔은 항구의 무엇엔가.\n\n차가 식는 동안, 사구 해변 쪽에서 달빛에 빛나는 조그만 물체들이 반짝였다. 라잔은 그것들을 '월편'이라고 부르는 것을 처음으로 마음속에 적었다.",
-    "characters": ["rajan"],
-    "world_settings": ["w-culture-lantern", "w-geo-solgaji"],
-    "places": ["솔가지 시 등대"],
+    "characters": [
+      "rajan"
+    ],
+    "world_settings": [
+      "w-culture-lantern",
+      "w-geo-solgaji"
+    ],
+    "places": [
+      "솔가지 시 등대"
+    ],
     "events": [],
-    "stories": ["s-001"],
+    "stories": [
+      "s-001"
+    ],
     "relationships": [],
     "setting_changes": [],
-    "tags": ["등대", "단편", "월편"]
+    "tags": [
+      "등대",
+      "단편",
+      "월편"
+    ]
   },
   {
     "id": "c-003",
@@ -35,14 +61,28 @@
     "type": "단편",
     "date": "2026-09-03",
     "content": "모겐은 새벽까지 항구를 돌았다.\n\n해가 뜨기 전, 전신국의 창에서 비친 노란 전등빛 아래에서 그는 가죽 가방을 열었다.\n\n그 속에는 월편 소문과, 아무도 보내지 않은 편지 한 통이 들어 있었다.\n\n'희망'이라는 단어가 어울릴까, 아니면 '기대'가 어울릴까. 그는 부호로는 이미 두 단어가 같은 패턴으로 시작한다는 것을 알고 있었다.\n\n그리고 편지를 다시 주머니에 넣었다. 지금은, 항구의 밤이 그에게 대답을 하지 않는다.",
-    "characters": ["morgen"],
-    "world_settings": ["w-org-telegraph", "w-geo-solgaji"],
-    "places": ["솔가지 연안 전신국"],
+    "characters": [
+      "morgen"
+    ],
+    "world_settings": [
+      "w-org-telegraph",
+      "w-geo-solgaji"
+    ],
+    "places": [
+      "솔가지 연안 전신국"
+    ],
     "events": [],
     "stories": [],
-    "relationships": ["rel-rajan-morgen", "rel-serin-morgen"],
+    "relationships": [
+      "rel-rajan-morgen",
+      "rel-serin-morgen"
+    ],
     "setting_changes": [],
-    "tags": ["전신", "밤", "단편"]
+    "tags": [
+      "전신",
+      "밤",
+      "단편"
+    ]
   },
   {
     "id": "c-004",
@@ -50,13 +90,74 @@
     "type": "스토리",
     "date": "2026-09-01",
     "content": "폭풍이 물러간 새벽, 사구 해변에 달빛이 머물렀다.\n\n세린은 흙에 반쯤 묻힌 조각 하나를 손에 감싸 쥐었다. 약간 따뜻했다.\n\n등대의 불빛이 두 번 깜빡였다. 세린은 그 패턴을 세었다. 그날 밤, 세 사람의 첫 기록이 시작되었다.",
-    "characters": ["rajan", "serin", "morgen"],
-    "world_settings": ["w-tech-wolpyeon", "w-hist-first-wolpyeon"],
-    "places": ["솔가지 사구 해변", "솔가지 시 등대"],
-    "events": ["첫 번째 월편 수집"],
-    "stories": ["s-001"],
-    "relationships": ["rel-rajan-serin", "rel-rajan-serin-reverse"],
-    "setting_changes": ["h-001"],
-    "tags": ["월편", "스토리", "시작"]
+    "characters": [
+      "rajan",
+      "serin",
+      "morgen"
+    ],
+    "world_settings": [
+      "w-tech-wolpyeon",
+      "w-hist-first-wolpyeon"
+    ],
+    "places": [
+      "솔가지 사구 해변",
+      "솔가지 시 등대"
+    ],
+    "events": [
+      "첫 번째 월편 수집"
+    ],
+    "stories": [
+      "s-001"
+    ],
+    "relationships": [
+      "rel-rajan-serin",
+      "rel-rajan-serin-reverse"
+    ],
+    "setting_changes": [
+      "h-001"
+    ],
+    "tags": [
+      "월편",
+      "스토리",
+      "시작"
+    ]
+  },
+  {
+    "title": "월현상자 (月絃箱子)",
+    "content": "월현상자는 미세한 유선 동선과 태엽 장치, 그리고 중앙의 작은 유리 슬롯으로 구성된 초기형 공명기다. 세린이 라잔에게 받은 첫 번째 월편의 파편들을 연구하는 과정에서 고안했으며, 슬롯에 월편을 넣고 약한 전류를 흘려보내면 월편이 달빛의 고도와 밀물 수위에 따라 미세하게 진동하는 성질을 이용한다. 이 진동은 동선을 타고 가느다란 타격음(클릭음)으로 변환되어, 마치 전신기에서 송신되는 부호처럼 들린다. 전신국 배달수장인 모겐은 이 불규칙한 소리 속에서 항구의 조석 변화와 안개 예보를 읽어낼 수 있는 규칙성을 발견했다고 주장한다. 현재 솔가지 시계 수리점과 전신국 지하 보관실에 각각 한 대씩 설치되어 시험 가동 중이다.",
+    "tags": [
+      "설정",
+      "기술",
+      "월편",
+      "솔가지시"
+    ],
+    "new_character": null,
+    "new_world_setting": {
+      "id": "w-tech-wolhyeonbox",
+      "category": "기술",
+      "name": "월현상자 (月絃箱子)",
+      "summary": "월편의 미세한 진동을 소리 신호로 변환하는 초기형 공명 장치.",
+      "details": "구리선과 정밀 태엽, 유리 슬롯으로 이루어진 기계 장치로, 월편이 달빛과 조류에 반응해 일으키는 불규칙한 떨림을 증폭하여 소리로 들려준다. 세린이 제작하였으며, 전신국의 신호 체계와 결합하여 새로운 용도를 모색 중이다."
+    },
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-005",
+    "date": "2026-09-13",
+    "type": "설정",
+    "characters": [
+      "serin",
+      "morgen",
+      "rajan"
+    ],
+    "world_settings": [
+      "w-tech-wolpyeon",
+      "w-org-telegraph",
+      "w-tech-wolhyeonbox"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
