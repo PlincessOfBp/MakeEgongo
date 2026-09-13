@@ -154,6 +154,10 @@ def excerpt(text, n=140):
     return s
 
 
+def squeeze(text):
+    return re.sub(r"[ \t\r\n]+", " ", str(text or "")).strip()
+
+
 def fmt_date(d):
     if not d:
         return ""
@@ -292,7 +296,7 @@ def build_home():
 <a class="card-link" href="{BASE}archive/{c['id']}.html">
 <header><span class="mini-date">{esc(fmt_date(c.get('date')))}</span>{badge_for(c.get('type', '설정'))}</header>
 <h3>{esc(c['title'])}</h3>
-<p class="mini-excerpt">{excerpt(re.sub(r'\n+', ' ', c.get('content', '')))}</p>
+<p class="mini-excerpt">{excerpt(squeeze(c.get('content')))}</p>
 </a></article>"""
         for c in recent_creations
     )
@@ -691,7 +695,7 @@ def build_archive():
 <a class="card-link" href="{BASE}archive/{c['id']}.html">
 <header><span class="mini-date">{esc(fmt_date(c.get('date')))}</span>{badge_for(c.get('type', '설정'))}</header>
 <h3>{esc(c['title'])}</h3>
-<p class="mini-excerpt">{excerpt(re.sub(r'\n+', ' ', c.get('content', '')))}</p>
+<p class="mini-excerpt">{excerpt(squeeze(c.get('content')))}</p>
 <p class="mini-chars">{"".join(link_char(x) for x in c.get('characters', []))}</p>
 </a></article>"""
         for c in al
