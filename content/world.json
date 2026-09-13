@@ -125,6 +125,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-wolhyeoncode",
+      "category": "기술",
+      "name": "월현 부호 (月絃 符號)",
+      "summary": "월현상자의 진동 패턴을 해석하기 위해 세린과 모겐이 합작하여 만든 전용 신호 체계.",
+      "details": "소리의 높낮이와 잔향의 길이를 조합하여 메시지를 전하는 기술이다. 증기 기관의 소음이 가득한 솔가지 시의 밤거리에서도 월편 특유의 공명 주파수 덕분에 왜곡 없이 송수신이 가능한 것이 특징이다. 공인된 전신망과는 별개로 움직이는 은밀하고 사적인 소통망 역할을 한다.",
+      "created": "2026-09-13",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
