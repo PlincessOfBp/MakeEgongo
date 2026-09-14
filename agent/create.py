@@ -405,19 +405,20 @@ def main():
         return 0
 
     if scheduled:
-        # 30분 단위 cron 발화: 지금 시각이 '다음 처리할 슬롯'의 시간 창 안인지 판정한다.
-        # (창: 슬롯 시각 ± 그간 GH Actions 스케줄이 밀려도 잡히도록 2시간 허용)
+        # 30분 단위 cron 발화: 지금 시각이 '다음 처리할 슬롯'의 시간 창 시작 전이면 건너뛴다.
+        # 창 시작 이후면 정상이든(창 안) 늦든(창 지남 캐치업) 생성한다.
+        # (창: 슬롯 시각 ± SLOT_WINDOW_MIN)
         now = datetime.now(timezone.utc)
         pending = state["plan"][state["done"]]
         t0 = slot_utc_time(state["day"], pending) - timedelta(minutes=SLOT_WINDOW_MIN)
         t1 = slot_utc_time(state["day"], pending) + timedelta(minutes=SLOT_WINDOW_MIN)
-        last_end = slot_utc_time(state["day"], state["plan"][-1]) + timedelta(minutes=SLOT_WINDOW_MIN)
-        if not (t0 <= now <= t1 or now >= last_end):
+        if now < t0:
             print(f"[스케줄] 지금 시각({now.isoformat()})이 다음 슬롯 "
-                  f"{slot_label(pending)} 창({t0.isoformat()} ~ {t1.isoformat()}) 안이 아님 — 건너뜁니다.")
+                  f"{slot_label(pending)} 창 시작({t0.isoformat()}) 전 — 건너뜁니다. (창: {t0.isoformat()} ~ {t1.isoformat()})")
             return 0
+        print(f"[스케줄] 지금 시각({now.isoformat()})이 {slot_label(slot)} 창 "
+              f"({t0.isoformat()} ~ {t1.isoformat()}) 안이거나 지나서 창작을 진행합니다.")
         slot = pending
-        print(f"[스케줄] 지금 시각({now.isoformat()})이 {slot_label(slot)} 창 안이라 창작을 진행합니다.")
 
     meta = load_json("meta.json")
     world = load_json("world.json")
