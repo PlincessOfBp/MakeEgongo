@@ -5,7 +5,7 @@ import re
 import sys
 import urllib.request
 import urllib.error
-from datetime import datetime, timezone
+from datetime import date, datetime, time, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -26,6 +26,10 @@ DEFAULT_MODELS = [
 
 CANDIDATE_SLOTS = 6
 SLOT_TIMES_KST = ["09:47", "13:23", "16:31", "20:05", "23:52", "04:38(새벽)"]
+SLOT_TIMES_UTC = ["00:47", "04:23", "07:31", "11:05", "14:52", "19:38"]
+# 30분 단위 cron으로 발화되는 스케줄 실행이 이 시간 창 안에 들어오면 해당 슬롯으로 처리한다.
+# (GH Actions 스케줄은 밀릴 수 있으므로 슬롯 전후로 넉넉히 2시간 허용, 창끼리는 겹치지 않음)
+SLOT_WINDOW_MIN = 120
 
 API_ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
 
@@ -138,6 +142,12 @@ def plan_for_day(state, slot):
     state["count"] = len(chosen)
     state["done"] = 0
     return state
+
+
+def slot_utc_time(day, slot):
+    """오늘(UTC day) 기준 슬롯의 실제 시각(UTC)."""
+    hh, mm = map(int, SLOT_TIMES_UTC[slot - 1].split(":"))
+    return datetime.combine(date.fromisoformat(day), time(hh, mm, tzinfo=timezone.utc))
 
 
 def slot_label(slot):
@@ -380,11 +390,8 @@ def main():
         return 0
 
     models = get_models()
+    scheduled = os.environ.get("RUN_REASON") == "schedule"
     slot = 0
-    try:
-        slot = int(os.environ.get("CREATE_SLOT") or "0")
-    except ValueError:
-        slot = 0
 
     state = load_state()
     state = plan_for_day(state, slot)
@@ -396,6 +403,21 @@ def main():
     if state["done"] >= state["count"]:
         print(f"[{slot_label(slot) or '수동'}] 오늘 창작 계획 {state['count']}개를 모두 채웠습니다. 건너뜁니다.")
         return 0
+
+    if scheduled:
+        # 30분 단위 cron 발화: 지금 시각이 '다음 처리할 슬롯'의 시간 창 안인지 판정한다.
+        # (창: 슬롯 시각 ± 그간 GH Actions 스케줄이 밀려도 잡히도록 2시간 허용)
+        now = datetime.now(timezone.utc)
+        pending = state["plan"][state["done"]]
+        t0 = slot_utc_time(state["day"], pending) - timedelta(minutes=SLOT_WINDOW_MIN)
+        t1 = slot_utc_time(state["day"], pending) + timedelta(minutes=SLOT_WINDOW_MIN)
+        last_end = slot_utc_time(state["day"], state["plan"][-1]) + timedelta(minutes=SLOT_WINDOW_MIN)
+        if not (t0 <= now <= t1 or now >= last_end):
+            print(f"[스케줄] 지금 시각({now.isoformat()})이 다음 슬롯 "
+                  f"{slot_label(pending)} 창({t0.isoformat()} ~ {t1.isoformat()}) 안이 아님 — 건너뜁니다.")
+            return 0
+        slot = pending
+        print(f"[스케줄] 지금 시각({now.isoformat()})이 {slot_label(slot)} 창 안이라 창작을 진행합니다.")
 
     meta = load_json("meta.json")
     world = load_json("world.json")

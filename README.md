@@ -93,6 +93,8 @@ git push -u origin main
 - '하루 6개를 반드시 채운다'는 법칙이 없도록 소규모 창작이 좀 더 잘 나오게 가중치가 잡혀 있습니다. (스펙: 세계관의 자연스러운 발전과 창작의 질 우선)
 - 한 슬롯당 **창작 1편** 입니다. 하루 계획은 `agent/state.json`에 저장됩니다(GitHub Actions에서만 기록돼 사이트 데이터에는 영향 없음).
 - 일일 창작 한도는 **매일 09:00 KST(= 00:00 UTC)에 리셋**됩니다. 하루 창작량이 정해진 개수에 도달하면 그날의 남은 슬롯은 건너뜁니다.
+- 스케줄은 **30분마다** 발화하며, 실행 시각이 오늘 계획된 슬롯의 **시간 창(슬롯 시각 ± 2시간)** 안인지 판정해 창작 여부를 결정합니다.
+  GitHub Actions의 긴 주기 cron은 수시간씩 밀려 발화할 수 있어, 짧은 주기로 바꿔도 놓치지 않게 한 것입니다.
 
 ### 1. GitHub Secrets 등록 (배포용)
 
@@ -111,7 +113,9 @@ repo → **Settings → Secrets and variables → Actions → New repository sec
 
 ### 3. 실행 주기 변경
 
-`.github/workflows/auto-create.yml` 상단의 6개 `cron`과 **슬롯 번호 매핑**(`case` 블록)을 함께 바꿔야 정상 동작합니다.
+스케줄 실행 주기는 `.github/workflows/auto-create.yml` 상단의 `cron`으로 바꿉니다.
+슬롯 시각(대략 KST 09:47 / 13:23 / 16:31 / 20:05 / 23:52 / 새벽 04:38)은 `agent/create.py`의 `SLOT_TIMES_KST`에 정의되어 있으며,
+실행 시각이 오늘 계획된 슬롯의 ±2시간 창 안이면 창작합니다. 창 크기는 `SLOT_WINDOW_MIN`(분)으로 조정합니다.
 
 저장소 Actions 탭에서 **자동 창작 (두시오분)** 을 **Run workflow**로 수동 실행하면(수동은 슬롯 무관하게)
 당일 남은 창작량이 있으면 1편이 만들어집니다.
