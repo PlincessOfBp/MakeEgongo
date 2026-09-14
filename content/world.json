@@ -136,6 +136,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-wolsa",
+      "category": "기술",
+      "name": "월사 (月砂)",
+      "summary": "월편이 월현상자의 미세한 진동을 버티지 못하고 잘게 부서져 남긴 은백색의 미세한 가루.",
+      "details": "월현상자를 오랫동안 작동시키거나 강한 전류를 흘릴 때, 월편의 표면이 깎여 나가며 발생하는 고운 가루다. 스스로 빛을 내지는 않지만, 주변에 약한 전류가 흐를 때 달빛을 머금은 듯 뿌옇게 빛나는 성질이 있어 미세 전류 감지 등에 응용될 가능성이 제시되었다.",
+      "created": "2026-09-14",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
