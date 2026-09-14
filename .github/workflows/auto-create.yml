@@ -1,11 +1,10 @@
 name: 자동 창작 (두시오분)
 
 on:
+  repository_dispatch:
+    types: [auto_create]   # cron-job.org에서 발동 (가장 신뢰할 수 있는 실행 경로)
   schedule:
-    # 하루 6개의 창작 슬롯 (KST 기준 대략: 09:47 / 13:23 / 16:31 / 20:05 / 23:52 / 04:38)
-    # 30분마다 발화해 create.py가 '지금 시각이 오늘 계획의 슬롯 시간 창 안인지'를 판정한다.
-    # (긴 주기 크론은 GH Actions가 수시간씩 밀려 발화할 수 있어, 짧은 주기로 바꿔도 놓치지 않게 함)
-    - cron: "*/30 * * * *"
+    - cron: "*/30 * * * *"   # GitHub 스케줄 (지연될 수 있음 — 보조)
   workflow_dispatch:
 
 permissions:
