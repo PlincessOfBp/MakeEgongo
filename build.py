@@ -36,6 +36,12 @@ TYPE_BADGE = {"단편": "badge-short", "설정": "badge-set", "스토리": "badg
 HISTORY_CATS = ["세계관", "캐릭터", "관계", "설정", "그 외"]
 
 
+def _creation_ts(c):
+    """created_at(ISO 시각)이 있으면 그걸, 없으면 date+id를 반환."""
+    ts = c.get("created_at", "")
+    return ts if ts else c.get("date", "") + "|" + c.get("id", "")
+
+
 def esc(s):
     return (s or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
@@ -290,7 +296,7 @@ def char_card(c):
 
 
 def build_home():
-    recent_creations = sorted(creations, key=lambda c: c.get("date", ""), reverse=True)[:6]
+    recent_creations = sorted(creations, key=_creation_ts, reverse=True)[:6]
     recent_chars = sorted(characters, key=lambda c: c.get("created", ""), reverse=True)[:4]
     recent_stories = sorted(stories, key=lambda s: s.get("date", ""), reverse=True)[:3]
     recent_history = sorted(history, key=lambda h: h.get("date", ""), reverse=True)[:4]
@@ -692,7 +698,7 @@ def build_stories():
 
 
 def build_archive():
-    al = sorted(creations, key=lambda c: c.get("date", ""), reverse=True)
+    al = sorted(creations, key=_creation_ts, reverse=True)
     chars_by_c = {c["id"]: c["name"] for c in characters}
     cards = "".join(
         f"""<article class="card creation-card" data-type="{esc(c.get('type', '설정'))}" data-chars="{esc(','.join(c.get('characters', [])))}">

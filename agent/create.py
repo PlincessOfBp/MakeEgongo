@@ -211,7 +211,7 @@ def build_context(meta, world, characters, relationships, stories, creations, hi
     lines.append("")
 
     lines.append("## 최근 창작 기록 (시간순, 최신 위)")
-    recent = sorted(creations, key=lambda x: x.get("date", ""), reverse=True)[:8]
+    recent = sorted(creations, key=lambda x: (x.get("created_at", ""), x.get("date", ""), x.get("id", "")), reverse=True)[:8]
     for x in recent:
         lines.append(f"- {x.get('date', '')} [{x.get('type', '')}] {x.get('title', '')}")
     lines.append("")
@@ -477,6 +477,7 @@ def main():
     creation_id = unique_id(f"c-{len(creations) + 1:03d}", taken_ids)
     c["id"] = creation_id
     c["date"] = today()
+    c["created_at"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
     c["type"] = c.pop("creation_type")
     c["characters"] = [x for x in c.get("linked_characters", []) if x in {y["id"] for y in characters}]
     c["world_settings"] = [x for x in c.get("linked_settings", []) if x in {y["id"] for y in world["settings"]}]
