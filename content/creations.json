@@ -343,5 +343,46 @@
     "stories": [],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "월사 잉크 (月砂 墨)",
+    "content": "월사 잉크는 월현상자의 미세 공명 과정에서 생성된 은백색 부산물 '월사(月砂)'를 정제한 등유 및 나무 수지와 배합하여 만든 특수 필기용 도료다. 세린이 시계 수리점 작업대에서 부서진 월사의 보존 방안을 모색하던 중 발명했다. 평상시나 시가지의 초기 전등 불빛 아래에서는 평범한 검회색 필기 흔적으로 보이지만, 달빛이나 등대의 굴절 광원에 노출되면 적힌 글씨 테두리가 은백색 모세혈관처럼 가늘게 빛나며 은은한 반응을 드러낸다. 전신국의 모겐은 보안이 중요한 해선 통문(海線 通文) 기록용으로 이 잉크를 즉시 채택했으며, 라잔 역시 밤의 등대 일지 구석에 사적인 기록을 숨겨 남길 때 이 잉크를 사용하기 시작했다.",
+    "tags": [
+      "월사",
+      "월사잉크",
+      "기술",
+      "세린",
+      "솔가지시"
+    ],
+    "new_character": null,
+    "new_world_setting": {
+      "id": "w-tech-wolsaink",
+      "category": "기술",
+      "name": "월사 잉크 (月砂 墨)",
+      "summary": "월사와 등유, 수지를 섞어 만든 미세 발광 특성의 필기용 특수 잉크.",
+      "details": "월현상자의 공명으로 부서진 은백색 가루 '월사'를 정제하여 만든 잉크. 일반 조명 아래에서는 검회색 필기 흔적으로 보이나, 달빛이나 등대 불빛을 받으면 은백색 테두리가 미세하게 반응한다. 보안용 해선 통문이나 등대지기의 야간 일지에 활용된다."
+    },
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-011",
+    "date": "2026-09-15",
+    "created_at": "2026-09-15T00:01:11+00:00",
+    "type": "설정",
+    "characters": [
+      "serin",
+      "rajan",
+      "morgen"
+    ],
+    "world_settings": [
+      "w-tech-wolsa",
+      "w-tech-wolhyeonbox",
+      "w-org-telegraph",
+      "w-tech-wolsaink"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [],
+    "relationships": [],
+    "setting_changes": []
   }
 ]

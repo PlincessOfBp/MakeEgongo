@@ -147,6 +147,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-wolsaink",
+      "category": "기술",
+      "name": "월사 잉크 (月砂 墨)",
+      "summary": "월사와 등유, 수지를 섞어 만든 미세 발광 특성의 필기용 특수 잉크.",
+      "details": "월현상자의 공명으로 부서진 은백색 가루 '월사'를 정제하여 만든 잉크. 일반 조명 아래에서는 검회색 필기 흔적으로 보이나, 달빛이나 등대 불빛을 받으면 은백색 테두리가 미세하게 반응한다. 보안용 해선 통문이나 등대지기의 야간 일지에 활용된다.",
+      "created": "2026-09-15",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
