@@ -158,6 +158,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-wolbitnotebook",
+      "category": "기술",
+      "name": "월빛 수첩 (月光 手帖)",
+      "summary": "월사 잉크로 적은 글씨가 어둠 속에서 은은한 푸른빛을 발해, 별도의 조명 없이도 읽고 쓸 수 있는 특수 기록용 수첩.",
+      "details": "월사 잉크가 종이에 스며들어 건조된 후에도, 잉크 속 월사 입자들은 미세한 야광 및 동조 특성을 유지한다. 세린이 제작한 '월빛 수첩'은 어두운 밤 등대지기나 전신국 야간 근무자가 촛불을 켜지 않고도 기상 변화나 전신 부호를 기록하고 읽을 수 있게 해준다. 습기에 강한 해풍용 가죽 표지와 방수 처리된 내지로 구성되어 있다.",
+      "created": "2026-09-15",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
