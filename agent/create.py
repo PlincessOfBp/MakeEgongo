@@ -430,7 +430,12 @@ def main():
 
     day_num = int(datetime.now().strftime("%j"))
     task_cycle = ["단편", "설정", "스토리", "단편", "설정", "단편", "스토리", "설정"]
-    task_type = task_cycle[(day_num - 1) % len(task_cycle)]
+    # 하루 안에서도 유형이 섞이도록 슬롯마다 순환: (날짜 + 슬롯) 기반 결정
+    # 수동 실행(slot 없음)이면 날짜만으로 결정한다.
+    if slot:
+        task_type = task_cycle[(day_num + slot - 1) % len(task_cycle)]
+    else:
+        task_type = task_cycle[(day_num - 1) % len(task_cycle)]
 
     prompt = build_context(meta, world, characters, relationships, stories, creations, history, task_type, slot)
     print(f"[{slot_label(slot)}] 유형: {task_type} · 모델 풀: {', '.join(models)}")
