@@ -192,6 +192,11 @@ def link_char(cid):
     return f'<a href="{BASE}characters/{cid}.html">{esc(c["name"])}</a>'
 
 
+def p_chars_from(cids):
+    items = [link_char(x) for x in cids]
+    return f'<p class="mini-chars">{"".join(items)}</p>' if items else ""
+
+
 def link_story(sid):
     s = STORY_INDEX.get(sid)
     if not s:
@@ -327,8 +332,8 @@ def build_home():
 <header><span class="mini-date">{esc(fmt_date(s.get('date')))}</span></header>
 <h3>{esc(s['title'])}</h3>
 <p class="mini-excerpt">{excerpt(s.get('summary', ''))}</p>
-<p class="mini-chars">{"".join(link_char(x) for x in s.get('characters', []))}</p>
-</a></article>"""
+</a>
+{p_chars_from(s.get('characters', []))}</article>"""
         for s in recent_stories
     )
 
@@ -647,8 +652,8 @@ def build_stories():
 <header><span class="mini-date">{esc(fmt_date(s.get('date')))}</span>{badge_for(s.get('type', '스토리'))}</header>
 <h3>{esc(s['title'])}</h3>
 <p class="mini-excerpt">{excerpt(s.get('summary', ''))}</p>
-<p class="mini-chars">{"".join(link_char(x) for x in s.get('characters', []))}</p>
-</a></article>"""
+</a>
+{p_chars_from(s.get('characters', []))}</article>"""
         for s in sl
     )
     index_body = f"""
@@ -706,8 +711,8 @@ def build_archive():
 <header><span class="mini-date">{esc(fmt_date(c.get('date')))}</span>{badge_for(c.get('type', '설정'))}</header>
 <h3>{esc(c['title'])}</h3>
 <p class="mini-excerpt">{excerpt(squeeze(c.get('content')))}</p>
-<p class="mini-chars">{"".join(link_char(x) for x in c.get('characters', []))}</p>
-</a></article>"""
+</a>
+{p_chars_from(c.get('characters', []))}</article>"""
         for c in al
     )
     char_opts = "".join(
