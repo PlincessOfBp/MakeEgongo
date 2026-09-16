@@ -462,5 +462,45 @@
     "stories": [],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "어둠 속에서 읽는 문장",
+    "content": "등대 망루의 덧창을 닫자 실내는 순식간에 짙은 어둠에 잠겼다. 라잔은 램프 심지를 낮추며 조용히 중얼거렸다. \"불빛을 완전히 거두는 건 등대지기로서 썩 내키지 않는 일인데.\"\n\"딱 차가 식을 때까지만이에요, 라잔 씨. 불빛이 없어야 이 잉크의 숨결이 드러나니까요.\"\n세린은 탁자 위에 '월빛 수첩'을 펼치고 석영으로 깎아낸 '월광 굴절 안경'을 고쳐 썼다. 월사 잉크로 꾹꾹 눌러쓴 활자들은 일반 조명 아래에서는 그저 은빛 얼룩에 불과했으나, 렌즈를 투과하자 번짐 없는 서늘한 푸른 획으로 또렷하게 떠올랐다.\n그것은 보름 전 사구 해변에서 처음 주웠던 네 개의 월편이 월현상자 안에서 부서지며 토해낸 진동, 즉 월현 부호의 첫 번째 완결된 필사본이었다. 파편의 소멸이 끝이 아니라, 밤의 언어로 다시 엮인 셈이었다.\n라잔은 온기가 남은 찻잔을 쥐고 세린의 렌즈 너머로 번지는 은청색 빛무리를 응시했다. 여전히 그 신호의 근원이 불안했으나, 칠흑 같은 망루 안에서 소리 없이 박동하는 활자는 바다에 띄우는 등대의 불빛과 어딘가 닮아 있었다.",
+    "tags": [
+      "등대",
+      "월빛 수첩",
+      "월광 굴절 안경",
+      "월사 잉크",
+      "세린",
+      "라잔",
+      "월현 부호"
+    ],
+    "new_character": null,
+    "new_world_setting": null,
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-014",
+    "date": "2026-09-16",
+    "created_at": "2026-09-16T00:01:20+00:00",
+    "type": "스토리",
+    "characters": [
+      "serin",
+      "rajan"
+    ],
+    "world_settings": [
+      "w-culture-lantern",
+      "w-tech-wolbitnotebook",
+      "w-tech-wolglass",
+      "w-tech-wolsaink",
+      "w-tech-wolhyeoncode",
+      "w-hist-first-wolpyeon"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [
+      "s-002"
+    ],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
