@@ -390,7 +390,7 @@ def main():
         return 0
 
     models = get_models()
-    scheduled = os.environ.get("RUN_REASON") == "schedule"
+    scheduled = os.environ.get("RUN_REASON") in ("schedule", "repository_dispatch")
     slot = 0
 
     state = load_state()
