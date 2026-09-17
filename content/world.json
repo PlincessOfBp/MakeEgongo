@@ -180,6 +180,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-wolhyeonrepeater",
+      "category": "기술",
+      "name": "월현 중계기 (月絃 中繼器)",
+      "summary": "월현상자의 공명 신호를 감쇠 없이 전선으로 전달하기 위한 초기형 신호 증폭 장치.",
+      "details": "일반 구리 전신선으로 월현 부호를 보낼 때 발생하는 신호 감쇄를 막기 위해 개발된 증폭 장치. 월사(月砂)를 도포한 유리관 코일을 사용하여 진동 신호를 잡아주나, 구름의 두께와 달빛의 양에 민감하게 반응하여 기상 정보와의 실시간 연동이 필수적이다.",
+      "created": "2026-09-17",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }

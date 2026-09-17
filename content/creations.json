@@ -502,5 +502,46 @@
     ],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "월현 중계기 (月絃 中繼器)",
+    "content": "월현 부호는 일반적인 전류 신호보다 훨씬 섬세한 진동을 기반으로 하기에, 솔가지 시의 노후화된 구리 전선망을 통과하면 금세 감쇠되어 사라지곤 했다. 이를 해결하기 위해 전신국의 배달수장 모겐과 시계 수리공 세린이 합작하여 고안한 것이 바로 '월현 중계기'이다. 이 장치는 구형 유리관 내부에 은백색 월사(月砂)를 바른 미세 코일을 밀봉한 구조로, 전선을 흐르는 진동을 월사의 공명 효과로 일시 증폭시킨다. 다만 이 중계기는 주변 달빛의 세기에 전적으로 의존한다. 밤하늘에 구름이 짙게 끼면 증폭 효율이 바닥으로 떨어지기 때문에, 전신국이 이 장치를 가동하려면 등대지기 라잔이 실시간으로 전해오는 등대 주변의 구름 분포와 기상 예측 정보가 필수적으로 요구된다.",
+    "tags": [
+      "설정",
+      "기술",
+      "월현부호",
+      "솔가지연안"
+    ],
+    "new_character": null,
+    "new_world_setting": {
+      "id": "w-tech-wolhyeonrepeater",
+      "category": "기술",
+      "name": "월현 중계기 (月絃 中繼器)",
+      "summary": "월현상자의 공명 신호를 감쇠 없이 전선으로 전달하기 위한 초기형 신호 증폭 장치.",
+      "details": "일반 구리 전신선으로 월현 부호를 보낼 때 발생하는 신호 감쇄를 막기 위해 개발된 증폭 장치. 월사(月砂)를 도포한 유리관 코일을 사용하여 진동 신호를 잡아주나, 구름의 두께와 달빛의 양에 민감하게 반응하여 기상 정보와의 실시간 연동이 필수적이다."
+    },
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-015",
+    "date": "2026-09-17",
+    "created_at": "2026-09-17T00:00:47+00:00",
+    "type": "설정",
+    "characters": [
+      "serin",
+      "morgen",
+      "rajan"
+    ],
+    "world_settings": [
+      "w-org-telegraph",
+      "w-tech-wolhyeonbox",
+      "w-tech-wolhyeoncode",
+      "w-tech-wolsa",
+      "w-tech-wolhyeonrepeater"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
