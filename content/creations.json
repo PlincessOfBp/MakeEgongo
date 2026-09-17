@@ -543,5 +543,39 @@
     "stories": [],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "선 위로 흐르는 푸른 떨림",
+    "content": "솔가지 연안 전신국의 구석방, 모겐은 수신반의 금속 바늘을 뚫어지게 바라보고 있었다. 전선 끝은 등대 망루의 '월현 중계기'와 연결되어 있었다.\n\n그 시각, 등대의 세린은 수리 완료된 회중시계의 태엽을 감듯 중계기 다이얼을 미세하게 조정했다. \"라잔 씨, 이제 월현상자에 보관해 둔 월사를 넣을게요.\"\n\n라잔은 무거운 침묵으로 답하며, 온기가 남은 찻잔을 내려놓았다. 그가 등유 램프를 낮추자 어둠 속에서 중계기의 틈새가 푸르게 점멸하기 시작했다. 증폭된 미세 진동이 해안선을 따라 설치된 구리 전선을 타고 유선 전류와 뒤섞여 달렸다.\n\n탁. 타닥. 탁.\n\n전신국의 수신 바늘이 기묘하게 튕겼다. 모겐은 전신 부호가 아닌, 마치 악기의 현이 떨리는 듯한 서늘한 맥박을 손가락 끝으로 느꼈다. 그것은 세린과 자신이 머리를 맞대고 고안했던 '월현 부호'의 첫 장거리 송출이었다. 모겐은 조용히 숨을 삼키며 회신 전신기를 두드렸다. [신호 수신. 달의 맥박이 이곳 전신국까지 닿았다.]",
+    "tags": [
+      "월현중계기",
+      "전신국",
+      "실험",
+      "소통"
+    ],
+    "new_character": null,
+    "new_world_setting": null,
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-016",
+    "date": "2026-09-17",
+    "created_at": "2026-09-17T02:30:34+00:00",
+    "type": "단편",
+    "characters": [
+      "serin",
+      "morgen",
+      "rajan"
+    ],
+    "world_settings": [
+      "w-tech-wolhyeonrepeater",
+      "w-org-telegraph",
+      "w-tech-wolhyeoncode",
+      "w-tech-wolsa"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
