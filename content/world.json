@@ -191,6 +191,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-wolhyentelelegraph",
+      "category": "기술",
+      "name": "월현 전신망 계획",
+      "summary": "기존 솔가지 연안 전신국 선로에 월현 중계기를 연동하여, 음성 진동 신호를 장거리로 전송하려는 확장 구상.",
+      "details": "전기 전류와 월편의 미세 진동을 동시에 흘려보내, 일반 전신망이 닿지 않는 해안 오지까지 월현 부호 형태의 메시지를 릴레이 방식으로 전송하는 초기 네트워크 구상안. 세린이 집필하고 모겐이 실무 가능성을 타진 중이다.",
+      "created": "2026-09-17",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
