@@ -852,5 +852,38 @@
     ],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "바다가 받아 적은 밤",
+    "content": "새벽 두 시, 솔가지 앞바다의 파도는 평소와 달랐다. 모겐은 전신국 옥상에서 구리 리본을 거두어들이며 손끝에 전해지는 서늘한 떨림을 느꼈다. 그것은 단순히 기계의 고장이 아니었다. 월현 타석기가 뱉어낸 리본 위에는 조석의 흐름과 완벽하게 동조한 파도의 맥박이 고스란히 찍혀 있었다. 등대 위에서 라잔이 켜둔 불빛이 수평선의 이슬을 비추고, 세린의 월광 굴절 안경 너머로 그 기록들은 은은한 푸른빛을 발했다. 밤의 바다는 스스로 거대한 송신기가 되어, 인간들이 알아듣지 못했던 고대의 문장을 전선 너머로 끊임없이 읊조리고 있었다.",
+    "tags": [
+      "단편",
+      "월조 현상",
+      "월현 타석기",
+      "솔가지 연안"
+    ],
+    "new_character": null,
+    "new_world_setting": null,
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-024",
+    "date": "2026-09-19",
+    "created_at": "2026-09-19T18:02:34+00:00",
+    "type": "단편",
+    "characters": [
+      "rajan",
+      "serin",
+      "morgen"
+    ],
+    "world_settings": [
+      "w-geo-solgaji",
+      "w-tech-wolhyeontypewriter",
+      "w-natur-wolcho"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
