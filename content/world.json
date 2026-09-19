@@ -213,6 +213,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-wolhyeontypewriter",
+      "category": "기술",
+      "name": "월현 타석기 (月絃 打席機)",
+      "summary": "월현 전신망의 수신 신호를 얇은 구리 리본에 자동 타공 및 엠보싱하여 영구 기록하는 초창기 자동 기록 장치.",
+      "details": "세린이 정밀 시계 기어 시스템과 월현 신호 수신기를 결합하여 발명했다. 신호가 들어올 때마다 전동 타침이 작동하여 롤 형태로 공급되는 구리 테이프에 홈을 파며, 테이프 표면에 얇게 발린 월사 코팅 덕분에 타공 부위가 은백색으로 은은하게 빛나 해독을 돕는다. 인간이 듣지 못하는 미세한 영역의 공명 주기까지 기록하는 특성을 지녔다.",
+      "created": "2026-09-19",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
