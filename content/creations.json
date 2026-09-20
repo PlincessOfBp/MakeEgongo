@@ -885,5 +885,46 @@
     "stories": [],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "월조 공명판 (月潮 共鳴板)",
+    "content": "월조 현상으로 드러난 바다의 맥박과 조석 진동을 정밀하게 수집하기 위해, 세린이 솔가지 등대 하부 조간대에 설치를 구상한 특수 진동 감응 장치.\n\n월현상자의 공명 원리를 바다에 직접 적용한 구조물로, 조수 간만의 차로 해수가 드나드는 좁은 바위 틈새에 고정된다. 장치 내부에는 월현상자에서 분쇄된 월사(月砂)를 압축 성형한 얇은 원반형 공명판이 들어 있으며, 파도의 수압과 달빛이 투영된 해수의 미세 진동을 흡수해 구리선으로 연결된 '월현 전신망'에 전달한다.\n\n라잔의 타종 신호와 같은 인위적 부호와 솔가지 앞바다의 자연 파동을 물리적으로 분리·여과할 수 있도록 황동 추가 달린 감쇄 추가 병설되어 있다. 이 판이 조간대에 설치됨으로써 솔가지 사람들은 등대와 전신국을 거치지 않고도 해면 아래에서 일어나는 조석의 미세한 변화와 폭풍의 징후를 구리 테이프 위에 연속적으로 기록할 수 있게 된다.",
+    "tags": [
+      "기술",
+      "월조현상",
+      "월현전신망",
+      "솔가지등대",
+      "세린"
+    ],
+    "new_character": null,
+    "new_world_setting": {
+      "id": "w-tech-wolchoboard",
+      "category": "기술",
+      "name": "월조 공명판 (月潮 共鳴板)",
+      "summary": "등대 하부 조간대에 설치되어 해수의 미세 조석 진동을 월현 전신망으로 전달하는 월사 압축형 감응 장치.",
+      "details": "월조 현상이 발견된 후 세린이 고안한 해양 진동 수집 장치. 월사를 압축한 박판과 황동 감쇄 추를 사용해 조석의 흐름과 파도의 리듬을 전기적 진동 부호로 정제하여 등대와 전신국으로 송신한다."
+    },
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-025",
+    "date": "2026-09-20",
+    "created_at": "2026-09-20T00:00:33+00:00",
+    "type": "설정",
+    "characters": [
+      "serin",
+      "rajan"
+    ],
+    "world_settings": [
+      "w-natur-wolcho",
+      "w-tech-wolhyentelelegraph",
+      "w-tech-wolhyeontypewriter",
+      "w-tech-wolsa",
+      "w-tech-wolchoboard"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [],
+    "relationships": [],
+    "setting_changes": []
   }
 ]

@@ -235,6 +235,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-wolchoboard",
+      "category": "기술",
+      "name": "월조 공명판 (月潮 共鳴板)",
+      "summary": "등대 하부 조간대에 설치되어 해수의 미세 조석 진동을 월현 전신망으로 전달하는 월사 압축형 감응 장치.",
+      "details": "월조 현상이 발견된 후 세린이 고안한 해양 진동 수집 장치. 월사를 압축한 박판과 황동 감쇄 추를 사용해 조석의 흐름과 파도의 리듬을 전기적 진동 부호로 정제하여 등대와 전신국으로 송신한다.",
+      "created": "2026-09-20",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
