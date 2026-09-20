@@ -998,5 +998,38 @@
     ],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "등대 아래의 파도",
+    "content": "밤이 깊어질수록 월조 공명판이 전해오는 진동은 선명해졌다. 라잔은 찻잔을 내려놓고 창밖을 응시했다. 바닷물에 잠긴 암초에서 울려 퍼지는 금속음은 마치 거대한 악기가 바다의 숨결을 연주하는 것만 같았다. 전신국에서 날아온 구리 리본은 파도의 리듬을 그대로 품은 채 쉼없이 덜컹거렸다. 라잔은 램프 심지를 조금 더 낮추고, 저 멀리 사구 해변을 향해 손수건으로 창가의 먼지를 닦아냈다. 첫 폭풍우 속에서 주웠던 네 개의 조각이 쏘아 올린 신호는 이제 단순한 이상 현상이 아니라, 솔가지 연안이 밤마다 새롭게 읽어내는 거대한 악보가 되어 있었다.",
+    "tags": [
+      "월조 현상",
+      "월조 공명판",
+      "등대",
+      "밤바다"
+    ],
+    "new_character": null,
+    "new_world_setting": null,
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-028",
+    "date": "2026-09-20",
+    "created_at": "2026-09-20T13:00:44+00:00",
+    "type": "단편",
+    "characters": [
+      "rajan",
+      "serin",
+      "morgen"
+    ],
+    "world_settings": [
+      "w-natur-coast",
+      "w-tech-wolchoboard",
+      "w-natur-wolcho"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
