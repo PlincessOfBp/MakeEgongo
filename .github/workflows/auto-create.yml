@@ -35,9 +35,11 @@ jobs:
 
       - name: 자동 창작 실행
         env:
-          # 보안: API 키는 반드시 Repository Secrets(GEMINI_API_KEY)로만 주입합니다.
+          # 보안: API 키는 반드시 Repository Secrets로만 주입합니다.
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODELS: ${{ vars.GEMINI_MODELS }}
+          POLLIN_API_KEY: ${{ secrets.POLLIN_API_KEY }}
+          POLLIN_MODELS: ${{ vars.POLLIN_MODELS }}
         run: python agent/create.py
 
       - name: 변경 사항 커밋 및 푸시
@@ -49,7 +51,7 @@ jobs:
         run: |
           git config user.name "두시오분[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add content/ agent/state.json
+          git add content/ agent/
           if ! git diff --cached --quiet; then
             git commit -m "자동 창작: $(date +%F)"
             git push

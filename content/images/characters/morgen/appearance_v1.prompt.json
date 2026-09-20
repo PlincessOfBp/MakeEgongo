@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "created_at": "2026-09-20T06:59:53+00:00",
+  "generator": "pollinations-gen",
+  "image_model": "sana",
+  "prompt_writer": "gemini-3.1-flash-lite",
+  "reason": "신규 캐릭터",
+  "prompt": "Character design sheet of Morgen, a 20-something courier and info-broker, front view, side view, and back view, modern Japanese anime style, 2D illustration, clean line art, flat cell shading, solid white background. Morgen has short cropped silver-white hair, bright grey eyes, and tanned skin covered in faint scar-like code patterns instead of fingerprints. Wears a black coat with a foldable hood, zipper slightly open revealing an acorn tucked inside, an old bag strap across the chest, and sneakers with double-layered soles. Accessories include a stack of thin telegraph papers on the shoulder and a small lightbulb device on the wrist. Calm, ageless, and neutral facial expression. Minimalist and functional aesthetic, steampunk-transition era influence, high quality, precise silhouette, no extra background objects.",
+  "resolution": "1280x768",
+  "appearance": {
+    "hair": "짧게 미는 은백발, 보자기에 가끔 감김",
+    "eyes": "밝은 회색, 밤이 되면 약간 얇아짐",
+    "skin": "골고루 탄 피부, 지문 대신 전신 부호처럼 잔 흉터",
+    "face": "나이를 가늠하기 어려운 평온한 얼굴",
+    "outfit": "접이식 후드가 달린 검은 코트, 가슴에는 낡은 가방 끈",
+    "shoes": "구두창이 두 번 갈린 운동화",
+    "accessories": "어깨에 놓는 얇은 전신지(轉信紙) 뭉치, 손목 전구",
+    "belongings": "주머니의 큐브 모양 납곽, 기름종이에 싼 오래된 편지",
+    "colors": [
+      "은백색",
+      "검은색",
+      "천연으로 주홍인 진흙색"
+    ],
+    "vibe": "항상 먼 곳을 향해 걷다가도, 딱 정해진 시간만큼 서 있는 사람",
+    "traits": [
+      "상대가 말하기 전에 부호로 답하기 좋아한다",
+      "새벽 4시까지만 도시에 남는다"
+    ],
+    "casual": "슬쩍 내려진 코트 지퍼에 항상 참나무 열매를 한 개",
+    "world_trait": "도심 어디에서든 3초 안에 가장 가까운 전신주를 찾는다",
+    "notes": "누구도 그가 언제 솔가지에 왔는지 정확히 기억하지 못한다."
+  },
+  "prev_version": null,
+  "image_file": "appearance_v1.jpg"
+}

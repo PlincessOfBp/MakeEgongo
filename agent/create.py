@@ -547,11 +547,28 @@ def main():
     state["done"] += 1
     save_state(state)
 
+    # --- 캐릭터 외관 이미지 자동 생성 ---
+    # 신규 캐릭터가 등장하거나 기존 캐릭터의 외관이 바뀌면 make_image가
+    # 외관 해시를 비교해 새 버전을 생성한다. (POLLIN_API_KEY 없으면 건너뜀)
+    img_done = []
+    try:
+        import make_image
+    except ImportError:
+        pass
+    else:
+        try:
+            made = make_image.run(characters=characters, world=world)
+            img_done = [cid for cid, _ in made]
+        except Exception as e:
+            print(f"  - 이미지 생성 과정 오류: {e}")
+
     print(f"[{slot_label(slot)}] 창작 완료: [{c['type']}] {c['title']} (id={c['id']}) · 모델: {used_model} · 오늘 {state['done']}/{state['count']}")
     print("  - 신규 캐릭터: " + (new_char["name"] if new_char else "없음"))
     print("  - 신규 설정: " + (new_setting["name"] if new_setting else "없음"))
     print("  - 신규 관계: " + (new_rel["id"] if new_rel else "없음"))
     print("  - 설정 변경 기록: " + (c["setting_changes"][0] if c["setting_changes"] else "없음"))
+    if img_done:
+        print("  - 캐릭터 외관 이미지 생성: " + ", ".join(img_done))
     print("보안: API 키는 저장되지 않았습니다. 모델 할당량 초과 시 다음 무료 모델로 자동 전환됩니다.")
     return 0
 

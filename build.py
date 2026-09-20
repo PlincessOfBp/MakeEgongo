@@ -8,6 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 CONTENT = ROOT / "content"
 OUT = ROOT / "site"
+IMG_DIR = CONTENT / "images"
 
 
 def load_json(name):
@@ -416,6 +417,34 @@ def char_relations_block(cid):
 </section>"""
 
 
+def char_images_block(c):
+    """캐릭터 외관 이미지 버전 목록 → HTML (최신 이미지 + 이전 버전 사본)."""
+    imgs = c.get("appearance_images") or []
+    if not imgs:
+        return ""
+    base_img = f"{BASE}images/characters/{esc(c['id'])}/"
+    latest = imgs[-1]
+    imgs_html = ""
+    for v in imgs:
+        label = f"v{v['version']}"
+        if v.get("reason"):
+            label += " · " + esc(v["reason"])
+        if v.get("created_at"):
+            label += " · " + esc(fmt_date(v["created_at"][:10]))
+        extra = ""
+        if v.get("prompt_txt"):
+            extra += f' <a href="{base_img}{esc(v["prompt_txt"])}" class="prompt-link" target="_blank" rel="noopener">프롬프트 (.txt)</a>'
+        if v.get("prompt_json"):
+            extra += f' <a href="{base_img}{esc(v["prompt_json"])}" class="prompt-link" target="_blank" rel="noopener">메타 (.json)</a>'
+        real_ref = f"{base_img}{esc(v['file'])}"
+        fig_cls = 'char-img current' if v is latest else 'char-img'
+        imgs_html += f"""<figure class="{fig_cls}">
+<img src="{real_ref}" alt="{esc(c['name'])} {label}" loading="lazy">
+<figcaption>{label}{extra}</figcaption>
+</figure>"""
+    return f'<section class="card panel char-images"><h2>외관 이미지</h2><div class="char-img-grid">{imgs_html}</div></section>'
+
+
 def build_character_pages():
     listing = "".join(char_card(c) for c in sorted(characters, key=lambda c: c.get("created", "")))
     index_body = f"""
@@ -512,6 +541,7 @@ def build_character_pages():
   {imp} <span class="badge badge-date">created {esc(fmt_date(c.get('created')))}</span>
   {tag_chips(c.get('tags'))}
 </header>
+{char_images_block(c)}
 {md_block(c.get('profile', ''))}
 <section class="panel-grid">
   <section class="card panel"><h2>기본 정보</h2><table class="kv-table">{basic_tr}</table></section>
@@ -899,6 +929,8 @@ def main():
     OUT.mkdir(parents=True)
     shutil.copytree(ROOT / "css", OUT / "css")
     shutil.copytree(ROOT / "js", OUT / "js")
+    if IMG_DIR.is_dir():
+        shutil.copytree(IMG_DIR, OUT / "images")
     for f in ["favicon.svg"]:
         src = ROOT / f
         if src.exists():

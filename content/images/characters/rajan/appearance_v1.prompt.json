@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "created_at": "2026-09-20T06:59:35+00:00",
+  "generator": "pollinations-gen",
+  "image_model": "sana",
+  "prompt_writer": "gemini-3.1-flash-lite",
+  "reason": "신규 캐릭터",
+  "prompt": "character design sheet of a 30-year-old male lighthouse keeper named Rajan, front view, side view, and back view, standing in a row, modern Japanese anime 2D art style, clean line art, flat cel-shading, solid white background. He has sun-tanned, thin skin, sharp jawline, small dark brown eyes with prominent dark under-eye circles from sleep deprivation, and messy tan-brown short hair. He wears a dusty, muted-colored shoulder cape over loose, worn work clothes, a faded scarf with a faint saddle pattern around his neck, and large, weathered boots stained with paint spots. Accessories include a small bundle of keys hanging from his waist. Detailed, consistent character design, no extra effects or background, minimalist, clear silhouette, late autumn orange and dusty blue-gray color palette.",
+  "resolution": "1280x768",
+  "appearance": {
+    "hair": "탄 갈색 단발, 바람에 흩어짐",
+    "eyes": "짙은 갈색, 오래 잠 들지 못해 생긴 아랫눈의 그림자",
+    "skin": "햇볕과 바닷바람에 탄 여윈 피부",
+    "face": "턱 선이 날카롭고 눈이 크지 않음",
+    "outfit": "탁한 어깨 망토와 헐렁한 작업복, 목에는 안장 무늬가 지워진 스카프",
+    "shoes": "군데군데 페인트 자국이 밴 크고 낡은 장화",
+    "accessories": "허리에 매단 작은 열쇠 무리 한 묶음",
+    "belongings": "주머니 항상에 든 납작한 셈종이, 잉크병, 성냥갑",
+    "colors": [
+      "탄갈색",
+      "먼지 회청",
+      "늦가을 주황"
+    ],
+    "vibe": "말수가 적고 체념한 듯하지만, 누군가의 어깨를 먼저 내어주는 사람",
+    "traits": [
+      "등대 계단을 오르면서 횡단보도 소리 없이 뛴다",
+      "웃을 때만 세월이 보인다"
+    ],
+    "casual": "등대 로비에서 푹석한 스웨터와 검은 작업바지",
+    "world_trait": "월편이 빛나는 밤, 등대의 불빛과 같은 각도로 손등을 뒤집는다",
+    "notes": "전신국 일 때문에 도시로 나가는 날에는 반드시 항구로 향한다."
+  },
+  "prev_version": null,
+  "image_file": "appearance_v1.jpg"
+}
