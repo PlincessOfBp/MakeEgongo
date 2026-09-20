@@ -34,6 +34,7 @@ STYLE_JP = (
 )
 
 DEFAULT_IMAGE_MODELS = [
+    "black-forest-labs/flux.1-schnell",
     "sana",
 ]
 

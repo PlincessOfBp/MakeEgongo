@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "created_at": "2026-09-20T06:59:35+00:00",
+  "created_at": "2026-09-20T07:13:45+00:00",
   "generator": "pollinations-gen",
-  "image_model": "sana",
+  "image_model": "black-forest-labs/flux.1-schnell",
   "prompt_writer": "gemini-3.1-flash-lite",
   "reason": "신규 캐릭터",
-  "prompt": "character design sheet of a 30-year-old male lighthouse keeper named Rajan, front view, side view, and back view, standing in a row, modern Japanese anime 2D art style, clean line art, flat cel-shading, solid white background. He has sun-tanned, thin skin, sharp jawline, small dark brown eyes with prominent dark under-eye circles from sleep deprivation, and messy tan-brown short hair. He wears a dusty, muted-colored shoulder cape over loose, worn work clothes, a faded scarf with a faint saddle pattern around his neck, and large, weathered boots stained with paint spots. Accessories include a small bundle of keys hanging from his waist. Detailed, consistent character design, no extra effects or background, minimalist, clear silhouette, late autumn orange and dusty blue-gray color palette.",
+  "prompt": "Character design sheet of Rajan, a lighthouse keeper in his early 30s. Turnaround view: front, side, and back full-body shots in a single frame. Modern Japanese anime style, clean line art, flat cel-shading, solid white background. Appearance: tan brown short hair tousled by wind, dark brown eyes with prominent dark circles underneath, lean face with sharp jawline, tanned skin weathered by sea breeze. Clothing: loose rugged workwear, muted-colored shoulder cape, a scarf with a faded saddle pattern around his neck, large worn-out boots with paint splatters. Accessories: a bunch of small keys hanging from his waist. Detailed features: lean physique, weary but gentle expression. Minimalist composition, high resolution, professional character sheet layout.",
   "resolution": "1280x768",
   "appearance": {
     "hair": "탄 갈색 단발, 바람에 흩어짐",
