@@ -587,7 +587,8 @@ def pollinations_image(char, world, width, height):
             return data, pt, models[0], gmodel
         except ApiError as e:
             errors.append(str(e))
-            log(f"    이미지 모델 {models[0]} 실패: {e} {"→ flux/sana 폴백" if e.rotate else ""}")
+            suffix = " → flux/sana 폴백" if e.rotate else ""
+            log(f"    이미지 모델 {models[0]} 실패: {e}{suffix}")
 
     # 2) 폴백: Pollinations 자연어 프롬프트
     pt, gmodel = make_prompt_with_gemini(char, world, prev_appearance, style="flux")
