@@ -959,5 +959,44 @@
     "stories": [],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "밀물 속에 울리는 건반",
+    "content": "등대 하부 암초에 설치한 월조 공명판이 바닷물에 잠기자마자, 전신국 옥상의 타석기는 미친 듯이 구리 리본을 뱉어내기 시작했다. 거센 밤 파도가 바위를 칠 때마다 전선에서는 맑고 무거운 금속음이 건반처럼 울려 퍼졌다.\n\n\"세린! 이거 멈춰야 하는 거 아냐? 바늘이 꺾이겠어!\" 모겐이 튀어 오르는 동판 테이프를 겨우 받쳐 들며 소리쳤다. \n\n하지만 세린은 석영 안경 너머로 튀어나오는 요철의 행렬을 뚫어지게 바라보았다. 단순한 바닷물의 압력이 아니었다. 첫 폭풍 다음 날 사구 해변에서 주웠던 네 개의 월편이 내던 불규칙한 진동, 바로 그 패턴이 파도의 숨결을 타고 고스란히 재현되고 있었다.\n\n그때, 등대 창가에 서 있던 라잔에게서 수동 전신 타종음이 한 박자 늦게 도착했다. 둔탁하지만 분명한 세 번의 신호. '바다가 파편을 부르는 소리다.'\n\n조석의 리듬과 등대지기의 타종, 그리고 전신망의 진동이 하나로 포개지며 차가운 밤공기 속에서 웅장한 하나의 화음을 완성하고 있었다.",
+    "tags": [
+      "솔가지 시",
+      "월조 현상",
+      "월조 공명판",
+      "월현 타석기",
+      "공명",
+      "등대"
+    ],
+    "new_character": null,
+    "new_world_setting": null,
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-027",
+    "date": "2026-09-20",
+    "created_at": "2026-09-20T09:32:53+00:00",
+    "type": "스토리",
+    "characters": [
+      "serin",
+      "morgen",
+      "rajan"
+    ],
+    "world_settings": [
+      "w-tech-wolchoboard",
+      "w-natur-wolcho",
+      "w-tech-wolhyeontypewriter",
+      "w-tech-wolhyentelelegraph",
+      "w-hist-first-wolpyeon"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [
+      "s-006"
+    ],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
