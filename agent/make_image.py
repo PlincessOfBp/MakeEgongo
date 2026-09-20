@@ -236,8 +236,49 @@ def base_info_block(c):
     )
 
 
-def build_gen_prompt(char, world, prev_appearance):
+def build_pixai_prompt(char, world, prev_appearance):
+    """PixAI(Tsubaki 계열)에 최적화된 danbooru 태그형 프롬프트 요청 지시문."""
     w = world
+    lines = []
+    lines.append("너는 danbooru 태그 스타일의 애니메이션 이미지 프롬프트 작성자다.")
+    lines.append("PixAI의 Tsubaki 계열 이미지 모델이 사용할 태그형 영문 프롬프트를 작성한다.")
+    lines.append("다음 규칙을 지킨다.")
+    lines.append("1. 태그는 콤마(,)로 구분한다. 소문자로 작성한다. 예: 1girl, long hair, blue eyes, white dress")
+    lines.append("2. 캐릭터의 헤어스타일/색, 눈 색, 복장, 액세서리, 나이, 전속감 등 외관 설정을 정확한 태그로 반환한다.")
+    lines.append("3. quiz 및 캐릭터 종류 태그로 1girl/1boy/solo 를 붙인다. 부분클로즈업이 아니라 전신(whole body)을 요구한다.")
+    lines.append("4. 품질 태그를 맨 앞에 붙인다: masterpiece, best quality, extremely detailed")
+    lines.append("5. 배경 태그: plain background, simple background, white background")
+    lines.append("6. 세계관 영향이 외관에 존재하면 (고딕, 스팀펑크, 사이버펑크 등) 관련 태그를 붙인다.")
+    lines.append("7. 설정에 없는 세부 요소를 추가하지 않는다. 외관을 임의로 미화하지 않는다.")
+    lines.append("8. negative는 작성하지 않는다. 프롬프트만 만든다.")
+    lines.append("")
+    lines.append("## 캐릭터 기본 정보")
+    lines.append(base_info_block(char))
+    lines.append("")
+    lines.append("## 현재 외관 설정")
+    lines.append(appearance_block(char.get("appearance") or {}))
+    lines.append("")
+    if prev_appearance:
+        lines.append("## 이전 외관 (이 요소는 유지하되, 변경 사항만 반영)")
+        lines.append(appearance_block(prev_appearance))
+        lines.append("")
+    lines.append("## 세계관의 시각적 요인 (외관에 영향을 주는 경우에만)")
+    for s in [f"- 시대/기술 수준: {w.get('era', '')} / {w.get('tech_level', '')}", f"- 사회적 분위기: {w.get('mood', '')}"]:
+        lines.append(s)
+    lines.append("")
+    lines.append('다음 JSON만 반환한다: {"prompt": "<태그형 영문 프롬프트, 콤마 구분>"}')
+    return "\n".join(lines)
+
+
+def build_gen_prompt(char, world, prev_appearance, style="flux"):
+    """이미지 생성 모델용 영문 프롬프트 요청 지시문을 만든다.
+
+    style='pixai': danbooru 태그형 프롬프트 (PixAI/Tsubaki 계열에 유리).
+    style 그 외: 자연어 문장형 (flux/sana 등 Pollinations 계열 기본).
+    """
+    w = world
+    if style == "pixai":
+        return build_pixai_prompt(char, world, prev_appearance)
     lines = []
     lines.append("너는 캐릭터 디자인 시트용 이미지 프롬프트 작성자다.")
     lines.append("캐릭터의 텍스트 설정과 세계관의 시각적 정보를 바탕으로, ")
@@ -267,12 +308,12 @@ def build_gen_prompt(char, world, prev_appearance):
     return "\n".join(lines)
 
 
-def make_prompt_with_gemini(char, world, prev_appearance):
+def make_prompt_with_gemini(char, world, prev_appearance, style="flux"):
     key = get_gemini_key()
     models = get_gemini_models()
     if not key:
         return None, None
-    prompt = build_gen_prompt(char, world, prev_appearance)
+    prompt = build_gen_prompt(char, world, prev_appearance, style=style)
     errors = []
     for m in models:
         try:
@@ -291,6 +332,35 @@ def make_prompt_with_gemini(char, world, prev_appearance):
             log(f"    프롬프트 모델 {m} 사용 불가 → 다음 모델")
     log("    Gemini 프롬프트 작성 실패 (" + "; ".join(errors) + ") → 템플릿 사용")
     return None, None
+
+
+def fallback_prompt_pixai(char, world):
+    """PixAI용 fallback: 태그만 조립. Gemini 실패 시에도 pixai는 쓸 수 있게 한다."""
+    a = char.get("appearance") or {}
+    tags = []
+    gender = "1girl" if (char.get("gender") or "").lower() in ("여", "여성", "female", "girl", "f") else "1boy"
+    tags.append(gender)
+    tags.append("solo")
+    tags.append("whole body")
+    for name, val in (
+        ("hair", a.get("hair")),
+        ("eyes", a.get("eyes")),
+        ("skin", a.get("skin")),
+        ("face", a.get("face")),
+        ("outfit", a.get("outfit")),
+        ("shoes", a.get("shoes")),
+        ("accessories", a.get("accessories")),
+    ):
+        if val:
+            tags.append(str(val))
+    if a.get("colors"):
+        tags.extend(str(x) for x in a["colors"])
+    if a.get("traits"):
+        tags.extend(str(x) for x in a["traits"])
+    tags.append("masterpiece")
+    tags.append("best quality")
+    tags.append("plain background")
+    return ", ".join(tags)
 
 
 def fallback_prompt(char, world):
@@ -479,7 +549,13 @@ def guess_ext(data):
 
 
 def pollinations_image(char, world, width, height):
-    """외관 기준 이미지 1장을 생성한다. (리턴=바이트, 프롬프트, 이미지 모델, 프롬프트 작성 모델)"""
+    """외관 기준 이미지 1장을 생성한다. (리턴=바이트, 프롬프트, 이미지 모델, 프롬프트 작성 모델)
+
+    모델 풀 첫 항목이 pixai면 태그형 프롬프트(tags), 그 외 Pollinations용
+    자연어 프롬프트 어느 쪽을 쓸지는 첫 성공 모델에 맞춘다.
+    pixai가 1순위면 pixai 스타일 프롬프트로 생성하고, pixai 실패 시
+    자연어 프롬프트로 flux/sana를 시도한다(두 콘텐츠를 모두 만들어 대비).
+    """
     prev = latest_version(char)
     prev_appearance = None
     if prev:
@@ -490,26 +566,43 @@ def pollinations_image(char, world, width, height):
                 prev_appearance = meta.get("appearance") or {}
             except (ValueError, OSError):
                 pass
-    prompt_text, gemini_model = make_prompt_with_gemini(char, world, prev_appearance)
-    if prompt_text is None:
-        prompt_text = fallback_prompt(char, world)
-
     if not width or not height:
         width, height = 1024, 1024
     models = get_image_models()
+
+    # 1) pixai가 1순위면 태그형 프롬프트를 만든다.
+    pixai_first = any(m == "pixai" or m.startswith("pixai:") for m in models)
     errors = []
-    for m in models:
+
+    if pixai_first:
+        pt, gmodel = make_prompt_with_gemini(char, world, prev_appearance, style="pixai")
+        if pt is None:
+            pt = fallback_prompt_pixai(char, world)
+            gmodel = "fallback-pixai-tags"
         try:
-            if m == "pixai" or m.startswith("pixai:"):
-                data = call_pixai(prompt_text, m, width, height)
-                gen_label = "pixai"
-            else:
-                data = call_pollinations(prompt_text, m, width, height)
-                gen_label = m
+            data = call_pixai(pt, models[0], width, height)
+            if len(data) < 1000:
+                raise ApiError(f"{models[0]} 응답이 너무 작음({len(data)} bytes)")
+            log(f"    이미지 생성 모델: {models[0]} · {len(data)} bytes · size={width}x{height} (api=pixai)")
+            return data, pt, models[0], gmodel
+        except ApiError as e:
+            errors.append(str(e))
+            log(f"    이미지 모델 {models[0]} 실패: {e} {"→ flux/sana 폴백" if e.rotate else ""}")
+
+    # 2) 폴백: Pollinations 자연어 프롬프트
+    pt, gmodel = make_prompt_with_gemini(char, world, prev_appearance, style="flux")
+    if pt is None:
+        pt = fallback_prompt(char, world)
+        gmodel = "fallback-template"
+    for m in models:
+        if m == "pixai" or m.startswith("pixai:"):
+            continue
+        try:
+            data = call_pollinations(pt, m, width, height)
             if len(data) < 1000:
                 raise ApiError(f"{m} 응답이 너무 작음({len(data)} bytes)")
-            log(f"    이미지 생성 모델: {m} · {len(data)} bytes · size={width}x{height} (api={gen_label})")
-            return data, prompt_text, m, gemini_model
+            log(f"    이미지 생성 모델: {m} · {len(data)} bytes · size={width}x{height} (api={m})")
+            return data, pt, m, gmodel
         except ApiError as e:
             errors.append(str(e))
             log(f"    이미지 모델 {m} 실패: {e}" + (" → 다음 모델" if e.rotate else ""))
