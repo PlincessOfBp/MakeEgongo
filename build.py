@@ -417,8 +417,14 @@ def char_relations_block(cid):
 </section>"""
 
 
+# 사이트에서 캐릭터 외관 이미지 섹션 표시 여부 (파이프라인 코드는 유지)
+SHOW_CHAR_IMAGES = False
+
+
 def char_images_block(c):
     """캐릭터 외관 이미지 버전 목록 → HTML (최신 이미지 + 이전 버전 사본)."""
+    if not SHOW_CHAR_IMAGES:
+        return ""
     imgs = c.get("appearance_images") or []
     if not imgs:
         return ""
