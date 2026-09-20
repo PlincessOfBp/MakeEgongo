@@ -15,6 +15,7 @@ import json
 import os
 import re
 import sys
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -34,6 +35,7 @@ STYLE_JP = (
 )
 
 DEFAULT_IMAGE_MODELS = [
+    "pixai",
     "black-forest-labs/flux.1-schnell",
     "sana",
 ]
@@ -67,6 +69,26 @@ def get_gemini_key():
 
 def get_pollin_key():
     return (os.environ.get("POLLIN_API_KEY") or "").strip()
+
+
+def get_pixai_key():
+    return (os.environ.get("PIXAI_API_KEY") or "").strip()
+
+
+def get_pixai_mode():
+    return (os.environ.get("PIXAI_MODE") or "standard").strip().lower()
+
+
+def get_pixai_style():
+    return (os.environ.get("PIXAI_STYLE") or "").strip()
+
+
+def get_pixai_negative():
+    return (
+        os.environ.get("PIXAI_NEGATIVE")
+        or "lowres, bad anatomy, bad hands, extra fingers, missing fingers, deformed, blurry, "
+        "watermark, text, logo, jpeg artifacts"
+    ).strip()
 
 
 def get_gemini_models():
@@ -312,6 +334,142 @@ def call_pollinations(prompt_text, model, width, height):
         raise ApiError(f"{model} HTTP {e.code}: {snippet}", rotate=rotate)
 
 
+# ---------- PixAI 호출 (비동기 태스크) ----------
+
+PIXAI_API = "https://api.pixai.art"
+PIXAI_POLL_INTERVAL = 3
+PIXAI_POLL_TIMEOUT = 600
+
+# PixAI 해상도 매핑 (aspectRatio + size tier → 실제 픽셀)
+PIXAI_RESOLUTIONS = {
+    "1:1": {"1k": (1024, 1024), "1.5k": (1536, 1536)},
+    "2:3": {"1k": (848, 1280), "1.5k": (1024, 1536)},
+    "3:2": {"1k": (1280, 848), "1.5k": (1536, 1024)},
+    "3:4": {"1k": (864, 1152), "1.5k": (1152, 1536)},
+    "4:3": {"1k": (1152, 864), "1.5k": (1536, 1152)},
+    "3:5": {"1k": (768, 1280), "1.5k": (912, 1536)},
+    "5:3": {"1k": (1280, 768), "1.5k": (1536, 912)},
+    "9:16": {"1k": (720, 1280), "1.5k": (864, 1536)},
+    "16:9": {"1k": (1280, 720), "1.5k": (1536, 864)},
+    "1:3": {"1k": (512, 1536), "1.5k": (512, 1536)},
+    "3:1": {"1k": (1536, 512), "1.5k": (1536, 512)},
+}
+
+
+def pixai_aspect_ratio(width, height):
+    """원하는 w×h에 가장 가까운 PixAI 비율 매핑키(예: '5:3')를 고른다."""
+    target = (width or 1024) / (height or 1024)
+    best, best_d = "1:1", 1e9
+    for key in PIXAI_RESOLUTIONS:
+        a, _, b = key.partition(":")
+        d = abs((int(a) / int(b)) - target)
+        if d < best_d:
+            best, best_d = key, d
+    return best
+
+
+def _pixai_request(path, payload, key):
+    req = urllib.request.Request(
+        PIXAI_API + path,
+        data=json.dumps(payload).encode("utf-8"),
+        headers={"Content-Type": "application/json", "Authorization": f"Bearer {key}"},
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=120) as resp:
+            return json.loads(resp.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        snippet = (e.read().decode("utf-8", "ignore") or "")[:400]
+        raise ApiError(f"PixAI POST {path} HTTP {e.code}: {snippet}", rotate=False)
+
+
+def _pixai_get(path, key):
+    req = urllib.request.Request(
+        PIXAI_API + path,
+        headers={"Authorization": f"Bearer {key}"},
+        method="GET",
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=60) as resp:
+            return json.loads(resp.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        snippet = (e.read().decode("utf-8", "ignore") or "")[:400]
+        raise ApiError(f"PixAI GET {path} HTTP {e.code}: {snippet}", rotate=False)
+
+
+def _pixai_model_version(model_token):
+    """'pixai' 접두 뒤의 셋업: 기본 모델버전 id를 환경변수에서 읽는다.
+
+    모델 토큰 예: 'pixai' → PIXAI_MODEL_VERSION, 'pixai:TSUB_ID' → TSUB_ID 직접 사용.
+    리턴: (model_version_id 또는 None)
+    """
+    token = model_token.split(":", 1)[1].strip() if ":" in model_token else ""
+    if token:
+        return token
+    env_v = (os.environ.get("PIXAI_MODEL_VERSION") or "").strip()
+    return env_v or None
+
+
+def call_pixai(prompt_text, model, width, height):
+    """PixAI 태스크 생성 → 폴링 → 완료 이미지 바이트를 리턴한다.
+
+    PixAI는 rgapi/tsubaki 계열 애니 특화 모델로 고품질 일러스트에 적합하다.
+    """
+    key = get_pixai_key()
+    if not key:
+        raise ApiError("PIXAI_API_KEY가 없어 PixAI를 사용할 수 없음", rotate=True)
+    mv = _pixai_model_version(model)
+    if not mv:
+        raise ApiError("PIXAI_MODEL_VERSION 미설정 (모델 버전 id 필요)", rotate=True)
+
+    ratio = pixai_aspect_ratio(width, height)
+    size = "1.5k" if max(width or 0, height or 0) > 1100 else "1k"
+    payload = {
+        "modelVersionId": mv,
+        "prompt": prompt_text,
+        "negativePrompt": get_pixai_negative(),
+        "aspectRatio": ratio,
+        "size": size,
+        "mode": get_pixai_mode(),
+        "batchSize": 1,
+        "promptHelper": "disable",
+    }
+    style = get_pixai_style()
+    if style:
+        payload["style"] = {"presetName": style}
+
+    log(f"    [pixai] 태스크 생성: model={mv} ratio={ratio} size={size} mode={get_pixai_mode()}")
+    task = _pixai_request("/v2/image/create", payload, key)
+    task_id = task.get("id")
+    if not task_id:
+        raise ApiError("PixAI 태스크 생성 응답에 id 없음", rotate=True)
+
+    waited = 0
+    while waited < PIXAI_POLL_TIMEOUT:
+        time.sleep(PIXAI_POLL_INTERVAL)
+        waited += PIXAI_POLL_INTERVAL
+        t = _pixai_get(f"/v1/task/{task_id}", key)
+        status = t.get("status", "")
+        if status == "completed":
+            outs = t.get("outputs") or {}
+            urls = outs.get("mediaUrls") or []
+            if not urls:
+                mids = outs.get("mediaIds") or []
+                for mid in mids:
+                    m = _pixai_get(f"/v1/media/{mid}", key)
+                    for u in m.get("urls") or []:
+                        urls.append(u.get("url"))
+            if not urls:
+                raise ApiError("PixAI 태스크 완료지만 mediaUrls 없음", rotate=True)
+            with urllib.request.urlopen(urls[0], timeout=120) as resp:
+                return resp.read()
+        if status in ("failed", "cancelled", "error"):
+            raise ApiError(f"PixAI 태스크 {status}: {str(t)[:300]}", rotate=True)
+        if waited % 30 == 0:
+            log(f"    [pixai] 대기 중… {waited}s (status={status})")
+    raise ApiError(f"PixAI 태스크 폴링 타임아웃 ({PIXAI_POLL_TIMEOUT}s)", rotate=True)
+
+
 def guess_ext(data):
     if data[:8] == b"\x89PNG\r\n\x1a\n":
         return "png"
@@ -342,10 +500,15 @@ def pollinations_image(char, world, width, height):
     errors = []
     for m in models:
         try:
-            data = call_pollinations(prompt_text, m, width, height)
+            if m == "pixai" or m.startswith("pixai:"):
+                data = call_pixai(prompt_text, m, width, height)
+                gen_label = "pixai"
+            else:
+                data = call_pollinations(prompt_text, m, width, height)
+                gen_label = m
             if len(data) < 1000:
                 raise ApiError(f"{m} 응답이 너무 작음({len(data)} bytes)")
-            log(f"    이미지 생성 모델: {m} · {len(data)} bytes · size={width}x{height}")
+            log(f"    이미지 생성 모델: {m} · {len(data)} bytes · size={width}x{height} (api={gen_label})")
             return data, prompt_text, m, gemini_model
         except ApiError as e:
             errors.append(str(e))
@@ -354,10 +517,11 @@ def pollinations_image(char, world, width, height):
 
 
 def build_prompt_meta(char, version, prompt_text, gemini_model, image_model, width, height, reason, prev):
+    gen = "pixai-api" if (image_model or "").startswith("pixai") else "pollinations-gen"
     return {
         "version": version,
         "created_at": now_iso(),
-        "generator": "pollinations-gen",
+        "generator": gen,
         "image_model": image_model,
         "prompt_writer": gemini_model or "fallback-template",
         "reason": reason,
