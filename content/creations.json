@@ -1107,5 +1107,38 @@
     ],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "은빛 거울의 새벽",
+    "content": "새벽 4시 반. 여명이 트기 직전의 솔가지 연안은 기묘한 정적에 휩싸여 있었다. 등대 아래부터 전신국 지붕까지 이어진 월염 현상 덕분에, 온 도시는 달빛과 구리가 빚어낸 서늘한 은청색 형광을 뿜어내고 있었다. 라잔은 난간에 손을 올렸다. 손가락 끝에 닿는 구리 파이프는 차갑다 못해 짜릿한 미세 전류의 감각을 전해왔다. 그 푸른 광채 속에서 도시 전체가 하나의 거대한 수신 기계처럼 숨 쉬는 듯했다. 세린이 만든 월광 굴절 안경을 쓰지 않아도, 밤새 월사 잉크와 월조 진동이 새겨넣은 동판의 활자들이 어둠 속에서 은은하게 빛났다. 모겐이 밤배달을 마치고 돌아오며 남긴 은빛 지문처럼, 이 항구의 밤은 이제 단순한 어둠이 아니었다. 바다와 달과 기계가 속삭이는 거대한 문자 그 자체였다.",
+    "tags": [
+      "단편",
+      "월염",
+      "새벽",
+      "솔가지"
+    ],
+    "new_character": null,
+    "new_world_setting": null,
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-031",
+    "date": "2026-09-21",
+    "created_at": "2026-09-21T18:04:57+00:00",
+    "type": "단편",
+    "characters": [
+      "rajan",
+      "serin",
+      "morgen"
+    ],
+    "world_settings": [
+      "w-tech-wolyeom",
+      "w-tech-wolsaink",
+      "w-tech-wolglass"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
