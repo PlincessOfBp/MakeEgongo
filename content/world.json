@@ -246,6 +246,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-wolyeom",
+      "category": "기술",
+      "name": "월염 현상 (月染 現象)",
+      "summary": "월조 공명이나 월현 신호에 장기간 노출된 금속 및 도체가 서늘한 은청색으로 영구 변색되며 신호 감도가 극대화되는 현상.",
+      "details": "월현 전신망을 가설한 이후 처음 관측된 물리 현상이다. 과도한 진동과 전류 부하를 견딘 전선이 은청색 얼룩과 함께 변화하여, 이후 더 약한 달빛이나 신호에도 민감하게 반응하게 된다. 단, 물리적인 강도는 이전보다 다소 취약해져 수리공들의 세심한 관리가 요구된다.",
+      "created": "2026-09-21",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
