@@ -1140,5 +1140,45 @@
     "stories": [],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "월염 뇌관 (月染 雷管)",
+    "content": "월염 현상으로 은청색으로 변색된 구리선과 금속 부품들이 전신망 전반에 확대되면서, 세린은 이 변성 금속이 단순한 전도율 향상을 넘어 특정 주파수의 전기적 충격을 물리적 폭발이 아닌 제어된 기계적 구동력으로 치환하는 성질을 지니고 있음을 발견했다. 등대지기의 비상 호출이나 전신국의 타석기가 과부하로 망가지는 것을 막기 위해 고안된 이 소형 뇌관은, 월사의 미세한 잔류 진동을 흡수하여 기계의 뇌관을 안전하게 격발시키는 솔가지 연안 고유의 특수 제어 부품이다.",
+    "tags": [
+      "기술",
+      "월염",
+      "전신망",
+      "부품"
+    ],
+    "new_character": null,
+    "new_world_setting": {
+      "id": "w-tech-wolyeom-detonator",
+      "category": "기술",
+      "name": "월염 뇌관 (月染 雷管)",
+      "summary": "월염 현상으로 변색된 금속 부품을 활용하여 과도한 전신 신호의 충격을 제어하는 초기형 안전 제어 뇌관.",
+      "details": "월사 잉크와 월염 현상을 거친 금속이 지닌 고유의 주파수 흡수 성질을 응용해 만든 장치. 급격한 전류나 조석 공명으로 인한 기계 장치의 과부하를 막고, 신호를 부드러운 기계적 구동력으로 변환한다."
+    },
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-032",
+    "date": "2026-09-22",
+    "created_at": "2026-09-22T09:31:07+00:00",
+    "type": "설정",
+    "characters": [
+      "serin",
+      "rajan",
+      "morgen"
+    ],
+    "world_settings": [
+      "w-tech-wolyeom",
+      "w-tech-wolhyeontypewriter",
+      "w-tech-wolchium-tuner",
+      "w-tech-wolyeom-detonator"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [],
+    "relationships": [],
+    "setting_changes": []
   }
 ]

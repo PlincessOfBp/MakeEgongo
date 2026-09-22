@@ -257,6 +257,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-wolyeom-detonator",
+      "category": "기술",
+      "name": "월염 뇌관 (月染 雷管)",
+      "summary": "월염 현상으로 변색된 금속 부품을 활용하여 과도한 전신 신호의 충격을 제어하는 초기형 안전 제어 뇌관.",
+      "details": "월사 잉크와 월염 현상을 거친 금속이 지닌 고유의 주파수 흡수 성질을 응용해 만든 장치. 급격한 전류나 조석 공명으로 인한 기계 장치의 과부하를 막고, 신호를 부드러운 기계적 구동력으로 변환한다.",
+      "created": "2026-09-22",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
