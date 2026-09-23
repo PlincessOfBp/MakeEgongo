@@ -1215,5 +1215,46 @@
     "stories": [],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "월염 가감기 (月染 加減器)",
+    "content": "월염 현상으로 은청색으로 변색된 금속 도체가 전신망 전체의 신호 감도를 폭발적으로 끌어올리면서, 역으로 야간 송수신 과정에서 과도한 전류와 음압이 장치를 파괴하는 부작용이 발견되었다. 이에 세린은 라잔의 등대 1층 작업대에서 월염 뇌관의 원리를 응용해, 신호의 증폭 폭을 유연하게 조절할 수 있는 가감 저항식 제어 장치 '월염 가감기'를 설계했다. 이 장치는 황동 실린더 내부에 월염 처리된 구리 코일을 감아 만든 것으로, 밤마다 밀물과 함께 밀려드는 바다의 거친 공명음을 부드럽게 감쇠시키는 역할을 한다.",
+    "tags": [
+      "설정",
+      "월염 가감기",
+      "월염 현상",
+      "전신망",
+      "세린",
+      "라잔"
+    ],
+    "new_character": null,
+    "new_world_setting": {
+      "id": "w-tech-wolyeom-regulator",
+      "category": "기술",
+      "name": "월염 가감기 (月染 加減器)",
+      "summary": "월염 현상으로 과도해진 전신 신호 감도를 제어하기 위해 세린이 고안한 가감 저항식 신호 조절 장치.",
+      "details": "월염 처리된 구리 코일을 황동 실린더 내부에 감아, 야간 조석과 연동되어 밀려드는 과도한 공명 전류를 흡수하고 신호의 세기를 유연하게 줄여주는 안전 제어 기구. 등대와 전신국 사이에 필수적으로 배치된다."
+    },
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-034",
+    "date": "2026-09-23",
+    "created_at": "2026-09-23T19:00:41+00:00",
+    "type": "설정",
+    "characters": [
+      "serin",
+      "rajan"
+    ],
+    "world_settings": [
+      "w-tech-wolyeom",
+      "w-tech-wolyeom-detonator",
+      "w-geo-solgaji",
+      "w-tech-wolyeom-regulator"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [],
+    "relationships": [],
+    "setting_changes": []
   }
 ]

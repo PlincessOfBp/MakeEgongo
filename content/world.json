@@ -268,6 +268,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-wolyeom-regulator",
+      "category": "기술",
+      "name": "월염 가감기 (月染 加減器)",
+      "summary": "월염 현상으로 과도해진 전신 신호 감도를 제어하기 위해 세린이 고안한 가감 저항식 신호 조절 장치.",
+      "details": "월염 처리된 구리 코일을 황동 실린더 내부에 감아, 야간 조석과 연동되어 밀려드는 과도한 공명 전류를 흡수하고 신호의 세기를 유연하게 줄여주는 안전 제어 기구. 등대와 전신국 사이에 필수적으로 배치된다.",
+      "created": "2026-09-23",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
