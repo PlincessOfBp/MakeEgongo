@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parent
 CONTENT = ROOT / "content"
 OUT = ROOT / "site"
 IMG_DIR = CONTENT / "images"
+CHAR_IMG_DIR = IMG_DIR / "characters"
 
 
 def load_json(name):
@@ -418,34 +419,49 @@ def char_relations_block(cid):
 
 
 # 사이트에서 캐릭터 외관 이미지 섹션 표시 여부 (파이프라인 코드는 유지)
-SHOW_CHAR_IMAGES = False
+SHOW_CHAR_IMAGES = True
+
+# 이미지로 인식하는 확장자 (수동 업로드)
+IMAGE_EXTS = (".png", ".jpg", ".jpeg", ".webp", ".gif", ".bmp")
 
 
 def char_images_block(c):
-    """캐릭터 외관 이미지 버전 목록 → HTML (최신 이미지 + 이전 버전 사본)."""
+    """캐릭터 외관 이미지 → HTML.
+
+    수동 업로드 방식: content/images/characters/{id}/ 폴더에 이미지 파일을 넣으면
+    자동으로 표시된다. 같은 이름의 .txt 파일이 있으면 '프롬프트' 링크로 노출.
+    appearance_images(characters.json)의 버전 정보가 있으면 캡션에 병기.
+    """
     if not SHOW_CHAR_IMAGES:
         return ""
-    imgs = c.get("appearance_images") or []
-    if not imgs:
+    cid = c["id"]
+    cdir = CHAR_IMG_DIR / cid
+
+    files = []
+    if cdir.is_dir():
+        for p in sorted(cdir.iterdir()):
+            if p.is_file() and p.suffix.lower() in IMAGE_EXTS:
+                files.append(p)
+
+    records = {r.get("file"): r for r in (c.get("appearance_images") or [])}
+    if not files and not records:
         return ""
-    base_img = f"{BASE}images/characters/{esc(c['id'])}/"
-    latest = imgs[-1]
+
+    base_img = f"{BASE}images/characters/{cid}/"
     imgs_html = ""
-    for v in imgs:
-        label = f"v{v['version']}"
-        if v.get("reason"):
-            label += " · " + esc(v["reason"])
-        if v.get("created_at"):
-            label += " · " + esc(fmt_date(v["created_at"][:10]))
+    for idx, fp in enumerate(files):
+        fname = fp.name
+        rec = records.get(fname) or {}
+        label = rec.get("version") and f"v{rec['version']}" or f"전신 {idx + 1}"
+        if rec.get("reason"):
+            label += " · " + esc(rec["reason"])
+        txt = fp.with_suffix(".txt")
         extra = ""
-        if v.get("prompt_txt"):
-            extra += f' <a href="{base_img}{esc(v["prompt_txt"])}" class="prompt-link" target="_blank" rel="noopener">프롬프트 (.txt)</a>'
-        if v.get("prompt_json"):
-            extra += f' <a href="{base_img}{esc(v["prompt_json"])}" class="prompt-link" target="_blank" rel="noopener">메타 (.json)</a>'
-        real_ref = f"{base_img}{esc(v['file'])}"
-        fig_cls = 'char-img current' if v is latest else 'char-img'
+        if txt.exists():
+            extra += f' <a href="{base_img}{esc(txt.name)}" class="prompt-link" target="_blank" rel="noopener">프롬프트 (.txt)</a>'
+        fig_cls = "char-img current" if idx == len(files) - 1 else "char-img"
         imgs_html += f"""<figure class="{fig_cls}">
-<img src="{real_ref}" alt="{esc(c['name'])} {label}" loading="lazy">
+<img src="{base_img}{esc(fname)}" alt="{esc(c['name'])} {label}" loading="lazy">
 <figcaption>{label}{extra}</figcaption>
 </figure>"""
     return f'<section class="card panel char-images"><h2>외관 이미지</h2><div class="char-img-grid">{imgs_html}</div></section>'
