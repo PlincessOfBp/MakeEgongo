@@ -1256,5 +1256,39 @@
     "stories": [],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "가감기의 첫 눈금",
+    "content": "세린은 전신국 한구석에서 새로 조립한 '월염 가감기'의 다이얼을 천천히 돌렸다. 황동과 은청색 월염 금속이 교차하는 복잡한 기어 위로 차가운 불꽃이 미세하게 튀었다. 모겐은 손가락끝에 배어든 은청색 얼룩을 문지르며 기계의 반응을 살폈다. \"확실히 윙윙대는 소리가 잦아들었어. 귀가 다 먹먹했는데 이제야 숨통이 트이네.\" 세린이 가감기 손잡이를 '3단계'로 고정하자, 벽면에 고정된 월현 타석기가 뱉어내던 구리 리본의 폭주가 멈추고 일정한 간격의 부호가 다시 찍히기 시작했다. 바다의 만조가 몰고 온 과도한 공명이 회로를 태워 먹기 전에 가감기가 전류를 억누른 것이다. \"이건 바다의 맥박을 완전히 죽이는 게 아니에요, 모겐 씨.\" 세린은 월광 굴절 안경을 벗으며 엷게 웃었다. \"그저 우리가 읽을 수 있는 크기로 목소리를 낮춰주는 것뿐이죠.\" 두 사람은 잉크 향이 가시지 않은 리본을 들여다보았다. 등대지기 라잔이 보낸 안부 전신 뒤편으로, 이제는 잔잔해진 조석의 떨림이 고요하고 선명하게 흘러가고 있었다.",
+    "tags": [
+      "세린",
+      "모겐",
+      "월염 가감기",
+      "전신국",
+      "월현 타석기"
+    ],
+    "new_character": null,
+    "new_world_setting": null,
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-035",
+    "date": "2026-09-24",
+    "created_at": "2026-09-24T00:00:57+00:00",
+    "type": "단편",
+    "characters": [
+      "serin",
+      "morgen"
+    ],
+    "world_settings": [
+      "w-tech-wolyeom-regulator",
+      "w-tech-wolhyeontypewriter",
+      "w-tech-wolyeom",
+      "w-tech-wolhyeoncode"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
