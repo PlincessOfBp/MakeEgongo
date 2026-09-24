@@ -245,12 +245,14 @@ def build_pixai_prompt(char, world, prev_appearance):
     lines.append("다음 규칙을 지킨다.")
     lines.append("1. 태그는 콤마(,)로 구분한다. 소문자로 작성한다. 예: 1girl, long hair, blue eyes, white dress")
     lines.append("2. 캐릭터의 헤어스타일/색, 눈 색, 복장, 액세서리, 나이, 전속감 등 외관 설정을 정확한 태그로 반환한다.")
-    lines.append("3. quiz 및 캐릭터 종류 태그로 1girl/1boy/solo 를 붙인다. 부분클로즈업이 아니라 전신(whole body)을 요구한다.")
-    lines.append("4. 품질 태그를 맨 앞에 붙인다: masterpiece, best quality, extremely detailed")
-    lines.append("5. 배경 태그: plain background, simple background, white background")
-    lines.append("6. 세계관 영향이 외관에 존재하면 (고딕, 스팀펑크, 사이버펑크 등) 관련 태그를 붙인다.")
-    lines.append("7. 설정에 없는 세부 요소를 추가하지 않는다. 외관을 임의로 미화하지 않는다.")
-    lines.append("8. negative는 작성하지 않는다. 프롬프트만 만든다.")
+    lines.append("3. 캐릭터 종류 태그로 1girl/1boy/solo 를 붙인다. 전신(full body)을 요구한다.")
+    lines.append("4. 규칙: 이 이미지는 캐릭터 디자인 시트다. 같은 캐릭터의 정면/측면/후면이 한 장에 보이도록 한다.")
+    lines.append("   따라서 'character sheet, turnaround, multiple views, front view side view back view' 태그를 반드시 넣는다.")
+    lines.append("5. 품질 태그를 맨 앞에 붙인다: masterpiece, best quality, extremely detailed")
+    lines.append("6. 배경 태그: plain background, simple background, white background")
+    lines.append("7. 세계관 영향이 외관에 존재하면 (고딕, 스팀펑크, 사이버펑크 등) 관련 태그를 붙인다.")
+    lines.append("8. 설정에 없는 세부 요소를 추가하지 않는다. 외관을 임의로 미화하지 않는다.")
+    lines.append("9. negative는 작성하지 않는다. 프롬프트만 만든다.")
     lines.append("")
     lines.append("## 캐릭터 기본 정보")
     lines.append(base_info_block(char))
@@ -415,7 +417,8 @@ def fallback_prompt_pixai(char, world):
     a = char.get("appearance") or {}
     tags = []
     gender = "1girl" if (char.get("gender") or "").lower() in ("여", "여성", "female", "girl", "f") else "1boy"
-    tags.extend([gender, "solo", "whole body", "masterpiece", "best quality", "plain background"])
+    tags.extend([gender, "solo", "character sheet", "turnaround", "multiple views",
+                 "front view side view back view", "full body", "masterpiece", "best quality", "plain background"])
     seen = set()
     uniq = []
     for t in tags:
