@@ -316,51 +316,140 @@ def make_prompt_with_gemini(char, world, prev_appearance, style="flux"):
     prompt = build_gen_prompt(char, world, prev_appearance, style=style)
     errors = []
     for m in models:
-        try:
-            data = call_gemini_text(m, key, prompt)
-            raw = (data or {}).get("prompt") or ""
-            p = re.sub(r"\s+", " ", raw).strip()
-            if len(p) > 30:
-                log(f"    프롬프트 작성 모델: {m}")
-                return p, m
-            errors.append(f"{m}: 프롬프트가 너무 짧음")
-        except ApiError as e:
-            if not e.rotate:
-                log(f"    프롬프트 작성 실패({m}): {e} → 템플릿 사용")
-                return None, None
-            errors.append(str(e))
-            log(f"    프롬프트 모델 {m} 사용 불가 → 다음 모델")
+        for attempt in range(3):
+            try:
+                data = call_gemini_text(m, key, prompt)
+                raw = (data or {}).get("prompt") or ""
+                p = re.sub(r"\s+", " ", raw).strip()
+                if len(p) > 30:
+                    log(f"    프롬프트 작성 모델: {m}")
+                    return p, m
+                errors.append(f"{m}: 프롬프트가 너무 짧음")
+                break
+            except ApiError as e:
+                if not e.rotate:
+                    log(f"    프롬프트 작성 실패({m}): {e} → 템플릿 사용")
+                    return None, None
+                if attempt < 2:
+                    log(f"    프롬프트 모델 {m} 일시 실패({attempt + 1}/3): {str(e)[:60]}… 재시도")
+                    time.sleep(3 + attempt * 3)
+                    continue
+                errors.append(str(e))
+                log(f"    프롬프트 모델 {m} 사용 불가 → 다음 모델")
     log("    Gemini 프롬프트 작성 실패 (" + "; ".join(errors) + ") → 템플릿 사용")
     return None, None
 
 
+# 외관 키워드 → PixAI danbooru 태그 매핑 (영문, 소문자)
+PIXAI_TAG_MAP = {
+    "hair": ["hair", "hairstyle"],
+    "eyes": ["eyes", "eye color"],
+    "skin": ["skin", "complexion"],
+    "face": ["face"],
+    "outfit": ["outfit", "clothes", "dress"],
+    "shoes": ["shoes", "footwear"],
+    "accessories": ["accessory", "accessories"],
+    "belongings": ["prop", "item"],
+}
+
+# 외관 값에서 발라낼 한글 잡음 키워드 등은 그대로 두고,
+# 값이 짧은(외관 토큰으로 쓰일) 항목만 태그 후보로 취급한다.
+PIXAI_TAG_PHRASES = {
+    "red": ["red", "red_hair", "red_eyes"],
+    "blue": ["blue", "blue_hair", "blue_eyes"],
+    "black": ["black", "black_hair", "black_eyes"],
+    "white": ["white", "white_hair"],
+    "blonde": ["blonde", "blonde_hair", "yellow_hair"],
+    "brown": ["brown", "brown_hair"],
+    "green": ["green", "green_eyes"],
+    "gray": ["gray", "grey", "gray_hair"],
+    "grey": ["grey", "gray", "gray_hair"],
+    "silver": ["silver", "silver_hair", "white_hair"],
+    "purple": ["purple", "purple_hair", "purple_eyes"],
+    "pink": ["pink", "pink_hair", "pink_eyes"],
+    "long hair": ["long_hair"],
+    "short": ["short_hair"],
+    "단발": ["short_hair"],
+    "장발": ["long_hair"],
+    "포니테일": ["ponytail"],
+    "빗겨 묶음": ["side_ponytail"],
+    "눈": ["eyes"],
+    "머리카락": ["hair"],
+}
+
+
+def _arange_to_tags(val):
+    """외관 항목 값(문자열/리스트) → 후보 태그 문자열 목록.
+
+    짧은 값(≤24자)은 그대로 태그로 쓰고, 긴 문장은 조각을 잘라 키워드를
+    추출한다. 값에 한글이 많으면 기본 영문 태그품질 태그만 남긴다.
+    """
+    if isinstance(val, list):
+        vals = [str(x) for x in val]
+    else:
+        vals = [str(val)]
+    out = []
+    for v in vals:
+        v = re.sub(r"\s+", " ", v.strip())
+        if not v:
+            continue
+        if len(v) <= 24:
+            # 영문이면 그대로 태그, 비영문 리터럴은 생략(태그화 불가)
+            if re.fullmatch(r"[a-zA-Z0-9 _\-/]+", v):
+                out.append(v.lower())
+            continue
+        # 긴 설명 → 알려진 키워드/색상만 추출
+        low = v.lower()
+        for phrase, tags in PIXAI_TAG_PHRASES.items():
+            if phrase in low:
+                out.extend(tags)
+    return out
+
+
 def fallback_prompt_pixai(char, world):
-    """PixAI용 fallback: 태그만 조립. Gemini 실패 시에도 pixai는 쓸 수 있게 한다."""
+    """PixAI용 fallback: 영문 danbooru 태그 + 한글 외관 설명(중복 포함).
+
+    Gemini 실패 시에도 캐릭터 외관 정보를 잃지 않도록, 한글 설명 텍스트를
+    그대로 포함한다. PixAI(또는 사용자)가 조정 가능.
+    """
     a = char.get("appearance") or {}
     tags = []
     gender = "1girl" if (char.get("gender") or "").lower() in ("여", "여성", "female", "girl", "f") else "1boy"
-    tags.append(gender)
-    tags.append("solo")
-    tags.append("whole body")
-    for name, val in (
-        ("hair", a.get("hair")),
-        ("eyes", a.get("eyes")),
-        ("skin", a.get("skin")),
-        ("face", a.get("face")),
-        ("outfit", a.get("outfit")),
-        ("shoes", a.get("shoes")),
-        ("accessories", a.get("accessories")),
-    ):
+    tags.extend([gender, "solo", "whole body", "masterpiece", "best quality", "plain background"])
+    seen = set()
+    uniq = []
+    for t in tags:
+        if t not in seen:
+            seen.add(t)
+            uniq.append(t)
+    # 영문 태그 후보 추가
+    for key in ("hair", "eyes", "skin", "face", "outfit", "shoes", "accessories", "belongings"):
+        val = a.get(key)
         if val:
-            tags.append(str(val))
-    if a.get("colors"):
-        tags.extend(str(x) for x in a["colors"])
-    if a.get("traits"):
-        tags.extend(str(x) for x in a["traits"])
-    tags.append("masterpiece")
-    tags.append("best quality")
-    tags.append("plain background")
-    return ", ".join(tags)
+            for t in _arange_to_tags(val):
+                if t not in seen:
+                    seen.add(t)
+                    uniq.append(t)
+    for c in (a.get("colors") or []):
+        for t in _arange_to_tags(c):
+            if t not in seen:
+                seen.add(t)
+                uniq.append(t)
+    for t in (a.get("traits") or []):
+        for x in _arange_to_tags(t):
+            if x not in seen:
+                seen.add(x)
+                uniq.append(x)
+    base = ", ".join(uniq)
+    # 한글 외관 설명 첨부 (정보 손실 방지 — PixAI에서 조정 가능)
+    desc_parts = []
+    for key in ("hair", "eyes", "skin", "face", "outfit", "shoes", "accessories"):
+        v = a.get(key)
+        if v and isinstance(v, str) and v not in base:
+            desc_parts.append(v)
+    if desc_parts:
+        return base + ", " + "; ".join(desc_parts)
+    return base
 
 
 def fallback_prompt(char, world):
