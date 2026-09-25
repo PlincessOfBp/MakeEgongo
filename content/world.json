@@ -290,6 +290,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-wolyeom-projector",
+      "category": "기술",
+      "name": "월염 투영등 (月染 投影燈)",
+      "summary": "월염 건판에 기록된 미세한 은청색 신호 궤적을 렌즈로 확대하여 벽면이나 종이 위에 투영하는 초기형 광학 판독 장치.",
+      "details": "월사 유제가 도포된 유리 건판에 정착된 미세 신호선들을 벽면에 대형으로 확대 투사하는 황동제 판독등. 등대 회전 렌즈의 집광 구조와 월광 굴절 안경의 석영 가공 기술을 접목해 제작되었다. 미세한 요철 궤적을 거대한 파형으로 시각화할 수 있어, 바다의 조석 변동과 월현 신호 사이의 숨은 상관관계를 장기적으로 분석하는 데 핵심적인 도구로 쓰인다.",
+      "created": "2026-09-25",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
