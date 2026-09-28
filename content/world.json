@@ -312,6 +312,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-wolyeom-plummet",
+      "category": "기술",
+      "name": "월염 측심추 (月染 測深錘)",
+      "summary": "월염 처리된 공명 동관과 압축 월사를 내장하여 깊은 여울의 수심과 해저 공명을 진동 신호로 측정하는 특수 측심 도구.",
+      "details": "전통적인 납 측심추의 구조를 응용해 제작된 장치로, 월염 변색을 거친 금속의 극대화된 신호 감도를 이용한다. 거센 조류 속에서도 해저면과의 접촉 및 심해의 미세 파동을 지상 또는 선상의 월현 전신 장치로 왜곡 없이 전송한다.",
+      "created": "2026-09-28",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }

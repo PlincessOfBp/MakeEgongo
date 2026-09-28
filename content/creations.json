@@ -1494,5 +1494,48 @@
     "stories": [],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "월염 측심추 (月染 測深錘)",
+    "content": "솔가지 앞바다의 험준한 암초와 깊은 수심을 측정하기 위해 고안된 특수 음향 측심 도구. 전통적인 항해용 납 측심추(Sounding Lead)의 중심부를 파내고, 그 안에 월염 현상으로 은청색 변색을 거친 공명 동관과 압축 월사를 봉인해 넣었다. 겉면에는 조류와 마찰하며 미세한 진동을 일으키는 얇은 황동 날개가 둘러싸고 있다.\n\n거친 조류가 흐르는 '검은 여울' 같은 심해에 얇은 월염 동선을 묶어 늘어뜨리면, 추의 바닥이 암초나 해저면에 닿을 때 발생하는 물리적 충격뿐 아니라 해저 저층수의 미세한 조석 파동을 은청색 선로를 통해 수면 위의 월현상자나 가감기로 직접 전달한다. 일반적인 줄 측량으로는 휩쓸려 나가기 쉬운 급류 속에서도, 바닥의 퇴적물 상태와 심해 월편의 공명 여부를 진동 음향의 고저로 판별할 수 있도록 돕는다. 라잔의 오랜 항해 경험과 세린의 정밀 기계 기술이 결합되어 첫 시험작이 제작되었다.",
+    "tags": [
+      "기술",
+      "항해",
+      "월편",
+      "월염",
+      "검은여울",
+      "솔가지시"
+    ],
+    "new_character": null,
+    "new_world_setting": {
+      "id": "w-tech-wolyeom-plummet",
+      "category": "기술",
+      "name": "월염 측심추 (月染 測深錘)",
+      "summary": "월염 처리된 공명 동관과 압축 월사를 내장하여 깊은 여울의 수심과 해저 공명을 진동 신호로 측정하는 특수 측심 도구.",
+      "details": "전통적인 납 측심추의 구조를 응용해 제작된 장치로, 월염 변색을 거친 금속의 극대화된 신호 감도를 이용한다. 거센 조류 속에서도 해저면과의 접촉 및 심해의 미세 파동을 지상 또는 선상의 월현 전신 장치로 왜곡 없이 전송한다."
+    },
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-041",
+    "date": "2026-09-28",
+    "created_at": "2026-09-28T06:00:37+00:00",
+    "type": "설정",
+    "characters": [
+      "serin",
+      "rajan",
+      "morgen"
+    ],
+    "world_settings": [
+      "w-natur-black-shoal",
+      "w-tech-wolyeom",
+      "w-tech-wolhyeonbox",
+      "w-geo-solgaji",
+      "w-tech-wolyeom-plummet"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
