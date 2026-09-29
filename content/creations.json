@@ -1573,5 +1573,43 @@
     "stories": [],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "월현 저주파 감응기",
+    "content": "검은 여울의 수심 스무 길 아래에서 올라오는 거대한 파동을 일반 월현 전신망의 선로로 직접 수신할 경우, 전선과 기계 장치가 견딜 수 없는 물리적 과부하에 걸리는 문제가 발생했다. 이를 해결하기 위해 세린이 고안한 보조 공명 장치. '월염 측심추'가 해저에서 전송해 오는 초저주파 진동을 정류하여, 전신국 타석기가 파손되지 않도록 완충 역할을 하는 동시에 깊은 여울의 수중 압력 변화를 세밀한 기계적 스트로크로 변환한다.",
+    "tags": [
+      "기술",
+      "월현전신망",
+      "검은여울",
+      "세린"
+    ],
+    "new_character": null,
+    "new_world_setting": {
+      "id": "w-tech-lowfrequency-dampener",
+      "category": "기술",
+      "name": "월현 저주파 감응기",
+      "summary": "검은 여울의 거대한 초저주파 진동을 안전하게 수신하기 위해 세린이 제작한 완충형 공명 장치",
+      "details": "월염 측심추가 기록하는 수심 스무 길의 압력 파동은 일반 월현상자의 허용치를 아득히 초과한다. 이 장치는 두꺼운 은청색 월염 동관 내부에 압축 월사와 특수 가감기를 다중으로 배치하여, 바다의 저주파 맥박을 장비의 파손 없이 구리 리본 위에 온전히 옮겨 담을 수 있도록 돕는다."
+    },
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-043",
+    "date": "2026-09-29",
+    "created_at": "2026-09-29T13:30:30+00:00",
+    "type": "설정",
+    "characters": [
+      "serin"
+    ],
+    "world_settings": [
+      "w-tech-wolhyeonbox",
+      "w-natur-black-shoal",
+      "w-tech-wolyeom-plummet",
+      "w-tech-lowfrequency-dampener"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [],
+    "relationships": [],
+    "setting_changes": []
   }
 ]

@@ -323,6 +323,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-lowfrequency-dampener",
+      "category": "기술",
+      "name": "월현 저주파 감응기",
+      "summary": "검은 여울의 거대한 초저주파 진동을 안전하게 수신하기 위해 세린이 제작한 완충형 공명 장치",
+      "details": "월염 측심추가 기록하는 수심 스무 길의 압력 파동은 일반 월현상자의 허용치를 아득히 초과한다. 이 장치는 두꺼운 은청색 월염 동관 내부에 압축 월사와 특수 가감기를 다중으로 배치하여, 바다의 저주파 맥박을 장비의 파손 없이 구리 리본 위에 온전히 옮겨 담을 수 있도록 돕는다.",
+      "created": "2026-09-29",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
