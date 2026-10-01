@@ -345,6 +345,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-wolsasinter",
+      "category": "기술",
+      "name": "월사 소결판 (月砂 燒結板)",
+      "summary": "월현 음차의 진동으로 배열된 월사(月砂) 패턴에 열과 전류를 가해 영구 고착시키는 금속 기록판.",
+      "details": "세린이 개발한 기술로, 월사 잉크나 건판보다 물리적인 내구성이 뛰어나며 심해의 미세 저주파 진동 패턴을 손끝으로 만질 수 있는 양각(陽刻) 요철 형태로 보존한다. 검은 여울의 변화를 장기적으로 기록하고 대조하기 위한 핵심 아카이브 수단으로 쓰인다.",
+      "created": "2026-10-01",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
