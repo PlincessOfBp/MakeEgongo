@@ -1871,5 +1871,45 @@
     "stories": [],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "심해 증폭 격자",
+    "content": "'월현 소결독취기'를 통해 검은 여울의 초저주파를 재생하는 과정에서, 단일 전선만으로는 심해 암초 네 곳에서 몰려오는 간섭 파동을 온전히 수용하지 못하는 한계가 드러났다. 이에 세린은 등대 하부와 전신국, 그리고 사구 해변의 수신점을 삼각 형태로 잇는 '심해 증폭 격자' 구상을 새롭게 정립했다. 이 격자는 월염 처리된 구리선과 월사 소결판의 공명 축을 다중으로 교차시켜, 심해에서 올라오는 입체적인 진동 정보를 왜곡 없이 평면 건판 위에 투영할 수 있도록 설계된 국부적 신호 정렬망이다.",
+    "tags": [
+      "기술",
+      "월현",
+      "검은여울",
+      "신호망"
+    ],
+    "new_character": null,
+    "new_world_setting": {
+      "id": "w-tech-deep-grid",
+      "category": "기술",
+      "name": "심해 증폭 격자",
+      "summary": "검은 여울의 다중 초저주파 신호를 평면 판독하기 위해 수신점들을 삼각으로 엮은 국부 공명 격자망.",
+      "details": "등대, 전신국, 사구 해변의 수신점을 월염 구리선으로 삼각 편대처럼 연결하여, 심해의 거센 간섭 파동을 분산 수용하고 소결독취기의 판독 정확도를 극대화하는 확장형 기술 체계."
+    },
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-051",
+    "date": "2026-10-03",
+    "created_at": "2026-10-03T09:30:41+00:00",
+    "type": "설정",
+    "characters": [
+      "serin",
+      "rajan",
+      "morgen"
+    ],
+    "world_settings": [
+      "w-tech-sinter-reader",
+      "w-tech-wolsasinter",
+      "w-natur-black-shoal",
+      "w-tech-deep-grid"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [],
+    "relationships": [],
+    "setting_changes": []
   }
 ]

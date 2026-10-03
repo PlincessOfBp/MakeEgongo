@@ -367,6 +367,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-deep-grid",
+      "category": "기술",
+      "name": "심해 증폭 격자",
+      "summary": "검은 여울의 다중 초저주파 신호를 평면 판독하기 위해 수신점들을 삼각으로 엮은 국부 공명 격자망.",
+      "details": "등대, 전신국, 사구 해변의 수신점을 월염 구리선으로 삼각 편대처럼 연결하여, 심해의 거센 간섭 파동을 분산 수용하고 소결독취기의 판독 정확도를 극대화하는 확장형 기술 체계.",
+      "created": "2026-10-03",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
