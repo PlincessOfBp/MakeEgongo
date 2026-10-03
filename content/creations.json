@@ -1802,5 +1802,38 @@
     "stories": [],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "소결판의 바닥",
+    "content": "전신국 모퉁이 방, 어두컴컴한 실내에서 세린은 새로 가공된 '월현 소결독취기'의 석영 바늘을 '월사 소결판'의 표면에 조심스럽게 내렸다. 굵은 구리 바늘이 은백색으로 굳어진 파동의 골짜기를 따라 미끄러지자, 기계의 공명함 안에서 나지막하고 묵직한 마찰음이 흘러나왔다. 그것은 검은 여울의 수심 스무 길 아래에서 올라온 초저주파 진동이 단단하게 박힌 뼈대였다. 등대에서 내려온 라잔은 찻잔을 든 채 그 소리를 묵묵히 들었고, 모겐은 밖에서 불어오는 밤바람 소리와 기계의 떨림이 기묘하게 겹치는 것을 느꼈다. 과거 폭풍우 치던 날 사구 해변에서 주웠던 네 개의 파편에서 시작된 진동은 이제 바다의 속살을 낱낱이 긁어내는 단단한 기록의 언어로 변해 있었다.",
+    "tags": [
+      "월현소결독취기",
+      "월사소결판",
+      "검은여울",
+      "진동기록"
+    ],
+    "new_character": null,
+    "new_world_setting": null,
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-049",
+    "date": "2026-10-03",
+    "created_at": "2026-10-03T02:31:08+00:00",
+    "type": "단편",
+    "characters": [
+      "serin",
+      "rajan",
+      "morgen"
+    ],
+    "world_settings": [
+      "w-tech-sinter-reader",
+      "w-tech-wolsasinter",
+      "w-natur-black-shoal"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
