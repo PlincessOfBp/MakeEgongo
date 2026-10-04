@@ -411,6 +411,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-natur-deep-clockwork-tower",
+      "category": "자연환경",
+      "name": "심해 태엽 축적탑",
+      "summary": "검은 여울 해저에서 침전 치차들이 맞물려 거대한 동력을 축적하는 기계적 지형 구조",
+      "details": "월조와 월염 현상의 장기간 작용으로 금속성 침전물들이 스스로 결합하여 형성된 해저 거대 구조물. 수심의 압력 변화를 동력으로 전환하여 주기적인 초저주파 진동과 기계적 고동을 발산한다.",
+      "created": "2026-10-04",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }

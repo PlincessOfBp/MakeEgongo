@@ -2140,5 +2140,45 @@
     "stories": [],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "심해 태엽 축적탑",
+    "content": "검은 여울 바닥에서 기계적으로 맞물려 회전하는 침전 치차들의 움직임이 수심을 타고 거세지면서, 솔가지 앞바다 해저 지각 전체가 주기적으로 미세하게 함몰하고 융기하는 현상이 새롭게 관찰되었다. 이는 단순한 침전물의 집적을 넘어, 수중의 거대한 압력과 월염 전류가 맞물려 스스로 동력을 생성하는 해저 기계 구조물인 '심해 태엽 축적탑'으로 정의된다. 세린의 소결독취기에서 들리던 둔중한 마찰음은 이 거대한 수중 태엽 장치가 에너지를 축적하며 내는 고유의 고동임이 밝혀졌다.",
+    "tags": [
+      "검은 여울",
+      "침전 치차",
+      "월염 현상",
+      "심해 구조물"
+    ],
+    "new_character": null,
+    "new_world_setting": {
+      "id": "w-natur-deep-clockwork-tower",
+      "category": "자연환경",
+      "name": "심해 태엽 축적탑",
+      "summary": "검은 여울 해저에서 침전 치차들이 맞물려 거대한 동력을 축적하는 기계적 지형 구조",
+      "details": "월조와 월염 현상의 장기간 작용으로 금속성 침전물들이 스스로 결합하여 형성된 해저 거대 구조물. 수심의 압력 변화를 동력으로 전환하여 주기적인 초저주파 진동과 기계적 고동을 발산한다."
+    },
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-058",
+    "date": "2026-10-04",
+    "created_at": "2026-10-04T13:01:25+00:00",
+    "type": "설정",
+    "characters": [
+      "serin",
+      "rajan",
+      "morgen"
+    ],
+    "world_settings": [
+      "w-natur-black-shoal",
+      "w-natur-precipitated-gears",
+      "w-tech-sinter-reader",
+      "w-natur-deep-clockwork-tower"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
