@@ -2297,5 +2297,37 @@
     "stories": [],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "여명의 방전",
+    "content": "솔가지 전신국 지붕 위, 뿜어져 나오는 푸른 전하를 온몸으로 견디며 모겐은 '월현 방전구'의 석영 밸브를 단단히 조였다. 굉음과 함께 뿜어져 나온 은빛 불꽃은 밤의 잔해를 태우며 하늘 높이 흩어졌고, 그 빛은 바다 건너 등대 꼭대기에서 차를 마시던 라잔의 찻잔 속 은청색 파문을 부드럽게 가라앉혔다. 세린은 수첩을 펼쳐 그 마지막 방전의 궤적을 차분히 기록했다.",
+    "tags": [
+      "단편",
+      "월현 방전구",
+      "여명",
+      "방전"
+    ],
+    "new_character": null,
+    "new_world_setting": null,
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-062",
+    "date": "2026-10-05",
+    "created_at": "2026-10-05T18:00:45+00:00",
+    "type": "단편",
+    "characters": [
+      "serin",
+      "morgen",
+      "rajan"
+    ],
+    "world_settings": [
+      "w-tech-wolhyeon-discharge-globe",
+      "w-natur-deep-clockwork-tower"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
