@@ -444,6 +444,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-bluefrost-mirror",
+      "category": "기술",
+      "name": "청상 거울 (靑霜 鏡)",
+      "summary": "월현 청상의 결정 구조를 활용해 심해의 파동 신호를 반사·시각화하는 특수 광학 거울",
+      "details": "월현 방전구의 여파로 내려앉은 월현 청상의 결정을 특수 석영 판 위에 고정해 만든 거울. 밤에 이 거울을 검은 여울 방향으로 비추면, 대기 중의 잔류 전파와 공명하여 수심 깊은 곳의 미세한 기계적 궤적을 은청색 파동의 형태로 반사해 낸다.",
+      "created": "2026-10-07",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }

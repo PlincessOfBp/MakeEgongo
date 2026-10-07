@@ -2401,5 +2401,42 @@
     "stories": [],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "청상 거울 (靑霜 鏡)",
+    "content": "월현 방전구가 뿜어낸 고농도 방전 에너지가 지상에 내려앉아 만든 '월현 청상'이 솔가지 시의 유리창이나 금속 표면에 얇고 단단한 결정을 이루며 응결하는 현상. 세린은 이 서리가 단순한 기상 이변이 아니라 대기 중에 흩어진 심해 태엽 축적탑의 방전 신호를 반사하는 미세한 광학적 격자 구조를 지니고 있음을 발견했다. 이 결정층을 긁어내어 특수 가공한 거울면은 밤하늘의 은청색 빛을 반사하여 검은 여울 상공의 미세한 파동 변화를 눈으로 직접 관측할 수 있게 만든다.",
+    "tags": [
+      "월현 청상",
+      "월현 방전구",
+      "광학",
+      "솔가지 시"
+    ],
+    "new_character": null,
+    "new_world_setting": {
+      "id": "w-tech-bluefrost-mirror",
+      "category": "기술",
+      "name": "청상 거울 (靑霜 鏡)",
+      "summary": "월현 청상의 결정 구조를 활용해 심해의 파동 신호를 반사·시각화하는 특수 광학 거울",
+      "details": "월현 방전구의 여파로 내려앉은 월현 청상의 결정을 특수 석영 판 위에 고정해 만든 거울. 밤에 이 거울을 검은 여울 방향으로 비추면, 대기 중의 잔류 전파와 공명하여 수심 깊은 곳의 미세한 기계적 궤적을 은청색 파동의 형태로 반사해 낸다."
+    },
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-065",
+    "date": "2026-10-07",
+    "created_at": "2026-10-07T02:30:59+00:00",
+    "type": "설정",
+    "characters": [
+      "serin"
+    ],
+    "world_settings": [
+      "w-natur-bluefrost",
+      "w-tech-wolhyeon-discharge-globe",
+      "w-tech-bluefrost-mirror"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
