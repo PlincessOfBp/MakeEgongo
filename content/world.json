@@ -455,6 +455,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-lunar-blueprint",
+      "category": "기술",
+      "name": "월해의 조립도 (月海 粗立圖)",
+      "summary": "청상 거울에 맺힌 잔상들이 연결되어 나타난, 심해 태엽 축적탑과 월편의 기계적 연관성을 보여주는 거대한 가상 설계도.",
+      "details": "월현 청상 서리가 도포된 특수 거울을 통해 특정 각도의 빛을 굴절시켰을 때 나타나는 투영선이다. 사구 해변의 월편 낙하 지점과 검은 여울 해저의 태엽 축적탑 중심축을 일직선으로 연결하며, 미세한 기어 이빨의 맞물림까지 은청색 빛으로 벽면에 재현한다. 이를 통해 월편이 단순한 광물이 아니라 거대한 심해 기계의 이탈된 제어용 부품이었음이 시각적으로 증명되었다.",
+      "created": "2026-10-08",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
