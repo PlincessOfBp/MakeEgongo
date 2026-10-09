@@ -466,6 +466,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-lunar-drafting-desk",
+      "category": "기술",
+      "name": "월영 제도대 (月影 製圖臺)",
+      "summary": "청상 거울이 투사하는 월해의 조립도를 정밀하게 추적해 기록할 수 있도록 설계된 전용 빛 트레이싱 테이블.",
+      "details": "두 겹의 유백색 반투명 유리 사이에 은청색 감쇄용 조율 기름을 충전한 상판, 그리고 빛의 투사 각도를 수평으로 보정하는 네 모퉁이의 미세 기어 나사들로 구성된 제도용 기구. 청상의 투영 광을 굴절 없이 흡수·반사하여 백색 양피지 위로 설계도의 세부를 또렷이 보여준다. 세린의 시계 수리용 도구들과 등대방의 정교한 하드웨어가 결합하여 만들어졌다.",
+      "created": "2026-10-09",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
