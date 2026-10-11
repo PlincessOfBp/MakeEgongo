@@ -2792,5 +2792,46 @@
     "stories": [],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "맞물린 초침의 바다",
+    "content": "네 개의 월편이 '월핵 결구'에 정확히 안착한 뒤, 등대 1층의 '월영 제도대' 위에서는 기묘한 변화가 일어났다. 정지해 있던 '월해의 조립도' 그림자가 스스로 미끄러지듯 서서히 회전하기 시작한 것이다. 검은 여울 해저에서 들려오던 둔탁한 마찰음은 어느새 일정한 박자를 갖춘 거대한 금속성 맥박으로 바뀌어 있었다. 세린은 떨리는 손으로 석영 안경을 고쳐 쓰며 제도대 위를 관찰했다. 도면 속 톱니들이 맞물려 돌아갈 때마다, 전신국으로 뻗은 월염 구리선에서 청아한 공명음이 끊임없이 흘러나왔다. 문을 박차고 들어온 모겐이 거친 숨을 몰아쉬며 외쳤다. \"세린, 라잔 씨! 시내 전신국의 수신기가 혼자서 움직여! 전원도 넣지 않았는데 타석기가 똑같은 간격으로 구리 테이프를 찍어내고 있다고!\" 라잔은 묵묵히 창가로 다가가 검은 여울 쪽 밤바다를 응시했다. 수평선 부근의 바닷물이 거대한 톱니의 궤적을 따라 미세한 은청색 소용돌이를 그리며 박동하고 있었다. 첫 폭풍우 날 해변에 흩어졌던 네 개의 파편은 바다가 잃어버린 조각이 아니었다. 그것은 검은 여울의 심해 태엽을 지상과 연결해 솔가지 연안 전체를 하나의 거대한 시계로 기동시키기 위한 태엽 열쇠였다.",
+    "tags": [
+      "월핵결구",
+      "월해의조립도",
+      "월영제도대",
+      "심해태엽축적탑",
+      "세린",
+      "라잔",
+      "모겐"
+    ],
+    "new_character": null,
+    "new_world_setting": null,
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-075",
+    "date": "2026-10-11",
+    "created_at": "2026-10-11T06:00:46+00:00",
+    "type": "스토리",
+    "characters": [
+      "serin",
+      "rajan",
+      "morgen"
+    ],
+    "world_settings": [
+      "w-tech-lunar-socket",
+      "w-tech-lunar-blueprint",
+      "w-tech-lunar-drafting-desk",
+      "w-natur-deep-clockwork-tower",
+      "w-natur-black-shoal",
+      "w-tech-wolhyentelelegraph"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [
+      "s-015"
+    ],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
