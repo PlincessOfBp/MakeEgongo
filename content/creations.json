@@ -2757,5 +2757,40 @@
     "stories": [],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "골목을 달리는 파동",
+    "content": "가죽 가방을 둘러멘 모겐의 귓바퀴 뒤쪽이 찌릿하게 저려왔다. 전신국 처마 밑을 벗어나 비탈진 항구 골목으로 접어들었는데도, 등대에서 울려 퍼지기 시작한 낮은 C음의 고동은 전깃줄을 타고 그림자처럼 그의 뒤를 쫓았다. \n\n기둥마다 묶인 가로등 구리 덮개가 아주 가늘게 떨리고 있었다. 그 소리는 마치 바다 밑바닥에 가라앉은 거대한 톱니가 지상의 전선망을 자신의 줄로 삼아 연주하는 듯했다. 배달할 우편물을 쥔 손가락 끝에는 지난밤 물들었던 은청색 월염의 냉기가 스며 있었다. \n\n'세린은 이것도 그저 조각들의 귀환이라 부르겠지.' \n\n모겐은 담배를 꺼내려다 말고 등대 쪽 밤하늘을 올려다보았다. 청상 거울을 거쳐 제도대 위의 네 개 홈에 안착한 월편들은 이제 더는 단순한 파편이 아니었다. 그것은 잠자던 바다의 심장에 시동을 건 태엽 열쇠였다. 바닷바람 사이로 짠 냄새 대신 팽팽하게 달아오른 금속의 서늘한 냄새가 섞여 들고 있었다. 도시 전체가 검은 여울의 숨결에 맞춰 조용히 맥박치고 있었다.",
+    "tags": [
+      "모겐",
+      "월핵 결구",
+      "검은 여울",
+      "월염 현상",
+      "솔가지 시"
+    ],
+    "new_character": null,
+    "new_world_setting": null,
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-074",
+    "date": "2026-10-11",
+    "created_at": "2026-10-11T02:30:47+00:00",
+    "type": "단편",
+    "characters": [
+      "morgen",
+      "serin",
+      "rajan"
+    ],
+    "world_settings": [
+      "w-geo-solgaji",
+      "w-tech-lunar-socket",
+      "w-natur-black-shoal",
+      "w-tech-wolyeom"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
