@@ -488,6 +488,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-wolhyeon-sync-gear",
+      "category": "기술",
+      "name": "월현 동기 톱니 (月絃 同期 齒車)",
+      "summary": "월현 전신망의 공명 신호를 직접 기계적 회전 동력으로 변환하여, 태엽 없이도 심해의 맥박에 맞춰 회전하는 특수 황동 톱니.",
+      "details": "월핵 결구 안착 이후 발생한 신호 동기화 현상을 이용해 세린이 고안한 미세 동력 전달 부품. 월염 처리된 구리 축과 연결되어, 검은 여울의 심해 태엽 축적탑에서 전신망을 통해 발송되는 박자 신호를 받아 스스로 맞물려 돌아간다.",
+      "created": "2026-10-12",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
