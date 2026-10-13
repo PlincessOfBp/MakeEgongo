@@ -2947,5 +2947,45 @@
     ],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "월현 기계학파 (月絃 機械學派)",
+    "content": "솔가지 시 전신국과 등대의 기초 암반이 심해 태엽 축적탑의 박동에 동기화되면서, 세린의 주변에는 단순한 수리공의 호기심을 넘어선 이들이 모여들기 시작했다. 전신국의 구리 전선과 월염 구동축을 정비하기 위해 자발적으로 결성된 이 기술자 집단은, 월현 동기 톱니의 회전 주기를 분석하고 시내 전신망의 과부하를 분산하는 실무를 맡는다. 이들은 월편의 현상을 단순한 초자연적 기적이 아니라, 바다가 품은 거대한 태엽 장치의 작동 법칙으로 해석하며 솔가지 시의 물리적 기반을 재구성하고 있다.",
+    "tags": [
+      "기관",
+      "월현기계학파",
+      "기술",
+      "동기화"
+    ],
+    "new_character": null,
+    "new_world_setting": {
+      "id": "w-org-wolhyeon-guild",
+      "category": "기관",
+      "name": "월현 기계학파",
+      "summary": "월현 전신망과 심해 태엽 축적탑의 동기화 현상을 유지·관리하기 위해 솔가지 시의 기술자들과 전신국 배달부들이 결성한 실무 기술 집단.",
+      "details": "월현 동기 톱니와 월염 구동축이 시내 전체에 도입되면서, 전신선의 과부하를 막고 기계적 공명을 안정화하기 위해 세린의 주변에 모인 인력들로 구성된 조직. 등대와 전신국을 잇는 회전축의 정비를 전담하며, 월편의 진동을 도시의 기계 동력으로 전환하는 실용 기술을 연구한다."
+    },
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-079",
+    "date": "2026-10-13",
+    "created_at": "2026-10-13T09:30:54+00:00",
+    "type": "설정",
+    "characters": [
+      "serin",
+      "morgen",
+      "rajan"
+    ],
+    "world_settings": [
+      "w-org-telegraph",
+      "w-tech-wolhyeon-sync-gear",
+      "w-natur-deep-clockwork-tower",
+      "w-org-wolhyeon-guild"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
