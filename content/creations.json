@@ -3106,5 +3106,43 @@
     ],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "심연의 박자로 차를 따를 때",
+    "content": "솔가지 등대 꼭대기 회전실의 황동 괘종시계가 자정의 타종을 건너뛰었다. 낡은 진자추가 덜컥, 둔중한 소리를 내며 멈추는가 싶더니, 이내 바닥 밑바닥에서 치솟아 오른 은청색 진동을 받아 스스로 다른 보폭으로 흔들리기 시작했다. 전신국 지하에서 세린의 동기화 각인기가 톱니를 완전히 물렸음을 알리는 신호였다.\n\n라잔은 무쇠 주전자를 기울여 찻잔에 뜨거운 김을 부었다. 찻물이 잔을 채우는 졸졸거리는 소리와 등대 회전 렌즈 축이 돌아가는 묵직한 마찰음이 거짓말처럼 똑같은 간격으로 맞물렸다. 네 번의 숨결, 한 번의 회전. 검은 여울의 해저 바닥에서 스스로 맞물려 돈다는 침전 치차들의 박동이었다. 한 달 전 사구 해변 모래톱에 버려졌던 네 조각의 월편이 이제는 도시 전체의 초침을 저 차가운 바다 깊은 곳의 맥박으로 이끌고 있었다.\n\n라잔은 식어가는 찻잔을 쥔 채 덧창 너머 밤바다를 내려다보았다. 등대의 불빛이 수평선을 훑고 지나갈 때마다 검은 여울 부근의 파도가 파르르 은빛 서리를 튕겨 올렸다. 사람의 손으로 태엽을 감지 않아도 새벽을 향해 굴러가는 밤. 라잔은 찻잔에 입술을 대며, 이 서늘하고 규칙적인 침묵이 솔가지 시의 골목마다 조용히 스며드는 것을 느꼈다.",
+    "tags": [
+      "솔가지연안",
+      "라잔",
+      "등대",
+      "월현동기톱니",
+      "심해태엽축적탑",
+      "등대차"
+    ],
+    "new_character": null,
+    "new_world_setting": null,
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-083",
+    "date": "2026-10-15",
+    "created_at": "2026-10-15T09:30:49+00:00",
+    "type": "단편",
+    "characters": [
+      "rajan",
+      "serin",
+      "morgen"
+    ],
+    "world_settings": [
+      "w-geo-solgaji",
+      "w-culture-lantern",
+      "w-tech-wolhyeon-sync-gear",
+      "w-natur-deep-clockwork-tower",
+      "w-natur-black-shoal",
+      "w-tech-wolhyeon-carver"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
