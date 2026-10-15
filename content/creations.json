@@ -3027,5 +3027,44 @@
     ],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "월현 기계학파의 작업 도구, 동기화 각인기",
+    "content": "월현 기계학파가 시내 곳곳의 시계탑과 전신국 분전반에 '월현 동기 톱니'를 안정적으로 고정하기 위해 제작한 수공구. 검은 여울에서 밀려오는 초저주파의 진동 압력을 받아내면서도 톱니바퀴의 축을 미세하게 조정할 수 있도록, 도구의 손잡이 전체가 월염 현상으로 은청색 처리된 특수 동관으로 만들어졌다. 세린이 설계하고 전신국 배달부들이 현장에서 직접 사용하며, 톱니가 바다의 맥박과 어긋나 튀어 오르는 것을 막는 유일한 정밀 제어구 역할을 한다.",
+    "tags": [
+      "월현 기계학파",
+      "월현 동기 톱니",
+      "월염"
+    ],
+    "new_character": null,
+    "new_world_setting": {
+      "id": "w-tech-wolhyeon-carver",
+      "category": "기술",
+      "name": "동기화 각인기",
+      "summary": "월현 동기 톱니를 도심의 기계 장치와 정밀하게 맞물리도록 고정하는 월염 처리된 수공구.",
+      "details": "검은 여울의 초저주파 진동 속에서도 톱니의 결합 밀도를 유지하기 위해, 월염 가감기의 원리를 응용하여 손잡이에 미세한 감쇠 스프링을 내장한 현장 작업용 특수 렌치형 각인기."
+    },
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-081",
+    "date": "2026-10-15",
+    "created_at": "2026-10-15T02:30:38+00:00",
+    "type": "설정",
+    "characters": [
+      "serin",
+      "morgen",
+      "rajan"
+    ],
+    "world_settings": [
+      "w-org-wolhyeon-guild",
+      "w-tech-wolhyeon-sync-gear",
+      "w-tech-wolyeom",
+      "w-tech-wolhyeon-carver"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [],
+    "relationships": [],
+    "setting_changes": []
   }
 ]

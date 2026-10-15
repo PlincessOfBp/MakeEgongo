@@ -510,6 +510,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-wolhyeon-carver",
+      "category": "기술",
+      "name": "동기화 각인기",
+      "summary": "월현 동기 톱니를 도심의 기계 장치와 정밀하게 맞물리도록 고정하는 월염 처리된 수공구.",
+      "details": "검은 여울의 초저주파 진동 속에서도 톱니의 결합 밀도를 유지하기 위해, 월염 가감기의 원리를 응용하여 손잡이에 미세한 감쇠 스프링을 내장한 현장 작업용 특수 렌치형 각인기.",
+      "created": "2026-10-15",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
