@@ -532,6 +532,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-bluefrost-oil",
+      "category": "기술",
+      "name": "청상 윤활유 (靑霜 潤滑油)",
+      "summary": "월현 청상의 결정을 정제유와 배합하여, 월현 동기 톱니의 마찰열을 식히고 햇빛의 간섭을 완충하는 특수 기계유.",
+      "details": "심해 태엽 축적탑과 동기화되어 회전하는 월현 동기 톱니의 지속적인 구동을 위해 개발된 윤활제. 월현 청상의 서늘한 성질을 머금고 있어 톱니의 금속 마찰열을 즉각 냉각하며, 낮 동안 햇빛으로 인해 유발되는 신호 간섭과 파동 왜곡을 방지한다. 오일이 소진되면 은청색 결정체로 굳어 교체 시점을 알린다.",
+      "created": "2026-10-17",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
