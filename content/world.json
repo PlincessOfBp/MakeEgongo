@@ -543,6 +543,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-resonance-pendulum",
+      "category": "기술",
+      "name": "월현 공명추 (月絃 共鳴錘)",
+      "summary": "심해 태엽 축적탑의 초저주파 공명에 반응하여, 태엽 없이도 바다의 맥박에 맞춰 스스로 규칙적인 진동을 유지하는 월염 합금제 시계 진자추.",
+      "details": "월현 기계학파와 세린이 고안한 진자 장치. 월염 구리 외피 내부에 압축 월사와 석영 분말을 층층이 채워 넣어 제작된다. 월현 동기 톱니와 결합될 때 지면과 전선을 통해 전달되는 검은 여울의 파동을 직접 운동 에너지로 흡수하여 태엽 동력 없이도 영구히 진동한다. 솔가지 시 전역의 시계탑 및 실내 시계에 보급되며 도시의 시간을 해저의 박동과 일치시키는 핵심 부품으로 쓰인다.",
+      "created": "2026-10-18",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
