@@ -3369,5 +3369,41 @@
     "stories": [],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "톱니가 맞물린 찻잔",
+    "content": "등대 1층의 낡은 나무 탁자 위에는 청상 윤활유가 담긴 작은 유리병이 놓여 있었다. 세린은 은청색으로 변색된 렌치를 들어 월현 동기 톱니의 축을 조심스럽게 조였다. 톱니바퀴는 이제 태엽 없이도 심해의 박자에 맞춰 부드럽게 회전하며 미세한 진동을 뿜어냈다. 라잔은 찻주전자에서 따뜻한 온기가 피어오르는 찻잔을 따라 세린과 모겐 앞에 밀어놓았다. '바다 밑바닥이 온통 톱니로 채워지고 있지만, 그렇다고 차가 식는 속도가 달라지진 않아.' 라잔의 낮고 차분한 목소리에 세린은 석영 안경을 밀어 올리며 피식 웃었다. 창밖으로 솔가지 시의 골목마다 심해 태엽 축적탑의 박자에 맞춰 도시의 크고 작은 시계 초침들이 일제히 미세하게 떨리는 소리가 들려왔다. 모겐은 전신국에서 들고 온 구리 리본을 코트 주머니에 찔러 넣으며 찻잔을 들어 올렸다. 도시의 밤은 이제 단순한 어둠이 아니었다. 그것은 바다와 지상이 하나의 거대한 기계처럼 맞물려 돌아가는 거대한 숨결 그 자체였다.",
+    "tags": [
+      "솔가지 등대",
+      "월현 동기 톱니",
+      "청상 윤활유",
+      "등대 차 한 잔의 시간"
+    ],
+    "new_character": null,
+    "new_world_setting": null,
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-090",
+    "date": "2026-10-18",
+    "created_at": "2026-10-18T09:30:35+00:00",
+    "type": "스토리",
+    "characters": [
+      "rajan",
+      "serin",
+      "morgen"
+    ],
+    "world_settings": [
+      "w-culture-lantern",
+      "w-tech-wolhyeon-sync-gear",
+      "w-tech-bluefrost-oil",
+      "w-natur-deep-clockwork-tower"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [
+      "s-019"
+    ],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
