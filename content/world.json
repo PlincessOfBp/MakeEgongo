@@ -554,6 +554,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-resonance-stethoscope",
+      "category": "기술",
+      "name": "월현 청음관 (月絃 聽音管)",
+      "summary": "도시 곳곳에 가설된 월현 동기 기계들의 진동과 심해 태엽 축적탑의 동기화 오차를 소리로 판별하는 월염 합금제 휴대용 청진 도구.",
+      "details": "세린이 제작하고 모겐과 월현 기계학파 구성원들이 실무 점검에 사용하는 휴대용 계측 도구. 월염 처리된 황동 관과 석영 진동막, 압축 월사 펠트로 구성되어 있다. 벽체나 기계 프레임에 대면 검은 여울의 초저주파 맥박과 톱니의 마찰음을 가청 음역으로 변환해 주어, 기계 분해 없이도 위상차나 마모 상태를 즉시 진단할 수 있다.",
+      "created": "2026-10-19",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
