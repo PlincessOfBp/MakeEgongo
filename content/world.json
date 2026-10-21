@@ -565,6 +565,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-wolhyeon-escapement",
+      "category": "기술",
+      "name": "월현 탈진기 (月絃 脫進機)",
+      "summary": "심해 태엽 축적탑의 거대한 공명 동력을 규칙적인 초침의 보폭으로 걸러내어, 월현 동기 톱니의 폭주를 막고 정확한 회전을 유지시키는 특수 탈진 기구.",
+      "details": "월현 동기 톱니와 월현 공명추 사이에 맞물려 설치되는 정밀 제어 부품. 월염 처리된 이중 갈고리 앵커가 해저에서 전해지는 초저주파의 극점마다 반응하여 톱니의 회전을 한 톱니씩 제어한다. 청상 윤활유가 침투된 석영 패드가 마찰열과 진동 충격을 흡수하여, 조석의 변동 속에서도 도시의 시계와 전신망이 바다의 박자와 오차 없이 연동되도록 돕는다.",
+      "created": "2026-10-21",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
