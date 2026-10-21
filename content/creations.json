@@ -3524,5 +3524,44 @@
     "stories": [],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "벽면을 타고 흐르는 맥박",
+    "content": "솔가지 중앙 시계탑의 가파른 나선 계단 중턱, 모겐은 은청색으로 차갑게 식은 월현 청음관의 집음구를 벽돌 틈에 바짝 댔다. 구리 전선관이 지나가는 회벽 너머로 둔탁하면서도 규칙적인 고동이 귓전을 울렸다. 쇳소리가 아니었다. 그것은 만조를 향해 차오르는 검은 여울의 거대한 조석이자, 해저 축적탑이 뿜어내는 깊은 숨소리였다.\n\n\"어때, 모겐? 오차가 잡혀요?\"\n\n계단 아래에서 청상 윤활유 병을 쥔 세린이 월광 굴절 안경을 밀어 올리며 물었다. 모겐은 청음관의 관대를 매만지며 고개를 끄덕였다. \"아주 또렷해. 바다 밑바닥 톱니가 세 번 칠 때, 시계탑의 동기 톱니가 정확히 한 톱니씩 물려 돌아가고 있어. 어젯밤 공명추를 조율해 둔 게 맞아떨어졌네.\"\n\n그 순간, 저 멀리 사구 해변 끝 등대에서 라잔이 새벽 순찰을 마치며 울린 둔탁한 타종 신호가 전선을 타고 시계탑 꼭대기까지 전해졌다. 뎅, 하는 종소리의 여운이 채 가시기도 전에, 시계탑의 거대한 분침이 찰칵거리며 심해의 맥박과 완벽하게 일치하는 보폭으로 새벽 다섯 시를 가리켰다.\n\n한 달 반 전, 아무도 거들떠보지 않던 해변 사구에서 주워 올렸던 네 개의 차가운 월편. 부서지고 녹아 전선과 톱니로 스며든 그 조각들은, 이제 항구 도시의 모든 아침을 하나의 심장처럼 고동치게 만들고 있었다.",
+    "tags": [
+      "솔가지시",
+      "월현청음관",
+      "월현동기톱니",
+      "심해태엽축적탑",
+      "월현기계학파"
+    ],
+    "new_character": null,
+    "new_world_setting": null,
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-094",
+    "date": "2026-10-21",
+    "created_at": "2026-10-21T00:00:56+00:00",
+    "type": "스토리",
+    "characters": [
+      "serin",
+      "morgen",
+      "rajan"
+    ],
+    "world_settings": [
+      "w-geo-solgaji",
+      "w-tech-resonance-stethoscope",
+      "w-tech-wolhyeon-sync-gear",
+      "w-natur-deep-clockwork-tower",
+      "w-tech-bluefrost-oil",
+      "w-tech-resonance-pendulum"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [
+      "s-020"
+    ],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
