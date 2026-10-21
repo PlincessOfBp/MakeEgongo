@@ -3610,5 +3610,45 @@
     "stories": [],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "걸쇠가 자르는 심해의 시간",
+    "content": "솔가지 중앙 시계탑의 최상층 기계실, 기름과 차가운 바닷바람이 엉킨 어둠 속에서 은청색 불꽃이 잘게 튀었다. 세린은 월광 굴절 안경을 콧등 위로 밀어 올린 채, 새로 조율한 '월현 탈진기'의 양 갈래 닻형 걸쇠를 '월현 동기 톱니'의 날 사이에 조심스레 물렸다. 심해 태엽 축적탑에서 전선을 타고 쏟아져 들어오던 거칠고 둔중한 파동이 탈진기의 차가운 팔을 내리치는 순간, 맹렬하게 헛돌려던 황동 톱니가 날카로운 금속음을 내며 딱 한 칸 전진하고 멈췄다. 틱. 그리고 다시 한 박자 뒤, 톡. 검은 여울의 무질서한 해류 압력이 비로소 정교하게 잘려 나가며 규칙적인 초침의 보폭으로 길들여지고 있었다. 나선 계단 입구에서 월현 청음관을 벽체에 대고 있던 모겐이 비로소 안도의 숨을 뱉었다. \"잡혔어, 세린. 날뛰던 맥박이 이제 사람의 시간처럼 걸어가기 시작했어.\" 그 순간 창밖 먼 수평선에서 사구 해변의 등대가 정확히 그 초침의 보폭에 맞추어 긴 빛줄기를 밤하늘 위로 그어 올렸다. 바다가 태엽을 감고, 등대가 지켜보며, 세 사람이 다듬어낸 고요한 밤의 박자였다.",
+    "tags": [
+      "월현탈진기",
+      "월현동기톱니",
+      "솔가지시계탑",
+      "세린",
+      "모겐",
+      "라잔",
+      "동기화"
+    ],
+    "new_character": null,
+    "new_world_setting": null,
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-096",
+    "date": "2026-10-21",
+    "created_at": "2026-10-21T13:00:51+00:00",
+    "type": "스토리",
+    "characters": [
+      "serin",
+      "morgen",
+      "rajan"
+    ],
+    "world_settings": [
+      "w-tech-wolhyeon-escapement",
+      "w-tech-wolhyeon-sync-gear",
+      "w-tech-resonance-stethoscope",
+      "w-natur-deep-clockwork-tower",
+      "w-geo-solgaji"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [
+      "s-021"
+    ],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
