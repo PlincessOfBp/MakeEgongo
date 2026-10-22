@@ -3729,5 +3729,45 @@
     "stories": [],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "바다가 건넨 첫 번째 시(時)",
+    "content": "솔가지 중앙 시계탑 꼭대기, 밤안개가 창틀을 적시는 종탑 난간에서 세린은 숨을 죽인 채 회중시계를 노려보았다. 월광 굴절 안경 너머로 비친 '월현 탈진기'의 황동 걸쇠가 삼천오백구십구 번째 틱, 소리를 내며 마지막 톱니를 넘겼다. 심해 태엽 축적탑의 거친 고동이 정확히 삼천육백 번의 초침으로 다듬어지는 순간이었다. 덜컥, 하는 묵직한 기계음과 함께 공중에 매달린 은청색 '월현 시보종'의 해머가 허공을 갈랐다. 댕—. 바다 깊은 곳의 암초와 톱니가 빚어낸 맑고 둔중한 종소리가 시계탑을 빠져나와 젖은 밤안개를 가르며 솔가지 시 전역으로 퍼져나갔다. 모겐은 종탑 난간을 짚은 채 입을 벌렸다. \"울렸어… 기름도, 태엽도 안 감았는데 정각이 울렸다고.\" 같은 시각, 사구 해변 끝 등대 꼭대기에서 차를 마시던 라잔은 잔을 내려놓고 창문을 활짝 열었다. 칠흑 같은 밤바다 너머에서 날아온 청아한 울림은 등대 망루의 유리창을 기분 좋게 울렸다. 두 달 전 폭풍 다음 날 해변에서 주웠던 네 개의 차가운 파편이, 이제는 솔가지의 밤을 지키는 가장 정확한 시간의 목소리가 되어 돌아와 있었다.",
+    "tags": [
+      "솔가지시",
+      "월현시보종",
+      "월현탈진기",
+      "월현동기톱니",
+      "세린",
+      "모겐",
+      "라잔"
+    ],
+    "new_character": null,
+    "new_world_setting": null,
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-099",
+    "date": "2026-10-22",
+    "created_at": "2026-10-22T09:30:54+00:00",
+    "type": "스토리",
+    "characters": [
+      "serin",
+      "morgen",
+      "rajan"
+    ],
+    "world_settings": [
+      "w-tech-wolhyeon-bell",
+      "w-tech-wolhyeon-escapement",
+      "w-tech-wolhyeon-sync-gear",
+      "w-natur-deep-clockwork-tower",
+      "w-geo-solgaji"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [
+      "s-022"
+    ],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
