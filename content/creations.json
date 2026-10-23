@@ -3891,5 +3891,42 @@
     "stories": [],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "새벽 네 시 삼십팔 분의 타종",
+    "content": "새벽 네 시 삼십팔 분, 솔가지 시의 모든 굴뚝 연기가 젖은 바다안개에 짓눌려 낮게 깔리는 시각이었다. 중앙 시계탑 기계실 난간에서 모겐은 차가운 가죽 장갑을 벗어 품에 넣고 '월현 시보록'의 백색 구리 테이프를 손끝으로 쓸어내렸다. 시보사(時報士)라는 낯선 직책을 맡아 맞이하는 첫 번째 새벽이었다. \n\n바다 밑바닥 검은 여울의 거대한 맥박이 탈진기의 닻형 걸쇠를 정확히 삼천육백 번째 밀어낸 순간, 묵직한 은청색 '월현 시보종'이 공기를 가르며 울렸다. 댕—. 기름칠도, 태엽을 감는 수고도 없이 바다가 제 힘으로 밀어 올린 정각의 소리였다. \n\n그 울림은 해안선 전선을 타고 사구 해변 등대 망루로 단숨에 가닿았다. 창가에 서 있던 라잔은 막 온기가 가시기 시작한 등대 차의 찻잔을 내려놓으며 나직이 읊조렸다. \"차 한 잔이 채 식기도 전에 바다가 한 시간을 넘겼군.\" \n\n아래층 전신실에서 세린이 월광 굴절 안경을 쓴 채 타석기에서 뿜어져 나오는 리본을 검수하는 규칙적인 소음이 밤의 끝자락을 채웠다. 누구도 시계를 되감지 않았지만, 솔가지 시의 밤은 이제 바다의 보폭에 맞추어 새벽으로 성큼 걸어 들어가고 있었다.",
+    "tags": [
+      "솔가지시",
+      "시보사",
+      "월현시보종",
+      "월현시보록",
+      "등대차한잔의시간",
+      "새벽"
+    ],
+    "new_character": null,
+    "new_world_setting": null,
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-103",
+    "date": "2026-10-23",
+    "created_at": "2026-10-23T18:34:50+00:00",
+    "type": "단편",
+    "characters": [
+      "morgen",
+      "rajan",
+      "serin"
+    ],
+    "world_settings": [
+      "w-job-chronomancer",
+      "w-tech-wolhyeon-bell",
+      "w-tech-wolhyeon-logbook",
+      "w-culture-lantern",
+      "w-tech-wolhyeon-escapement"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
