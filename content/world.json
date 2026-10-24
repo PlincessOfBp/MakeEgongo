@@ -609,6 +609,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-differential-pipe",
+      "category": "기술",
+      "name": "월현 차율관 (月絃 差律管)",
+      "summary": "시보사가 도시 시계 기구의 초침 보폭과 심해 태엽 축적탑의 공명 박동 사이에서 발생하는 미세한 동기화 오차를 청각과 은청색 광학 잔상으로 확인해 조율하는 휴대용 측정 도구.",
+      "details": "월염 처리된 합금관 내부에 특수 석영 렌즈와 월사 유제 반응판을 내장한 관측 도구. 시계탑이나 전신 분전반의 회전축에 접촉시켜 사용하며, 두 시차의 오차가 소리와 광학 잔상으로 나타나 이를 바탕으로 동기화율을 정밀 조율할 수 있다.",
+      "created": "2026-10-24",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
