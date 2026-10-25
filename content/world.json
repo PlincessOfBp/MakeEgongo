@@ -620,6 +620,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-lunar-steam-valve",
+      "category": "기술",
+      "name": "월조 동기 증기변 (月潮 同期 蒸氣辯)",
+      "summary": "월현 동기 톱니의 무음 회전력을 도시 증기 배관의 방출 밸브와 연동하여, 증기압 배출 주기를 검은 여울의 조석 박동과 일치시키는 증기-월현 완충 기구.",
+      "details": "새벽 네 시 삼십팔 분의 정적을 통해 심해 축적탑과 도시 초침이 오차 없이 일치하자, 세린이 도심의 보일러실 및 증기 배관망에 가설한 특수 황동 밸브 장치. 월염 합금으로 코팅된 피스톤이 월현 동기 톱니의 일정한 회전에 맞춰 개폐되어, 도시 전체의 증기기관이 겪는 압력 불균형을 해저 조석의 리듬으로 완충하고 매끄러운 맥동으로 전환시킨다.",
+      "created": "2026-10-25",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
