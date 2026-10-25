@@ -631,6 +631,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-wolhyeon-manometer",
+      "category": "기술",
+      "name": "월현 압력계 (月絃 壓力計)",
+      "summary": "증기 배관의 수증기압과 검은 여울에서 전해지는 월조 공명압을 하나의 원형 눈금판에서 이중 바늘로 동시에 계측하는 복합 압력계.",
+      "details": "세린이 월조 동기 증기변의 안정적인 가동을 위해 고안한 정밀 계측기. 붉은 구리 침은 보일러 증기압을, 은청색 월염 침은 심해 태엽 축적탑의 공명 박동을 가리킨다. 두 바늘의 각도 차이를 통해 증기 폭주 위험과 월현 동기화 오차를 즉각 시각적으로 판독할 수 있어, 시보사와 기계학파 기술자들이 배관망 조율에 널리 활용한다.",
+      "created": "2026-10-25",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
