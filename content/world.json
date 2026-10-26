@@ -642,6 +642,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-wolyeom-condensate",
+      "category": "기술",
+      "name": "월염 응축수 (月染 凝縮水)",
+      "summary": "월조 동기 증기변을 거친 수증기가 차가운 지하 배관에서 응축되어 맺히는, 서늘한 은청색 미세 발광 액체.",
+      "details": "검은 여울의 초저주파 공명과 월사 유분을 머금은 수증기가 배관 내벽에서 냉각되며 형성된다. 일반 수증기와 달리 체온이나 태양열로 잘 증발하지 않으며, 한낮 기계 장치의 열 마찰을 식히고 동기화 신호의 열 왜곡을 방지하는 고급 완충 냉각수로 사용된다.",
+      "created": "2026-10-26",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
