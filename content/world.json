@@ -675,6 +675,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-wolyeom-frostlamp",
+      "category": "기술",
+      "name": "월염 서리등 (月染 霜燈)",
+      "summary": "월염 축전지의 서늘한 전하를 흡수해 열이나 불꽃 없이 은청색 잔광을 비추는 공명 발광 장치.",
+      "details": "솔가지 시의 주요 기관 지하실과 기계 기구 내부에 설치되기 시작한 무열 발광 등. 월염 축전지에서 나오는 전하를 석영관 내부의 월사 유제 레이어에 전하 진동 형태로 전달하여 빛을 만든다. 심해 태엽 축적탑의 동기화 상태에 따라 빛의 선명도가 달라지므로, 시보사와 기계학파 기술자들에게는 중요한 광원인 동시에 정밀한 신호 계측 지표가 되어준다.",
+      "created": "2026-10-29",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }

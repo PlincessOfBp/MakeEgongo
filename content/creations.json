@@ -4549,5 +4549,49 @@
     ],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "불꽃 없는 밤의 조명, 월염 서리등 (月染 霜燈)",
+    "content": "월염 축전지에서 공급되는 서늘한 공명 전하를 이용해, 불꽃이나 열기 없이 은청색 빛을 밝히는 초기형 공명 발광 장치. 석영 유리관 내벽에 월사(月砂) 유제를 바르고 월염 침강선으로 축전지 단자와 연결하면, 필라멘트가 타들어 가는 소리도 없이 잔잔하고 서늘한 빛을 내뿜는다. 심해 태엽 축적탑의 초저주파 맥박과 직접 동기화되어 있어, 기계망에 미세한 오차가 생기면 은청색 빛이 서리 결정의 떨림처럼 미세하게 일렁인다. 전신국 분전반과 등대 하부의 습기 차고 등유 가스 폭발 위험이 있는 지하 작업실에 먼저 배치되어, 기름 냄새 없는 차분한 밤의 조화로운 빛이 되어주고 있다.",
+    "tags": [
+      "설정",
+      "기술",
+      "솔가지연안",
+      "월염서리등",
+      "월염축전지",
+      "세린",
+      "모겐",
+      "라잔"
+    ],
+    "new_character": null,
+    "new_world_setting": {
+      "id": "w-tech-wolyeom-frostlamp",
+      "category": "기술",
+      "name": "월염 서리등 (月染 霜燈)",
+      "summary": "월염 축전지의 서늘한 전하를 흡수해 열이나 불꽃 없이 은청색 잔광을 비추는 공명 발광 장치.",
+      "details": "솔가지 시의 주요 기관 지하실과 기계 기구 내부에 설치되기 시작한 무열 발광 등. 월염 축전지에서 나오는 전하를 석영관 내부의 월사 유제 레이어에 전하 진동 형태로 전달하여 빛을 만든다. 심해 태엽 축적탑의 동기화 상태에 따라 빛의 선명도가 달라지므로, 시보사와 기계학파 기술자들에게는 중요한 광원인 동시에 정밀한 신호 계측 지표가 되어준다."
+    },
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-120",
+    "date": "2026-10-29",
+    "created_at": "2026-10-29T02:30:56+00:00",
+    "type": "설정",
+    "characters": [
+      "serin",
+      "morgen",
+      "rajan"
+    ],
+    "world_settings": [
+      "w-tech-wolyeom-battery",
+      "w-tech-wolyeom-condensate",
+      "w-natur-deep-clockwork-tower",
+      "w-tech-wolyeom-frostlamp"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
