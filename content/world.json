@@ -686,6 +686,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-frost-switchboard",
+      "category": "기술",
+      "name": "월염 서리배전반 (月染 霜配電盤)",
+      "summary": "월염 축전지의 서늘한 전하를 여러 대의 월염 서리등과 기구로 과부하 없이 분배·제어하는 석판형 유선 배전 장치.",
+      "details": "월염 축전지에서 공급되는 서늘한 전기를 안정적으로 나누기 위해 세린이 고안한 정밀 제어반. 검은 대리석 판에 월염 처리된 황동 차단용 스위치와 월사 저항 스핀들을 배치하였다. 각 분기 회로마다 장착된 석영 표시관을 통해 전류 흐름과 서리 응축 상태를 시각적으로 관찰할 수 있으며, 등유 조명 없이도 전신국과 등대 실내의 은청색 조명을 균일하게 유지한다.",
+      "created": "2026-10-29",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
