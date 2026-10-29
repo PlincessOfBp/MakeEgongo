@@ -4635,5 +4635,40 @@
     "stories": [],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "서늘한 배전반 아래에서",
+    "content": "새벽 네 시 삼십팔 분의 정적이 지나간 뒤, 솔가지 연안 전신국 지하 분전반실에는 미세한 웅종 소리만이 가득했다. 세린은 새로 가설된 '월염 서리배전반'의 석판형 패널 앞에 앉아, 은청색으로 빛나는 전력 분배 단자를 손끝으로 쓸어내렸다. 축전지에서 흘러나온 서늘한 전하는 불꽃 없이도 가느다란 빛의 갈래로 갈라져, 도시 곳곳의 '월염 서리등'으로 부드럽게 스며들고 있었다. 계단을 내려온 모겐은 코트 깃을 여미며 배전반 밑에서 피어오르는 은빛 서리를 바라보았다. \"불꽃이 없는데도 이렇게 환하니, 등대 불빛이랑 닮았단 말이지.\" 세린은 석영 안경을 밀어 올리며 고개를 끄덕였다. \"라잔 씨가 지키는 밤의 빛이, 이제 도시의 구석구석까지 고요하게 이어지는 셈이에요.\" 바다의 맥박은 더 이상 두려운 심해의 울림이 아니라, 이 차가운 유리와 배전반을 거쳐 솔가지의 밤을 지탱하는 가장 따뜻한 숨결이 되어 있었다.",
+    "tags": [
+      "월염 서리배전반",
+      "월염 서리등",
+      "전신국",
+      "세린",
+      "모겐",
+      "라잔"
+    ],
+    "new_character": null,
+    "new_world_setting": null,
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-122",
+    "date": "2026-10-29",
+    "created_at": "2026-10-29T18:01:56+00:00",
+    "type": "단편",
+    "characters": [
+      "serin",
+      "morgen",
+      "rajan"
+    ],
+    "world_settings": [
+      "w-tech-frost-switchboard",
+      "w-tech-wolyeom-frostlamp",
+      "w-tech-wolyeom-battery"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
