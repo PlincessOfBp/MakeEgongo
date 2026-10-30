@@ -697,6 +697,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-frost-searchlight",
+      "category": "기술",
+      "name": "월염 서리투광기 (月染 霜投光器)",
+      "summary": "월염 서리등의 무열 은청색 광원을 등대 프레넬 렌즈와 결합하여, 열과 그을음 없이 검은 여울의 심해까지 꿰뚫는 등대용 대형 투광 장치.",
+      "details": "월염 축전지의 전하를 서리배전반을 통해 고압으로 공급받아 가동하는 등대용 집광 투광기. 발열이나 그을음이 전혀 발생하지 않아 정밀 석영 렌즈의 열팽창 변형을 방지하며, 검은 여울의 짙은 해무를 뚫고 해저 암초의 윤곽까지 서늘한 은청색 빛으로 비추어 관측을 가능하게 한다.",
+      "created": "2026-10-30",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
