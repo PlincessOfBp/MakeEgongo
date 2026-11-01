@@ -719,6 +719,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-deep-sensitizer-plate",
+      "category": "기술",
+      "name": "월심 감광 궤적판 (月深 感光 軌跡板)",
+      "summary": "월심 수광경이 모아들인 검은 여울의 반사 잔광을 감광 석영 유제로 고착시켜, 해저 침전 치차의 미세 회전 오차를 정밀 수치화하는 광학 기록판.",
+      "details": "등대 망루의 월심 수광경 초점부에 결합하는 석영 유리판. 검은 여울 해저에서 쏘아 올려진 은청색 잔광을 집광하여 판 표면의 월사 유제에 고착시킨다. 심해 태엽 축적탑의 회전 잔상이 동심원과 맥박 모양의 빛 무늬로 남기 때문에, 세린과 시보사들이 바다 밑 기계의 회전 오차를 정밀하게 판독해 조율할 수 있도록 돕는다.",
+      "created": "2026-11-01",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
