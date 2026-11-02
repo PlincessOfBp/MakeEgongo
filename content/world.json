@@ -741,6 +741,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-wolhyeon-backlash-gear",
+      "category": "기술",
+      "name": "월현 유격차 (月絃 遊隙齒車)",
+      "summary": "심해 침전 치차와 지상 기계망 간의 0.04도 회전 편차를 흡수하기 위해 톱니 사이에 의도적인 유격을 둔 특수 완충 톱니바퀴.",
+      "details": "월심 편차 독취경으로 확인된 해저와 지상 간의 0.04도 오차를 수용하기 위해 고안된 기계 부품. 톱니의 맞물림에 미세한 여백을 두어, 검은 여울의 거대한 조석 압력이 지상 장치에 전해질 때 발생하는 충격과 마찰열을 완충하고 기계의 영구적인 수명을 보장한다.",
+      "created": "2026-11-02",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
