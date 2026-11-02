@@ -4991,5 +4991,42 @@
     "stories": [],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "한 박자 늦게 울리는 안식",
+    "content": "솔가지 시계탑의 둔중한 시보종이 세 번째 울림을 흩뿌린 직후, 모겐은 자전거 페달에서 발을 떼고 등대 쪽 해안 도로에 멈춰 섰다. 차율관의 밸브를 억지로 잠그지 않은 덕에, 등대 망루의 타종 신호는 도심의 초침보다 정확히 0.04도만큼 늦게 밤바다를 건너오고 있었다. 찰나의 침묵 뒤에 도착한 그 서늘하고 맑은 종소리가 모겐의 귓전을 부드럽게 스쳤다. \"이거였군, 라잔 씨가 말한 숨통이란 게.\" 모겐은 코트 깃을 올리며 희미하게 웃었다. 기계의 톱니가 조금의 틈도 없이 바다를 삼키려 들 때, 그 미세한 틈새가 사람에게 한 번 숨을 들이쉴 틈을 내어주고 있었다. 전신 가방 속 구리 리본은 여전히 은청색으로 차갑게 식어 있었으나, 그 위에 찍힌 타공선 사이로 스며든 밤바람만큼은 기묘할 정도로 따뜻했다.",
+    "tags": [
+      "솔가지 연안",
+      "모겐",
+      "라잔",
+      "세린",
+      "월심 편차 독취경",
+      "월현 시보종",
+      "밤거리"
+    ],
+    "new_character": null,
+    "new_world_setting": null,
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-131",
+    "date": "2026-11-02",
+    "created_at": "2026-11-02T09:33:54+00:00",
+    "type": "단편",
+    "characters": [
+      "morgen",
+      "rajan",
+      "serin"
+    ],
+    "world_settings": [
+      "w-tech-deep-comparator",
+      "w-tech-wolhyeon-bell",
+      "w-tech-differential-pipe",
+      "w-culture-lantern"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
