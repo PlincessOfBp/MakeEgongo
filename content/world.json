@@ -752,6 +752,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-wolhyeon-backlash-gear-2",
+      "category": "기술",
+      "name": "월현 유격차 (月絃 遊隙齒車)",
+      "summary": "지상 기계망과 해저 침전 치차 사이의 0.04도 회전 편차를 흡수하는 완충 톱니바퀴",
+      "details": "심해 태엽 축적탑의 거대한 맥박이 지상으로 전해질 때 발생하는 미세한 회전 오차(0.04도)를 흡수하기 위해 세린이 고안한 특수 톱니바퀴. 톱니와 톱니 사이에 의도적인 유격(Backlash)을 두어, 바다의 거친 조석 압력이 도시의 미세한 초침 보폭을 직접 부수지 않도록 충격을 분산하고 완충하는 역할을 한다.",
+      "created": "2026-11-03",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
