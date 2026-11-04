@@ -763,6 +763,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-wolhyeon-backlash-gear-2-2",
+      "category": "기술",
+      "name": "월현 유격차 (월현 遊隙齒車)",
+      "summary": "지상 기계망과 해저 침전 치차 사이의 0.04도 회전 편차를 흡수하는 완충 톱니바퀴",
+      "details": "톱니바퀴의 맞물림 부위에 미세한 유격을 두어, 심해의 거대한 공명 압력이 지상의 시계와 전신 장치에 직접적인 무리를 주지 않도록 충격을 분산시키는 특수 황동 부품.",
+      "created": "2026-11-04",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
