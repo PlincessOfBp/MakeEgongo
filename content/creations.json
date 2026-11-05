@@ -5220,5 +5220,40 @@
     "stories": [],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "톱니 사이로 흐르는 찻김",
+    "content": "세린은 등대 1층의 탁자에 앉아 '월현 유격차'의 유격을 매만졌다. 황동 톱니와 톱니 사이에 남겨진 0.04도의 이격은, 심해 태엽 축적탑의 거대한 박동과 도시 시계의 정교한 초침이 서로를 갉아먹지 않도록 만들어진 작은 숨통이었다.\n\n라잔은 온기가 자욱한 찻잔을 세린의 손가락 옆에 조용히 놓아두었다. \"바다가 아무리 거센 박자로 지상의 시계를 밀어붙여도, 그 미세한 틈 덕분에 탁자 위의 찻물이 흔들리지 않는 게지.\"\n\n세린이 석영 안경을 밀어 올리며 차를 한 머금자, 등대 바깥의 월염 서리등 불빛이 0.04초의 찰나 동안 숨을 고르듯 살포시 잦아들었다가 다시 은청색으로 타올랐다. 전신국 리본을 정리하던 모겐이 나선 계단에 기댄 채 나지막이 피식 웃었다. 바다와 도시가 완벽히 맞물리지 않는 그 작은 유격 속에서, 솔가지 시의 밤은 비로소 서두르지 않고 차분하게 깊어가고 있었다.",
+    "tags": [
+      "솔가지연안",
+      "세린",
+      "라잔",
+      "모겐",
+      "월현유격차",
+      "등대차한잔의시간"
+    ],
+    "new_character": null,
+    "new_world_setting": null,
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-137",
+    "date": "2026-11-05",
+    "created_at": "2026-11-05T00:00:59+00:00",
+    "type": "단편",
+    "characters": [
+      "serin",
+      "rajan",
+      "morgen"
+    ],
+    "world_settings": [
+      "w-tech-wolhyeon-backlash-gear",
+      "w-culture-lantern",
+      "w-natur-deep-clockwork-tower"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
