@@ -774,6 +774,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-backlash-wedge",
+      "category": "기술",
+      "name": "월현 유격 쐐기 (月絃 遊隙 楔)",
+      "summary": "월현 유격차의 0.04도 완충 유격을 물리적으로 지탱하고 충격을 흡수하는 월염 청동제 가변 완충 기구.",
+      "details": "세린이 월현 유격차의 0.04도 회전 편차 공간을 정밀하게 보존하기 위해 고안한 조율용 쐐기. 월염 처리된 청동 잎편과 청상 윤활유 유막을 결합하여, 심해 태엽 축적탑의 강렬한 공명 충격 속에서도 톱니 사이의 틈새가 소멸하거나 파손되지 않도록 보호한다.",
+      "created": "2026-11-05",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
