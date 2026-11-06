@@ -785,6 +785,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-backlash-gauge",
+      "category": "기술",
+      "name": "월현 유격 지침계 (月絃 遊隙 指針計)",
+      "summary": "월현 유격차와 쐐기 사이의 0.04도 미세 유동 변위를 석영 감응 바늘과 월사 윤활막으로 시각화하여 파손을 예방하는 정밀 계측 장치.",
+      "details": "심해 태엽 축적탑의 동력 변화나 조석 차로 인해 월현 유격 쐐기가 받는 완충 폭(0.04도)의 변동을 실시간으로 추적하는 기구. 석영판 내부 유화막의 잔광 색상 변화로 쐐기의 안전 한계 범위를 시보사에게 전달한다.",
+      "created": "2026-11-06",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
