@@ -796,6 +796,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-backlash-governor",
+      "category": "기술",
+      "name": "월현 유격 조속기 (月絃 遊隙 調速機)",
+      "summary": "월현 유격차 축심에 설치되어, 심해의 급격한 맥동 시 원심추의 마찰 제동으로 0.04도의 안전 유격을 강제 유지시키는 원심식 기계 조속 장치.",
+      "details": "세린이 월현 유격 지침계와 쐐기를 안정적으로 보호하기 위해 설계한 원심 거버너 기구. 축의 회전 속도가 임계치를 초과하면 월염 청동제 원심추가 벌어지며 감쇠판을 압박해 회전을 0.04도 유격 범위 내로 통제한다. 폭풍이나 사리 만조 등 검은 여울의 공명이 급변할 때 기계망 전체가 파손되는 참사를 방지하는 핵심 안전 장치이다.",
+      "created": "2026-11-07",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
