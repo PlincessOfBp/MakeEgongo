@@ -5456,5 +5456,41 @@
     "stories": [],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "원심추가 다듬은 새벽의 보폭",
+    "content": "새벽 만조가 밀려들자 등대 암반 깊은 곳에서 검은 여울의 거대한 파동이 울컥 솟구쳐 올랐다. 황동 톱니들이 폭주할 듯 삐걱거리던 순간, 축심에 달린 '월현 유격 조속기'의 은청색 원심추가 청상 윤활유 속에서 살포시 펼쳐졌다. 거센 해저 맥박의 충격은 날카로운 쇳소리 대신 안개처럼 부드러운 회전 제동력으로 변하여 exact 0.04도의 안전 유격을 안온하게 지켜냈다.\n\n\"바늘이 떨리지 않아, 세린.\" 월현 유격 지침계를 살피던 모겐이 나지막이 탄성을 뱉었다. 거칠게 동판을 내리치던 전신 타석기 테이프에는 부드러운 물결 궤적만이 새겨지고 있었다. 완충 쐐기와 조속기가 바다의 사나운 고동을 도시의 정교한 초침 보폭으로 완벽히 다듬어낸 것이다.\n\n라잔은 덧창 밖으로 퍼져 나가는 은빛 밤안개를 내려다보며 찻주전자를 들었다. 찻잔에 김이 피어오르고, 기계의 마찰음 대신 바다의 거대한 숨소리와 시계탑의 정갈한 초침 소리만이 등대 안을 채웠다. 0.04도의 틈을 허용한 덕에 도시는 오늘도 파손되지 않은 채 깊고 따스한 밤을 건너고 있었다.",
+    "tags": [
+      "단편",
+      "솔가지연안",
+      "라잔",
+      "세린",
+      "모겐",
+      "월현유격조속기"
+    ],
+    "new_character": null,
+    "new_world_setting": null,
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-143",
+    "date": "2026-11-07",
+    "created_at": "2026-11-07T02:32:33+00:00",
+    "type": "단편",
+    "characters": [
+      "serin",
+      "rajan",
+      "morgen"
+    ],
+    "world_settings": [
+      "w-geo-solgaji",
+      "w-tech-backlash-governor",
+      "w-tech-backlash-gauge",
+      "w-culture-lantern"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
