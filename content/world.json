@@ -807,6 +807,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-backlash-circulator",
+      "category": "기술",
+      "name": "월현 유격 순환함 (月絃 遊隙 循環函)",
+      "summary": "월현 유격차와 쐐기 사이의 0.04도 완충 유격을 보존하기 위해, 조석 맥동을 이용해 청상 윤활유를 무동력으로 순환·분사하는 특수 윤활 장치.",
+      "details": "월현 유격 조속기와 연동되어 작동하는 소형 청동제 밀폐 순환함. 내부의 석영 모세관과 역류 방지용 판막이 심해 태엽 축적탑의 초저주파 맥동과 조석 압력차를 이용해 펌프질을 수행한다. 0.04도의 틈새로 미세하게 분사된 청상 윤활유는 마찰열을 즉각 냉각하고 유격의 마모를 방지하며, 다시 집유조로 흘러들어 순환을 반복한다.",
+      "created": "2026-11-08",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
