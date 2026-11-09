@@ -5655,5 +5655,42 @@
     "stories": [],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "풍경 소리가 맺히는 밤",
+    "content": "등대 외벽에 달린 '월현 유격 배기종'이 사르르 떨리며 맑은 쇳소리를 토해냈다. 월현 유격 순환함에서 솟구쳐 오른 은청색 유증기가 배기종의 차가운 황동 갓을 적실 때마다, 심해에서부터 끌어올려진 0.04도의 미세 과압은 험악한 파열음이 아닌, 아득한 풍경(風鈴)의 울림으로 산산이 부서졌다.\n\n세린은 석영 안경을 밀어 올리며 등대 창문을 조금 더 넓게 열었다. 창틀 너머 밤바람을 타고 스며든 서늘한 은청색 이슬 가루가 라잔이 따라둔 찻잔 수면 위로 미세한 동그라미를 그리며 침전했다.\n\n\"소리가 참 서늘하군.\" 모겐이 등대 난간에 기댄 채 맑은 종소리에 귀를 기울였다. 전신국 전선을 감싸고 돌던 저주파의 둔탁한 진동이 이 작은 배기종을 거치면서 사람의 귀를 부드럽게 간지럽히는 밤의 노래로 변하고 있었다.\n\n라잔은 온기가 식어가는 찻잔을 손끝으로 감싸 쥐었다. \"검은 여울의 거친 숨이 파도로 터지지 않고, 차를 마시는 사이에 울리는 풍경 소리가 되었다면... 그 0.04도의 틈이란 건 기계의 완충뿐만 아니라, 바다가 솔가지 시에 건네는 인사일지도 모르겠지.\"",
+    "tags": [
+      "단편",
+      "솔가지연안",
+      "월현유격배기종",
+      "등대차한잔의시간",
+      "라잔",
+      "세린",
+      "모겐"
+    ],
+    "new_character": null,
+    "new_world_setting": null,
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-148",
+    "date": "2026-11-09",
+    "created_at": "2026-11-09T06:00:55+00:00",
+    "type": "단편",
+    "characters": [
+      "rajan",
+      "serin",
+      "morgen"
+    ],
+    "world_settings": [
+      "w-tech-backlash-vent-bell",
+      "w-tech-backlash-circulator",
+      "w-tech-wolhyeon-backlash-gear",
+      "w-culture-lantern"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
