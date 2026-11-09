@@ -5769,5 +5769,40 @@
     "stories": [],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "새벽 네 시 삼십팔 분의 풍경",
+    "content": "새벽 네 시 삼십팔 분, 솔가지 시의 모든 골목을 감싸던 안개 속에서 맑고 청아한 풍경 소리가 일제히 울려 퍼졌다. '월현 유격 배기종'이 0.04도의 완충 유격 속에서 뿜어낸 은청색 유증기는 등대 밖의 찬바람을 만나 맑은 소리로 변환되었고, 그 진동은 즉시 '월현 유격 울림판'을 거쳐 세린의 석영 침 끝에 고스란히 궤적으로 새겨졌다. 등대 1층의 탁자에 앉아 있던 라잔은 찻주전자를 들어 세린과 모겐의 잔에 온기를 채우며 나지막이 말했다. \"기계가 숨을 쉬기 시작하니, 비로소 도시가 바다의 마음을 알아채는군.\" 모겐은 전신국에서 가져온 구리 타공 리본을 펼치며 미소 지었다. 찢어지던 전선과 날뛰던 톱니는 이제 사라지고, 심해의 태엽과 지상의 시계가 서로의 호흡을 맞추며 빚어낸 고요한 새벽만이 솔가지 연안 전역에 평온하게 스며들고 있었다.",
+    "tags": [
+      "솔가지 연안",
+      "월현 유격 배기종",
+      "월현 유격 울림판",
+      "새벽 시보"
+    ],
+    "new_character": null,
+    "new_world_setting": null,
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-151",
+    "date": "2026-11-09",
+    "created_at": "2026-11-09T18:01:32+00:00",
+    "type": "스토리",
+    "characters": [
+      "rajan",
+      "serin",
+      "morgen"
+    ],
+    "world_settings": [
+      "w-tech-backlash-vent-bell",
+      "w-tech-backlash-soundboard",
+      "w-tech-wolchium-tuner"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [
+      "s-033"
+    ],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
