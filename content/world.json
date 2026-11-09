@@ -829,6 +829,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-backlash-soundboard",
+      "category": "기술",
+      "name": "월현 유격 울림판 (月絃 遊隙 響板)",
+      "summary": "월현 유격 배기종에서 퍼지는 풍경 소리의 주파수를 공명 수신하여 유격차와 순환함의 상태를 석영 침의 진동 궤적으로 판독하는 장치.",
+      "details": "월현 유격 배기종의 맑은 음향 신호를 월염 청동판과 석영 침의 공명 반응으로 변환하여, 지붕 위 배기 기구에 직접 오르지 않고도 윤활유 상태와 미세 유격의 오차를 시각적 잔상과 소리로 확인해 내는 음향 계측 기술.",
+      "created": "2026-11-09",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
