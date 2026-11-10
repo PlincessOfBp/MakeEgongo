@@ -840,6 +840,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-backlash-detector",
+      "category": "기술",
+      "name": "월현 잔향 감지기 (月絃 殘響 感知器)",
+      "summary": "울림판과 배기종 사이에 가설되어 미세한 잔향의 왜곡을 포착하는 소형 석영 공명 검출기.",
+      "details": "월현 유격 울림판이 석영 침으로 새기는 밀랍판의 궤적과 배기종의 풍경 소리를 대조하여, 심해 태엽 축적탑의 마모나 동기화 오차를 음향적 잔향으로 미리 감지하는 예방 기술.",
+      "created": "2026-11-10",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
