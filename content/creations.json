@@ -5804,5 +5804,45 @@
     ],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "안개 속으로 퍼지는 은빛 악보",
+    "content": "아침 안개가 등대 창틀을 두드릴 무렵, 세린은 '월현 유격 울림판' 위에서 천천히 긁혀 나간 은백색 곡선들을 손끝으로 더듬었다. 0.04도의 숨결이 배기종의 맑은 풍경 소리로 터져 나갈 때마다 석영 침이 밀랍판 위에 남긴 자국은, 소음의 흔적이 아니라 정갈하게 쓰인 악보에 가까웠다. \"세린, 시계탑과 전신국 쪽 선로 잡음이 완전히 사라졌어.\" 모겐이 밤새 회수한 구리 타공 리본을 탁자 위에 가지런히 얹으며 턱을 괴었다. 거칠게 찢어지던 금속 요철 대신, 리본 위에는 파도의 만조와 썰물이 그리는 것과 똑같은 완만한 파문만이 찍혀 있었다. 라잔은 찻주전자 뚜껑을 닫으며 등대 덧창을 밀어 열었다. 서늘한 바닷바람 사이로 사구 해변의 모래알이 사르르 쓸려나가는 소리가 섞여 들었다. 두 달 전 폭풍 다음 날 새벽, 처음 주워 올렸던 네 개의 파편이 품고 있던 불안한 떨림이 마침내 솔가지 시 전체를 안온하게 감싸는 하나의 박동으로 완성된 순간이었다. \"바다가 이제야 자기 목소리로 말을 거는군.\" 라잔이 건넨 찻잔에서 피어오른 김이 맑은 종소리의 여운 속으로 조용히 흩어졌다.",
+    "tags": [
+      "솔가지등대",
+      "월현유격울림판",
+      "월현유격배기종",
+      "0.04도의유격",
+      "라잔",
+      "세린",
+      "모겐"
+    ],
+    "new_character": null,
+    "new_world_setting": null,
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-152",
+    "date": "2026-11-10",
+    "created_at": "2026-11-10T00:04:28+00:00",
+    "type": "스토리",
+    "characters": [
+      "rajan",
+      "serin",
+      "morgen"
+    ],
+    "world_settings": [
+      "w-tech-backlash-vent-bell",
+      "w-tech-backlash-soundboard",
+      "w-tech-wolhyeon-backlash-gear",
+      "w-culture-lantern",
+      "w-hist-first-wolpyeon"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [
+      "s-034"
+    ],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
