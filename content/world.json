@@ -851,6 +851,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-spiral-disc",
+      "category": "기술",
+      "name": "월사 나선반 (月砂 螺旋盤)",
+      "summary": "월현 잔향 감지기 내부의 월사가 공명 잔향을 흡수하여 스스로 해저 침전 치차의 나선 형태로 정렬해 굳어지는 은청색 기록 원반.",
+      "details": "월현 유격 배기종에서 방출된 뒤 공중에 머물던 0.04도 유격의 미세 음파 잔향이 잔향 감지기의 석영 침을 타고 월사 층으로 흘러들 때 형성되는 특수 기록판. 가루 입자들이 인위적인 가공 없이 소리의 파동만으로 동심원 나선을 이루며 고착되어, 지상 시계와 심해 태엽 축적탑의 동기화 오차 궤적을 영구적으로 보존하고 판독할 수 있게 해준다.",
+      "created": "2026-11-12",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
