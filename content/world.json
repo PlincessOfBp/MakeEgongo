@@ -862,6 +862,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-spiral-decoder",
+      "category": "기술",
+      "name": "월사 나선 해독기 (月砂 螺旋 解讀機)",
+      "summary": "월사 나선반 표면에 새겨진 미세한 나선 궤적과 첫 번째 월편의 단면 균열을 투영·대조하는 이중 석영 광학 해독 기구.",
+      "details": "월사 나선반을 중앙 석영 판에 고정하고 월염 서리등의 잔광을 투과시켜, 렌즈를 통해 나선 패턴과 월편 균열 도서를 삼차원적으로 겹쳐 판독하는 정밀 계측 장치. 세린이 월사 나선반 표면의 잔향 궤적이 폭풍 다음 날 채집된 월편의 단면과 완벽히 일치한다는 사실을 밝혀낸 뒤 정밀 정량화를 위해 고안했다.",
+      "created": "2026-11-12",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
