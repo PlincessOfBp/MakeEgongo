@@ -873,6 +873,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-spiral-index",
+      "category": "기술",
+      "name": "월사 나선 색인기 (月砂 螺旋 索引機)",
+      "summary": "월사 나선 해독기가 투영한 첫 번째 월편의 균열선과 잔향 원반의 나선 궤적 사이의 접점을 계측하여, 검은 여울의 심해 좌표와 공명 주파수를 추적하는 색인 기구.",
+      "details": "월사 나선 해독기와 연결되어 두 나선 궤적이 만나는 교점을 석영 감응 바늘과 이중 분각반으로 읽어내는 정밀 측정 장치. 월편의 균열선이 검은 여울 심해의 특정 위치를 가리키는 나선형 지도임을 밝혀내는 데 핵심적인 역할을 한다.",
+      "created": "2026-11-12",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
