@@ -6374,5 +6374,45 @@
     "stories": [],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "좌표에 찍힌 은빛 흔적",
+    "content": "솔가지 연안 전신국의 모퉁이 방, '월사 나선 색인기'의 석영 안경 너머로 투영된 은청색 굴절광이 해저 지도의 한 점에 멈추어 섰다. 두 달 전 사구 해변에서 주웠던 첫 번째 월편의 균열선과 잔향 나선반의 궤적이 완벽하게 교차하는 곳, 바로 검은 여울 중심부의 굴곡이었다. \"이 좌표예요.\" 세린이 월빛 수첩을 짚으며 떨리는 목소리로 속삭였다. \"첫 번째 월편은 바다가 버린 조각이 아니었어요. 심해 태엽 축적탑의 가장 깊은 축심에서 뿜어져 나와 사구 해변까지 밀려왔던 거였어요.\" 모겐은 구리 테이프 위에 찍힌 미세한 압력 수치를 살피며 깊은 한숨을 내쉬었다. \"그 말은 그 깊은 바다 밑바닥에 아직 맞물리지 않은 동력의 중심이 남아 있다는 뜻이군.\" 라잔은 난로 곁에서 온기가 피어오르는 찻잔을 들고 창밖의 검은 여울을 바라보았다. 등대의 불빛이 지목하는 사구 너머 수평선, 바다는 여전히 서늘한 은빛 숨결을 토해내며 밤의 깊이를 더해가고 있었다.",
+    "tags": [
+      "솔가지연안",
+      "월사나선색인기",
+      "월편",
+      "검은여울",
+      "세린",
+      "모겐",
+      "라잔"
+    ],
+    "new_character": null,
+    "new_world_setting": null,
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-167",
+    "date": "2026-11-14",
+    "created_at": "2026-11-14T00:00:52+00:00",
+    "type": "스토리",
+    "characters": [
+      "serin",
+      "morgen",
+      "rajan"
+    ],
+    "world_settings": [
+      "w-tech-spiral-index",
+      "w-tech-spiral-disc",
+      "w-hist-first-wolpyeon",
+      "w-natur-black-shoal",
+      "w-natur-deep-clockwork-tower"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [
+      "s-038"
+    ],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
