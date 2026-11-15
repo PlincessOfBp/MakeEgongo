@@ -6455,5 +6455,43 @@
     ],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "심연에서 돌아온 답신",
+    "content": "검은 여울의 칠흑 같은 수면 아래로 은청색 광선이 잦아들자, 등대 기초를 뒤흔들던 거친 진동도 거짓말처럼 부드러운 맥박으로 잦아들었다. 라잔은 투광기 조작반에서 손을 떼고 김이 피어오르는 주전자 뚜껑을 열었다. 찻잔에 채워지는 맑은 차 위로 망루 유리창을 통과한 여린 은청색 반사광이 맴돌았다. \"바늘이 뛰지 않아요.\" 세린이 월심 편차 독취경에서 조심스럽게 눈을 떼며 낮게 속삭였다. \"0.04도의 틈새도, 치차의 마찰음도 없어요. 심해의 태엽이 이제 도시의 시계와 싸우지 않고 나란히 걷고 있어요.\" 모겐은 등대 벽에 기댄 채 전신국 옥상에서 가져온 구리 테이프를 손가락으로 가만히 쓸어내렸다. 거칠게 찍혀 나오던 요철 자국들은 이제 잔잔한 밤바다의 물결처럼 고르고 투명한 파문만을 그리고 있었다. 두 달 전 사구 해변의 차가운 모래밭에서 처음 주워 올렸던 네 개의 파편. 그것은 부서져 버려진 잔해가 아니라 바다가 육지를 향해 오랜 세월 건네온 초대장이었다. 라잔은 세 사람 몫의 찻잔을 탁자 중앙으로 밀어놓았다. 창밖 수평선 너머로 솔가지 시의 시보종이 맑고 온화하게 자정을 알리고 있었다.",
+    "tags": [
+      "솔가지 연안",
+      "검은 여울",
+      "심해 태엽 축적탑",
+      "등대 차 한 잔의 시간",
+      "월편",
+      "동기화"
+    ],
+    "new_character": null,
+    "new_world_setting": null,
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-169",
+    "date": "2026-11-15",
+    "created_at": "2026-11-15T02:35:14+00:00",
+    "type": "단편",
+    "characters": [
+      "rajan",
+      "serin",
+      "morgen"
+    ],
+    "world_settings": [
+      "w-geo-solgaji",
+      "w-natur-black-shoal",
+      "w-natur-deep-clockwork-tower",
+      "w-culture-lantern",
+      "w-tech-deep-comparator",
+      "w-tech-wolhyeon-bell"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
