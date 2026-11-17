@@ -6765,5 +6765,40 @@
     "stories": [],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "기록이 머무는 원통 드럼",
+    "content": "새벽 네 시 삼십팔 분, 솔가지 등대 하부 공명실의 '월심 자필계' 원통 드럼이 나지막한 회전음을 내며 돌기 시작했다. 석영 관 안의 액주가 오르내릴 때마다 펜촉은 회전하는 드럼 표면의 감광 종이 위에 검은 여울의 응답 궤적을 끊김 없이 그렸다. 세린은 월광 굴절 안경을 고쳐 쓰며 드럼에 잉크가 고르게 스며드는지 확인했다. 모겐은 전신국에서 들고 온 구리 리본을 한쪽에 치워두고, 라잔이 따라준 따뜻한 차를 한 모금 마셨다. \"바다가 직접 손으로 글을 써 내려가는 것 같군.\" 라잔의 낮고 차분한 목소리에 세린은 고개를 끄덕였다. 기계가 남기는 자국은 단순한 수치의 나열이 아니었다. 그것은 심연의 태엽이 품은 호흡이자, 두 달 전 사구 해변의 파편에서 시작된 이야기가 마침내 종이 위에 완벽하게 매듭지어지는 순간이었다.",
+    "tags": [
+      "스토리",
+      "월심 자필계",
+      "검은 여울",
+      "새벽"
+    ],
+    "new_character": null,
+    "new_world_setting": null,
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-177",
+    "date": "2026-11-17",
+    "created_at": "2026-11-17T18:26:14+00:00",
+    "type": "스토리",
+    "characters": [
+      "serin",
+      "morgen",
+      "rajan"
+    ],
+    "world_settings": [
+      "w-tech-deep-seismograph",
+      "w-tech-deep-response-pipe",
+      "w-natur-black-shoal"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [
+      "s-041"
+    ],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
