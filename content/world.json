@@ -906,6 +906,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-deep-fixer-box",
+      "category": "기술",
+      "name": "월심 정착함 (月深 定着函)",
+      "summary": "월심 자필계 드럼에서 연속으로 출력되는 감광 기록지를 외부 빛의 간섭 없이 월염 응축 증기로 정착·밀봉 보존하는 특수 차광 기구.",
+      "details": "월심 자필계의 원통 드럼에서 출력되는 감광 종이 위 은청색 궤적이 외부 빛이나 공기에 닿아 승화하는 것을 막기 위해 고안된 차광 밀봉 장비. 흑단목과 월염 청동의 이중 벽체 구조로 이루어져 있으며, 내부에 미세 분사되는 월염 응축 증기를 통해 심해의 진동 궤적을 종이 섬유에 영구 안착시킨다.",
+      "created": "2026-11-18",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
