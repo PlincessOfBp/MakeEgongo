@@ -928,6 +928,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-deep-composing-table",
+      "category": "기술",
+      "name": "월심 답신 조판대 (月深 答信 組版臺)",
+      "summary": "월심 궤적 투영기로 비춘 해저의 응답선을 추적하여, 도시 기계망과 전신망에 전달할 월현 구리 리본을 정밀 조판·천공하는 기구.",
+      "details": "월심 궤적 투영기가 벽면에 맺어낸 은청색 궤적을 석영 추적 침으로 훑어 판토그래프 기구로 전달하면, 연동된 펀치 해머가 구리 테이프에 정밀하게 규격 구멍을 타공하는 조판 장비. 검은 여울의 초저주파 응답을 도시 시계망과 전신국에서 즉각 판독 가능한 물리적 부호 테이프로 변환해 배포하는 데 쓰인다.",
+      "created": "2026-11-20",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
