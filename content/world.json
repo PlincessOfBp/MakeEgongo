@@ -939,6 +939,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-deep-punch-transmitter",
+      "category": "기술",
+      "name": "월심 타공 송신기 (月深 打孔 送信機)",
+      "summary": "월심 답신 조판대에서 천공된 구리 리본을 미세 월염 접점으로 읽어내어 심해의 응답 신호를 전신망과 월현 기계에 자동 송출하는 장치.",
+      "details": "월심 답신 조판대에서 출력된 천공 구리 테이프를 회전 드럼에 장착하고 태엽 구동 롤러로 미끄러뜨리는 장치. 리본 표면에 뚫린 미세한 구멍 사이로 은청색 월염 바늘이 접촉할 때마다 공명 전하가 발생하여 전신선으로 부호가 자동 전송된다. 수동 송신의 한계를 극복하고 심해 태엽 축적탑의 박동과 완전히 동기화된 신호를 도시 전체로 전파하는 핵심 기구다.",
+      "created": "2026-11-20",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }

@@ -7004,5 +7004,46 @@
     "stories": [],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "월심 타공 송신기 (月深 打孔 送信機)",
+    "content": "월심 답신 조판대(月深 答信 組版臺)에서 정밀하게 천공된 구리 리본을 회전 롤러에 물려, 심해의 응답 신호를 솔가지 시 전역의 전신망과 기계 장치로 자동 송출하는 전용 송신 기구.\n\n구리 테이프의 요철과 타공 구멍이 송신기 내부를 통과할 때마다, 은청색으로 월염 처리된 미세 접점 바늘이 구멍 틈으로 순간적인 공명 스파크를 튀기며 전류를 일으킨다. 이를 통해 사람이 일일이 수동 전신 키를 두드리지 않고도, 검은 여울 해저에서 돌려준 정교한 파동 부호를 오차 없이 도시 시계탑, 전신국 타석기, 월조 동기 증기변으로 실시간 전달할 수 있게 되었다.",
+    "tags": [
+      "월심타공송신기",
+      "전신국",
+      "월현전신망",
+      "솔가지시",
+      "기술"
+    ],
+    "new_character": null,
+    "new_world_setting": {
+      "id": "w-tech-deep-punch-transmitter",
+      "category": "기술",
+      "name": "월심 타공 송신기 (月深 打孔 送信機)",
+      "summary": "월심 답신 조판대에서 천공된 구리 리본을 미세 월염 접점으로 읽어내어 심해의 응답 신호를 전신망과 월현 기계에 자동 송출하는 장치.",
+      "details": "월심 답신 조판대에서 출력된 천공 구리 테이프를 회전 드럼에 장착하고 태엽 구동 롤러로 미끄러뜨리는 장치. 리본 표면에 뚫린 미세한 구멍 사이로 은청색 월염 바늘이 접촉할 때마다 공명 전하가 발생하여 전신선으로 부호가 자동 전송된다. 수동 송신의 한계를 극복하고 심해 태엽 축적탑의 박동과 완전히 동기화된 신호를 도시 전체로 전파하는 핵심 기구다."
+    },
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-183",
+    "date": "2026-11-20",
+    "created_at": "2026-11-20T10:01:20+00:00",
+    "type": "설정",
+    "characters": [
+      "serin",
+      "morgen",
+      "rajan"
+    ],
+    "world_settings": [
+      "w-tech-deep-composing-table",
+      "w-org-telegraph",
+      "w-tech-wolhyeontypewriter",
+      "w-tech-deep-punch-transmitter"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
