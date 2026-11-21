@@ -950,6 +950,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-deep-line-splitter",
+      "category": "기술",
+      "name": "월심 분선 중계기 (月深 分線 中繼器)",
+      "summary": "월심 타공 송신기에서 송출되는 심해의 응답 신호를 솔가지 시 전역의 선로로 손실 없이 배분하는 다중 공명 분개 장치.",
+      "details": "솔가지 연안 전신국 지하 배선실에 설치된 월심 분선 중계기는 타공 송신기가 읽어낸 심해 태엽 축적탑의 신호를 등대, 시계탑, 기차역, 항만 전신선으로 동시에 갈라 보낸다. 월염 응축수 오일조에 잠긴 네 갈래의 은청색 감응 스위치가 신호 충격을 흡수하여 선로 간 과부하와 간섭을 방지한다.",
+      "created": "2026-11-21",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }

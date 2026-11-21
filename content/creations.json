@@ -7045,5 +7045,44 @@
     "stories": [],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "월심 분선 중계기 (月深 分線 中繼器)",
+    "content": "월심 타공 송신기에서 송출되는 심해의 응답 신호를 솔가지 시 전역의 전신선과 시계 기계망으로 정밀하게 갈라 보내는 석판형 다중 공명 분개 장치.\n\n월염 처리된 네 개의 황동 감응 바늘과 은청색 공명 스위치가 내장되어 있어, 타공 구리 리본이 전달하는 미세 저주파 신호를 등대선, 중앙 시계탑선, 기차역선, 항만선 등 네 개의 주요 주선로로 전압 손실 없이 동시 분배한다. 수신 신호가 급격히 몰릴 때 발생할 수 있는 선로 간 신호 간섭을 월염 응축수 완충 오일조가 흡수하여, 도시 곳곳의 월현 동기 톱니들이 단 1/100초의 오차도 없이 검은 여울의 맥박을 일정하게 받아들이도록 지탱한다.",
+    "tags": [
+      "월심분선중계기",
+      "월현전신망",
+      "솔가지연안전신국",
+      "월염기술"
+    ],
+    "new_character": null,
+    "new_world_setting": {
+      "id": "w-tech-deep-line-splitter",
+      "category": "기술",
+      "name": "월심 분선 중계기 (月深 分線 中繼器)",
+      "summary": "월심 타공 송신기에서 송출되는 심해의 응답 신호를 솔가지 시 전역의 선로로 손실 없이 배분하는 다중 공명 분개 장치.",
+      "details": "솔가지 연안 전신국 지하 배선실에 설치된 월심 분선 중계기는 타공 송신기가 읽어낸 심해 태엽 축적탑의 신호를 등대, 시계탑, 기차역, 항만 전신선으로 동시에 갈라 보낸다. 월염 응축수 오일조에 잠긴 네 갈래의 은청색 감응 스위치가 신호 충격을 흡수하여 선로 간 과부하와 간섭을 방지한다."
+    },
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-184",
+    "date": "2026-11-21",
+    "created_at": "2026-11-21T06:01:15+00:00",
+    "type": "설정",
+    "characters": [
+      "serin",
+      "morgen"
+    ],
+    "world_settings": [
+      "w-tech-deep-punch-transmitter",
+      "w-org-telegraph",
+      "w-tech-wolhyentelelegraph",
+      "w-tech-deep-line-splitter"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
