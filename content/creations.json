@@ -7125,5 +7125,43 @@
     "stories": [],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "이슬로 내려앉은 바다의 대답",
+    "content": "솔가지 시의 밤거리를 달리던 모겐은 골목길 전신주에 붙은 '월심 선로 감응기' 앞에 멈춰 섰다. 전신국 지하 분선 중계기를 지나 도심 끝자락 선로까지 흘러 들어온 심해의 신호는 감응기의 석영 표면 위에 은청색 이슬을 똑똑 맺히게 하고 있었다. 손가락 끝으로 그 서늘한 이슬을 훔쳐내자 지문 위로 맑고 미세한 푸른 파문이 번져 나갔다. \"세린, 시내 전체 선로 감응기가 반응하고 있어. 바다의 대답이 전선을 타고 골목길 구석구석까지 내려왔어.\" 시계탑 상부 선로 단자를 점검하던 세린은 석영 안경 너머로 잔잔하게 피어나는 은청색 잔광을 보며 월빛 수첩에 현장 수치를 적어 내려갔다. 같은 시각, 사구 해변 등대 망루에서 라잔은 어두운 솔가지 시의 밤거리를 내려다보았다. 짙은 밤안개 속 전신주마다 맺힌 은청색 이슬과 광학 파문들이 마치 지상에 내린 작은 등대 불빛처럼 조용히 반짝이고 있었다. 사구 해변의 흩어진 조각으로 시작된 폭풍의 기록이, 마침내 도심 골목길 끝까지 닿아 안온한 이슬의 언어로 숨 쉬고 있었다.",
+    "tags": [
+      "라잔",
+      "세린",
+      "모겐",
+      "솔가지연안전신국",
+      "월심선로감응기"
+    ],
+    "new_character": null,
+    "new_world_setting": null,
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-186",
+    "date": "2026-11-23",
+    "created_at": "2026-11-23T10:01:45+00:00",
+    "type": "스토리",
+    "characters": [
+      "rajan",
+      "serin",
+      "morgen"
+    ],
+    "world_settings": [
+      "w-geo-solgaji",
+      "w-org-telegraph",
+      "w-tech-deep-line-sensor",
+      "w-tech-deep-line-splitter",
+      "w-tech-wolbitnotebook"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [
+      "s-042"
+    ],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
