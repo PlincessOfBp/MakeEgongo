@@ -972,6 +972,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-deep-light-collector",
+      "category": "기술",
+      "name": "월심 집광경 (月深 集光鏡)",
+      "summary": "월심 선로 감응기에서 발산되는 은청색 이슬 잔광을 모아 어둠 속 문자를 선명하게 확대·독취하는 휴대용 광학 돋보기.",
+      "details": "세린이 모겐과 야간 배달부들을 위해 고안한 휴대용 광학 기구. 이중 석영 렌즈 내부에 미세 월사 유제를 도포하여, 전신주에 맺힌 월심 선로 감응기의 푸른 이슬 잔상을 한 점으로 집광한다. 등유 불꽃을 켜지 않고도 야간에 서류의 미세한 주소와 문패를 또렷하게 읽어낼 수 있으며, 집광 시 렌즈 황동 테두리가 미세하게 공명하여 감응 신호의 감도를 촉각으로 전달한다.",
+      "created": "2026-11-25",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
