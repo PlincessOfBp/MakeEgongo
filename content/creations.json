@@ -7421,5 +7421,43 @@
     "stories": [],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "렌즈 끝에 맺힌 아침",
+    "content": "동이 트기 직전의 솔가지 시는 서늘한 푸른빛과 붉은 여명이 뒤엉키는 기묘한 고요에 휩싸였다. 모겐은 전신주 아래 웅크리고 앉아 '월심 집광경'의 석영 렌즈를 선로 감응기의 이슬방울에 바짝 가져다 댔다. 집광경의 오목한 테두리가 은청색 잔광을 한곳으로 모아내자, 밤샘 배달의 마지막 송장 종이 위에 희미하게 적혀 있던 수신인의 이름이 선명하게 떠올랐다. '라잔 씨 앞으로 온 등대 난로용 석탄 송장이야.' 골목 모퉁이에서 밤새 선로 전압을 점검하던 세린이 다가와 집광경을 들여다보며 작게 웃었다. 석영 렌즈 너머로는 글자뿐 아니라, 검은 여울 해저에서 쉼 없이 올라오는 미세한 파문의 결까지 마치 살아있는 지문처럼 겹쳐 보였다. '차가운 심해의 맥박이 전신선을 타고 달려와, 사람과 사람 사이를 이어주는 불빛이 되었네요.' 모겐은 배달 가방을 어깨에 메며 일어섰다. 저 멀리 사구 해변 등대 꼭대기에서 라잔의 서리투광기가 조용히 소등되며 여명의 하늘로 녹아들었다. 도시의 밤을 지키던 은청색 맥박이 마침내 사람들의 아침 속으로 스며들고 있었다.",
+    "tags": [
+      "솔가지 연안",
+      "월심 집광경",
+      "월심 선로 감응기",
+      "라잔",
+      "세린",
+      "모겐"
+    ],
+    "new_character": null,
+    "new_world_setting": null,
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-194",
+    "date": "2026-11-26",
+    "created_at": "2026-11-26T00:02:47+00:00",
+    "type": "스토리",
+    "characters": [
+      "serin",
+      "morgen",
+      "rajan"
+    ],
+    "world_settings": [
+      "w-tech-deep-line-sensor",
+      "w-tech-deep-light-collector",
+      "w-tech-frost-searchlight",
+      "w-natur-black-shoal"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [
+      "s-045"
+    ],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
