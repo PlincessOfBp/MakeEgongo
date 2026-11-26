@@ -7459,5 +7459,38 @@
     ],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "은빛 가루가 남긴 온도",
+    "content": "오전의 해가 솔가지 시의 젖은 지붕들을 말려갈 때, 세린은 수리점 구석에 쌓인 월사(月砂) 가루를 조심스럽게 모았다. 렌즈 끝에 맺힌 아침 볕이 투과되면서, 미세한 은백색 가루는 단순한 잔여물이 아니라 밤새 전신선이 호흡하며 남긴 미열을 품고 미세하게 떨리고 있었다. 문을 열고 들어온 모겐이 코트 깃을 털어내며 말했다. \"골목마다 맺힌 이슬 덕분에 오늘 아침 배달은 램프도 없이 끝냈어.\" 세린은 월빛 수첩을 펼쳐 그 미열의 주기를 기록했다. 바다의 심연에서 시작된 파동은 이제 등대의 불빛을 거쳐, 골목길의 전신주와 작은 찻잔 속까지 따스하게 스며들어 있었다.",
+    "tags": [
+      "월사",
+      "솔가지 시",
+      "아침",
+      "기록"
+    ],
+    "new_character": null,
+    "new_world_setting": null,
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-195",
+    "date": "2026-11-26",
+    "created_at": "2026-11-26T03:01:06+00:00",
+    "type": "단편",
+    "characters": [
+      "serin",
+      "morgen",
+      "rajan"
+    ],
+    "world_settings": [
+      "w-tech-wolsa",
+      "w-tech-deep-light-collector",
+      "w-tech-wolbitnotebook"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
