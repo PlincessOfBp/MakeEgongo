@@ -983,6 +983,17 @@
       "related_characters": [],
       "related_stories": [],
       "related_creations": []
+    },
+    {
+      "id": "w-tech-wolyeom-teapot",
+      "category": "기술",
+      "name": "월염 찻주전자 (月染 茶壺)",
+      "summary": "월염 현상으로 서늘한 은청색이 감도는 동제 찻주전자로, 미세한 조석 공명을 머금어 차가 쉽게 식지 않고 온기를 길게 유지한다.",
+      "details": "라잔이 등대에서 수십 년간 사용하던 동제 찻주전자가 월염 전신망의 공명에 오래 노출되며 은청색 빛을 띠게 된 기물. 내부의 차가 닿는 면에 미세한 월사 입자가 안착해, 바다의 조석 박동에 맞춰 차의 잔물결이 온화하게 진동하며 은은한 향과 온도를 오랫동안 보존해 준다.",
+      "created": "2026-11-27",
+      "related_characters": [],
+      "related_stories": [],
+      "related_creations": []
     }
   ]
 }
