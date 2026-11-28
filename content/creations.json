@@ -7615,5 +7615,49 @@
     "stories": [],
     "relationships": [],
     "setting_changes": []
+  },
+  {
+    "title": "월염 찻잔 (月染 茶盞)",
+    "content": "월염 찻잔(月染 茶盞)은 라잔의 등대 1층 차탁에서 오랜 세월 바다의 조석 공명과 월사 증기에 노출되어 서늘한 은청색 테를 두르게 된 백자 잔이다. \n\n일반적인 찻잔과 달리, 찻물이 담기는 순간 바닥에 침전된 미세한 월염 유약층이 열기와 심해의 초저주파를 동시에 감응해 반응한다. 찻물 표면 위에는 검은 여울의 침전 치차와 지상 시계망 사이의 0.04도 완충 유격이 은청색 동심원 파문으로 피어오른다. \n\n등대지기 라잔이 밤샘 근무 중 손님에게 차를 권할 때, 차를 마시는 이는 입술을 적시기 전 수면에 이는 잔물결의 결을 보며 바다와 도시가 밤새 얼마나 평온하게 호흡을 나누었는지를 직관적으로 확인할 수 있다. 차의 온기는 월염 차받침과 주전자의 공명 덕에 밤바람 속에서도 쉽게 흩어지지 않는다.",
+    "tags": [
+      "솔가지연안",
+      "월염",
+      "월염찻잔",
+      "등대차",
+      "검은여울"
+    ],
+    "new_character": null,
+    "new_world_setting": {
+      "id": "w-tech-wolyeom-teacup",
+      "category": "기술",
+      "name": "월염 찻잔 (月染 茶盞)",
+      "summary": "월염 현상을 머금은 백자 찻잔으로, 차를 따르면 검은 여울의 조석 박동과 0.04도의 유격을 수면에 은청색 파문으로 띄워 올리는 기물.",
+      "details": "라잔의 등대 차탁에서 오랜 시간 조석 공명과 월현 신호에 노출된 도자기 잔. 잔 가장자리와 굽 안쪽에 은청색의 미세한 광택 결정이 영구 고착되어 있다. 뜨거운 차를 부으면 찻물의 대류와 검은 여울의 초저주파 맥박이 겹치면서, 수면에 잔잔한 은청색 동심원 파문이 그려진다. 이 파문은 심해 태엽 축적탑과 지상 기계망 사이의 0.04도 유격이 정상적으로 유지되고 있는지를 보여주는 시각적 지표 역할을 겸한다."
+    },
+    "new_relationship": null,
+    "setting_change": null,
+    "id": "c-199",
+    "date": "2026-11-28",
+    "created_at": "2026-11-28T19:06:35+00:00",
+    "type": "설정",
+    "characters": [
+      "rajan",
+      "serin",
+      "morgen"
+    ],
+    "world_settings": [
+      "w-tech-wolyeom",
+      "w-culture-lantern",
+      "w-tech-wolyeom-teapot",
+      "w-tech-wolyeom-saucer",
+      "w-natur-black-shoal",
+      "w-tech-wolhyeon-backlash-gear",
+      "w-tech-wolyeom-teacup"
+    ],
+    "places": [],
+    "events": [],
+    "stories": [],
+    "relationships": [],
+    "setting_changes": []
   }
 ]
